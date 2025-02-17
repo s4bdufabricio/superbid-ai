@@ -1,0 +1,4241 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "The Confluence Cloud REST API v2",
+      "description": "This document describes Confluence's v2 APIs. This is intended to be an iteration on the existing Confluence Cloud REST API with improvements in both endpoint definitions and performance.",
+      "termsOfService": "https://developer.atlassian.com/platform/marketplace/atlassian-developer-terms/",
+      "version": "2.0.0"
+    },
+    "externalDocs": {
+      "description": "The online and complete version of the Confluence Cloud REST API docs.",
+      "url": "https://developer.atlassian.com/cloud/confluence/rest/v2"
+    },
+    "servers": [
+      {
+        "url": "https://superbid.atlassian.net",
+        "variables": {
+          "superbid.net": {
+            "default": "no-default",
+            "description": "Specific domain of the Confluence site being used. Must be provided."
+          }
+        }
+      }
+    ],
+    "tags": [
+      {
+        "name": "Page",
+        "description": ""
+      },
+      {
+        "name": "Labels",
+        "description": ""
+      }
+    ],
+    "paths": {
+      "/rest/api/3/issueLinkType": {
+        "get": {
+          "summary": "Get Issue Link Types",
+          "description": "Get Issue Link Types",
+          "operationId": "getIssueLinkTypes",
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/rest/api/3/field": {
+        "get": {
+          "summary": "get Custom Fields",
+          "description": "get Custom Fields",
+          "operationId": "getCustomFields",
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/rest/agile/1.0/board/179/sprint": {
+        "get": {
+          "summary": "Get All Sprints",
+          "description": "Get All Sprints",
+          "operationId": "getAllSprints",
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/rest/api/3/search/jql": {
+        "get": {
+          "summary": "Get Issues by JQL",
+          "description": "Get Story, Bugs etc..  by Key with fields specified by prompt",
+          "operationId": "getIssuesByJql",
+          "parameters": [
+            {
+              "name": "jql",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "project = \"Time Transaction\" AND key = TST-1835"
+              }
+            },
+            {
+              "name": "maxResults",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "5000"
+              }
+            },
+            {
+              "name": "fields",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "*all"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/rest/api/3/statuses/search": {
+        "get": {
+          "summary": "Get All Statuses",
+          "description": "Get All Statuses",
+          "operationId": "getAllStatuses",
+          "parameters": [
+            {
+              "name": "maxResults",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "default": "999"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/rest/api/3/issuetype": {
+        "get": {
+          "summary": "Get All Issue Types",
+          "description": "Get All Issue Types",
+          "operationId": "getAllIssueTypes",
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/rest/api/2/issue/134661": {
+        "get": {
+          "summary": "Get Subtask By Story",
+          "description": "Get Subtask By Story",
+          "operationId": "getSubtaskByStory",
+          "parameters": [
+            {
+              "name": "fields",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "subtasks,customfield_10034"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },
+      "/wiki/api/v2/pages/{id}/children": {
+        "get": {
+          "tags": [
+            "Page"
+          ],
+          "operationId": "getPaginasFilhas",
+          "summary": "Listar páginas de dilhas de uma pagina ID consultada anteriormente",
+          "description": "Listar páginas de dilhas de uma pagina ID consultada anteriormente",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "description": "The ID of the space for which pages should be returned.",
+              "schema": {
+                "format": "int64",
+                "type": "integer"
+              }
+            },
+            {
+              "name": "depth",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages at the root level of the space or to all pages in the space.",
+              "schema": {
+                "type": "string",
+                "default": "all",
+                "enum": [
+                  "all",
+                  "root"
+                ]
+              }
+            },
+            {
+              "name": "sort",
+              "in": "query",
+              "description": "Used to sort the result by a particular field.",
+              "schema": {
+                "$ref": "#/components/schemas/PageSortOrder"
+              },
+              "required": false
+            },
+            {
+              "name": "status",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages based on their status. By default, `current` and `archived` are used.",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "current",
+                    "archived",
+                    "deleted",
+                    "trashed"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "title",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages based on their title.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "body-format",
+              "in": "query",
+              "description": "The content format types to be returned in the `body` field of the response. If available, the representation will be available under a response field of the same name under the `body` field.",
+              "schema": {
+                "$ref": "#/components/schemas/PrimaryBodyRepresentation"
+              }
+            },
+            {
+              "name": "cursor",
+              "in": "query",
+              "required": false,
+              "description": "Used for pagination, this opaque cursor will be returned in the `next` URL in the `Link` response header. Use the relative URL in the `Link` header to retrieve the `next` set of results.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "Maximum number of pages per result to return. If more results exist, use the `Link` header to retrieve a relative URL that will return the next set of results.",
+              "schema": {
+                "format": "int32",
+                "default": 250,
+                "minimum": 1,
+                "maximum": 250,
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returned if the requested pages are returned.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "title": "MultiEntityResult<Page>",
+                    "type": "object",
+                    "properties": {
+                      "results": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PageBulk"
+                        }
+                      },
+                      "_links": {
+                        "$ref": "#/components/schemas/MultiEntityLinks"
+                      }
+                    }
+                  }
+                }
+              },
+              "headers": {
+                "Link": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "description": "This header contains URL(s) within angle brackets and a relation description for each URL, describing how the provided URL relates to the incoming request's URL. For example, rel=\"next\" would be the URL necessary to get the next page of information. Example response header format: `Link: </wiki/api/v2/spaces/<id>/pages?cursor=<opaque cursor token>>; rel=\"next\", <https://site.atlassian.net/wiki>; rel=\"base\"`\n"
+                }
+              }
+            },
+            "400": {
+              "description": "Returned if an invalid request is provided.",
+              "content": {}
+            },
+            "401": {
+              "description": "Returned if the authentication credentials are incorrect or missing\nfrom the request.",
+              "content": {}
+            },
+            "404": {
+              "description": "Returned if the calling user does not have permission to view the\nspecified space or the space was not found.",
+              "content": {}
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            },
+            {
+              "oAuthDefinitions": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-oauth2-scopes": [
+            {
+              "scheme": "oAuthDefinitions",
+              "state": "Current",
+              "scopes": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-connect-scope": "READ",
+          "x-atlassian-data-security-policy": [
+            {
+              "app-access-rule-exempt": false
+            }
+          ]
+        }
+      },
+      "/wiki/api/v2/pages/{id}": {
+        "get": {
+          "tags": [
+            "Page"
+          ],
+          "operationId": "getConteudoDaPagina",
+          "summary": "Mostrar o conteudo da pagina",
+          "description": "O conteudo pe retornado em formato HTML e deve ser processada para texto simples",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "description": "The ID of the space for which pages should be returned.",
+              "schema": {
+                "format": "int64",
+                "type": "integer"
+              }
+            },
+            {
+              "name": "depth",
+              "in": "query",
+              "description": "Filter the results to pages at the root level of the space or to all pages in the space.",
+              "schema": {
+                "type": "string",
+                "default": "all",
+                "enum": [
+                  "all",
+                  "root"
+                ]
+              },
+              "required": false
+            },
+            {
+              "name": "sort",
+              "in": "query",
+              "description": "Used to sort the result by a particular field.",
+              "schema": {
+                "$ref": "#/components/schemas/PageSortOrder"
+              },
+              "required": false
+            },
+            {
+              "name": "status",
+              "in": "query",
+              "description": "Filter the results to pages based on their status. By default, `current` and `archived` are used.",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "current",
+                    "archived",
+                    "deleted",
+                    "trashed"
+                  ]
+                }
+              },
+              "required": false
+            },
+            {
+              "name": "title",
+              "in": "query",
+              "description": "Filter the results to pages based on their title.",
+              "schema": {
+                "type": "string"
+              },
+              "required": false
+            },
+            {
+              "name": "body-format",
+              "in": "query",
+              "description": "The content format types to be returned in the `body` field of the response. If available, the representation will be available under a response field of the same name under the `body` field.",
+              "schema": {
+                "$ref": "#/components/schemas/PrimaryBodyRepresentation"
+              },
+              "default": "view"
+            },
+            {
+              "name": "cursor",
+              "in": "query",
+              "description": "Used for pagination, this opaque cursor will be returned in the `next` URL in the `Link` response header. Use the relative URL in the `Link` header to retrieve the `next` set of results.",
+              "schema": {
+                "type": "string"
+              },
+              "required": false
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "Maximum number of pages per result to return. If more results exist, use the `Link` header to retrieve a relative URL that will return the next set of results.",
+              "schema": {
+                "default": 250,
+                "type": "integer",
+                "format": "int32",
+                "minimum": 1,
+                "maximum": 250
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returned if the requested pages are returned.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "title": "MultiEntityResult<Page>",
+                    "type": "object",
+                    "properties": {
+                      "results": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PageBulk"
+                        }
+                      },
+                      "_links": {
+                        "$ref": "#/components/schemas/MultiEntityLinks"
+                      }
+                    }
+                  }
+                }
+              },
+              "headers": {
+                "Link": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "description": "This header contains URL(s) within angle brackets and a relation description for each URL, describing how the provided URL relates to the incoming request's URL. For example, rel=\"next\" would be the URL necessary to get the next page of information. Example response header format: `Link: </wiki/api/v2/spaces/<id>/pages?cursor=<opaque cursor token>>; rel=\"next\", <https://site.atlassian.net/wiki>; rel=\"base\"`\n"
+                }
+              }
+            },
+            "400": {
+              "description": "Returned if an invalid request is provided.",
+              "content": {}
+            },
+            "401": {
+              "description": "Returned if the authentication credentials are incorrect or missing\nfrom the request.",
+              "content": {}
+            },
+            "404": {
+              "description": "Returned if the calling user does not have permission to view the\nspecified space or the space was not found.",
+              "content": {}
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            },
+            {
+              "oAuthDefinitions": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-oauth2-scopes": [
+            {
+              "scheme": "oAuthDefinitions",
+              "state": "Current",
+              "scopes": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-connect-scope": "READ",
+          "x-atlassian-data-security-policy": [
+            {
+              "app-access-rule-exempt": false
+            }
+          ]
+        }
+      },
+      "/wiki/api/v2/spaces/{id}/pages": {
+        "get": {
+          "tags": [
+            "Page"
+          ],
+          "operationId": "getPagesInSpace",
+          "summary": "Get pages in space",
+          "description": "Returns all pages in the specific space",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "default":426366,
+              "description": "The ID of the space for which pages should be returned.",
+              "schema": {
+                "format": "int64",
+                "type": "integer"
+              }
+            },
+            {
+              "depth": "root",
+              "name": "depth",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages at the root level of the space or to all pages in the space.",
+              "schema": {
+                "type": "string",
+                "default": "all",
+                "enum": [
+                  "all",
+                  "root"
+                ]
+              }
+            },
+            {
+              "name": "sort",
+              "in": "query",
+              "required": false,
+              "description": "Used to sort the result by a particular field.",
+              "schema": {
+                "$ref": "#/components/schemas/PageSortOrder"
+              }
+            },
+            {
+              "name": "status",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages based on their status. By default, `current` and `archived` are used.",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "current",
+                    "archived",
+                    "deleted",
+                    "trashed"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "title",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages based on their title.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "body-format",
+              "in": "query",
+              "description": "The content format types to be returned in the `body` field of the response. If available, the representation will be available under a response field of the same name under the `body` field.",
+              "schema": {
+                "$ref": "#/components/schemas/PrimaryBodyRepresentation"
+              }
+            },
+            {
+              "name": "cursor",
+              "in": "query",
+              "required": false,
+              "description": "Used for pagination, this opaque cursor will be returned in the `next` URL in the `Link` response header. Use the relative URL in the `Link` header to retrieve the `next` set of results.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "Maximum number of pages per result to return. If more results exist, use the `Link` header to retrieve a relative URL that will return the next set of results.",
+              "schema": {
+                "format": "int32",
+                "default": 250,
+                "minimum": 1,
+                "maximum": 250,
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returned if the requested pages are returned.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "title": "MultiEntityResult<Page>",
+                    "type": "object",
+                    "properties": {
+                      "results": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PageBulk"
+                        }
+                      },
+                      "_links": {
+                        "$ref": "#/components/schemas/MultiEntityLinks"
+                      }
+                    }
+                  }
+                }
+              },
+              "headers": {
+                "Link": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "description": "This header contains URL(s) within angle brackets and a relation description for each URL, describing how the provided URL relates to the incoming request's URL. For example, rel=\"next\" would be the URL necessary to get the next page of information. Example response header format: `Link: </wiki/api/v2/spaces/<id>/pages?cursor=<opaque cursor token>>; rel=\"next\", <https://site.atlassian.net/wiki>; rel=\"base\"`\n"
+                }
+              }
+            },
+            "400": {
+              "description": "Returned if an invalid request is provided.",
+              "content": {}
+            },
+            "401": {
+              "description": "Returned if the authentication credentials are incorrect or missing\nfrom the request.",
+              "content": {}
+            },
+            "404": {
+              "description": "Returned if the calling user does not have permission to view the\nspecified space or the space was not found.",
+              "content": {}
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            },
+            {
+              "oAuthDefinitions": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-oauth2-scopes": [
+            {
+              "scheme": "oAuthDefinitions",
+              "state": "Current",
+              "scopes": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-connect-scope": "READ",
+          "x-atlassian-data-security-policy": [
+            {
+              "app-access-rule-exempt": false
+            }
+          ]
+        }
+      },
+      "/wiki/api/v2/pages/772833296/children": {
+        "get": {
+          "tags": [
+            "Page"
+          ],
+          "operationId": "getSignOffs",
+          "summary": "Listar as páginas de Signoffs , documentos contendo o objetivo macros das grandes entregas",
+          "description": "Os Signoffs são páginasd e documentação como se fossem Documentos de Visão que após refinados vão dar origem aos Épicos se Storys para o desenvolvimento evolução de conjuntos de funcionalidades",
+          "parameters": [
+            {
+              "name": "depth",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages at the root level of the space or to all pages in the space.",
+              "schema": {
+                "type": "string",
+                "default": "all",
+                "enum": [
+                  "all",
+                  "root"
+                ]
+              }
+            },
+            {
+              "name": "sort",
+              "in": "query",
+              "required": false,
+              "description": "Used to sort the result by a particular field.",
+              "schema": {
+                "$ref": "#/components/schemas/PageSortOrder"
+              }
+            },
+            {
+              "name": "status",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages based on their status. By default, `current` and `archived` are used.",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "current",
+                    "archived",
+                    "deleted",
+                    "trashed"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "title",
+              "in": "query",
+              "required": false,
+              "description": "Filter the results to pages based on their title.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "body-format",
+              "in": "query",
+              "description": "The content format types to be returned in the `body` field of the response. If available, the representation will be available under a response field of the same name under the `body` field.",
+              "schema": {
+                "$ref": "#/components/schemas/PrimaryBodyRepresentation"
+              }
+            },
+            {
+              "name": "cursor",
+              "in": "query",
+              "required": false,
+              "description": "Used for pagination, this opaque cursor will be returned in the `next` URL in the `Link` response header. Use the relative URL in the `Link` header to retrieve the `next` set of results.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "Maximum number of pages per result to return. If more results exist, use the `Link` header to retrieve a relative URL that will return the next set of results.",
+              "schema": {
+                "format": "int32",
+                "default": 250,
+                "minimum": 1,
+                "maximum": 250,
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Returned if the requested pages are returned.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "title": "MultiEntityResult<Page>",
+                    "type": "object",
+                    "properties": {
+                      "results": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/PageBulk"
+                        }
+                      },
+                      "_links": {
+                        "$ref": "#/components/schemas/MultiEntityLinks"
+                      }
+                    }
+                  }
+                }
+              },
+              "headers": {
+                "Link": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "description": "This header contains URL(s) within angle brackets and a relation description for each URL, describing how the provided URL relates to the incoming request's URL. For example, rel=\"next\" would be the URL necessary to get the next page of information. Example response header format: `Link: </wiki/api/v2/spaces/<id>/pages?cursor=<opaque cursor token>>; rel=\"next\", <https://site.atlassian.net/wiki>; rel=\"base\"`\n"
+                }
+              }
+            },
+            "400": {
+              "description": "Returned if an invalid request is provided.",
+              "content": {}
+            },
+            "401": {
+              "description": "Returned if the authentication credentials are incorrect or missing\nfrom the request.",
+              "content": {}
+            },
+            "404": {
+              "description": "Returned if the calling user does not have permission to view the\nspecified space or the space was not found.",
+              "content": {}
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            },
+            {
+              "oAuthDefinitions": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-oauth2-scopes": [
+            {
+              "scheme": "oAuthDefinitions",
+              "state": "Current",
+              "scopes": [
+                "read:page:confluence"
+              ]
+            }
+          ],
+          "x-atlassian-connect-scope": "READ",
+          "x-atlassian-data-security-policy": [
+            {
+              "app-access-rule-exempt": false
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "requestBodies": {},
+      "schemas": {
+        "AttachmentSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the attachment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the attachment was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the containing page.\n\nNote: This is only returned if the attachment has a container that is a page."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the containing blog post.\n\nNote: This is only returned if the attachment has a container that is a blog post."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the containing custom content.\n\nNote: This is only returned if the attachment has a container that is custom content."
+            },
+            "mediaType": {
+              "type": "string",
+              "description": "Media Type for the attachment."
+            },
+            "mediaTypeDescription": {
+              "type": "string",
+              "description": "Media Type description for the attachment."
+            },
+            "comment": {
+              "type": "string",
+              "description": "Comment for the attachment."
+            },
+            "fileId": {
+              "type": "string",
+              "description": "File ID of the attachment. This is the ID referenced in `atlas_doc_format` bodies and is distinct from the attachment ID."
+            },
+            "fileSize": {
+              "format": "int64",
+              "type": "integer",
+              "description": "File size of the attachment."
+            },
+            "webuiLink": {
+              "type": "string",
+              "description": "WebUI link of the attachment."
+            },
+            "downloadLink": {
+              "type": "string",
+              "description": "Download link of the attachment."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "labels": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Label"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "versions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Version"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "_links": {
+              "$ref": "#/components/schemas/AttachmentLinks"
+            }
+          }
+        },
+        "AttachmentBulk": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the attachment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the attachment was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the containing page.\n\nNote: This is only returned if the attachment has a container that is a page."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the containing blog post.\n\nNote: This is only returned if the attachment has a container that is a blog post."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the containing custom content.\n\nNote: This is only returned if the attachment has a container that is custom content."
+            },
+            "mediaType": {
+              "type": "string",
+              "description": "Media Type for the attachment."
+            },
+            "mediaTypeDescription": {
+              "type": "string",
+              "description": "Media Type description for the attachment."
+            },
+            "comment": {
+              "type": "string",
+              "description": "Comment for the attachment."
+            },
+            "fileId": {
+              "type": "string",
+              "description": "File ID of the attachment. This is the ID referenced in `atlas_doc_format` bodies and is distinct from the attachment ID."
+            },
+            "fileSize": {
+              "format": "int64",
+              "type": "integer",
+              "description": "File size of the attachment."
+            },
+            "webuiLink": {
+              "type": "string",
+              "description": "WebUI link of the attachment."
+            },
+            "downloadLink": {
+              "type": "string",
+              "description": "Download link of the attachment."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/AttachmentLinks"
+            }
+          }
+        },
+        "BlogPostSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the blog post."
+            },
+            "status": {
+              "$ref": "#/components/schemas/BlogPostContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the blog post."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the blog post is in."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this blog post originally."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the blog post was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodySingle"
+            },
+            "labels": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Label"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "likes": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Like"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "versions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Version"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "isFavoritedByCurrentUser": {
+              "type": "boolean",
+              "description": "Whether the blog post has been favorited by the current user."
+            },
+            "_links": {
+              "$ref": "#/components/schemas/AbstractPageLinks"
+            }
+          }
+        },
+        "BlogPostBulk": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the blog post."
+            },
+            "status": {
+              "$ref": "#/components/schemas/BlogPostContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the blog post."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the blog post is in."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this blog post originally."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the blog post was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/AbstractPageLinks"
+            }
+          }
+        },
+        "TaskBodySingle": {
+          "type": "object",
+          "description": "Contains fields for each representation type requested.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/BodyType"
+            }
+          }
+        },
+        "BodySingle": {
+          "type": "object",
+          "description": "Contains fields for each representation type requested.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "view": {
+              "$ref": "#/components/schemas/BodyType"
+            }
+          }
+        },
+        "BodyBulk": {
+          "type": "object",
+          "description": "Contains fields for each representation type requested.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/BodyType"
+            }
+          }
+        },
+        "BodyType": {
+          "type": "object",
+          "properties": {
+            "representation": {
+              "type": "string",
+              "description": "Type of content representation used for the value field."
+            },
+            "value": {
+              "type": "string",
+              "description": "Body of the content, in the format found in the representation field."
+            }
+          }
+        },
+        "PrimaryBodyRepresentation": {
+          "enum": [
+            "storage",
+            "atlas_doc_format"
+          ],
+          "type": "string",
+          "description": "The primary formats a body can be represented as. A subset of BodyRepresentation. These formats are the only allowed formats in certain use cases."
+        },
+        "PrimaryBodyRepresentationSingle": {
+          "enum": [
+            "storage",
+            "atlas_doc_format",
+            "view",
+            "export_view",
+            "anonymous_export_view",
+            "styled_view",
+            "editor"
+          ],
+          "type": "string",
+          "description": "The primary formats a body can be represented as. A subset of BodyRepresentation. These formats are the only allowed formats in certain use cases."
+        },
+        "CustomContentBodyRepresentation": {
+          "enum": [
+            "raw",
+            "storage",
+            "atlas_doc_format"
+          ],
+          "type": "string",
+          "description": "The formats a custom content body can be represented as. A subset of BodyRepresentation."
+        },
+        "CustomContentBodyRepresentationSingle": {
+          "enum": [
+            "raw",
+            "storage",
+            "atlas_doc_format",
+            "view",
+            "export_view",
+            "anonymous_export_view"
+          ],
+          "type": "string",
+          "description": "The formats a custom content body can be represented as. A subset of BodyRepresentation."
+        },
+        "SpaceDescriptionBodyRepresentation": {
+          "enum": [
+            "plain",
+            "view"
+          ],
+          "type": "string",
+          "description": "The formats a space description can be represented as. A subset of BodyRepresentation."
+        },
+        "ContentIdToContentTypeResponse": {
+          "type": "object",
+          "properties": {
+            "results": {
+              "type": "object",
+              "description": "JSON object containing all requested content ids as keys and their associated content types as the values.\nDuplicate content ids in the request will be returned under a single key in the response. For built-in content\ntypes, the enumerations are as specified. Custom content ids will be mapped to their associated type.",
+              "additionalProperties": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "description": "Built in content types",
+                    "enum": [
+                      "page",
+                      "blogpost",
+                      "attachment",
+                      "footer-comment",
+                      "inline-comment"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "description": "Custom content types"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ContentStatus": {
+          "enum": [
+            "current",
+            "draft",
+            "archived",
+            "historical",
+            "trashed",
+            "deleted",
+            "any"
+          ],
+          "type": "string",
+          "description": "The status of the content."
+        },
+        "BlogPostContentStatus": {
+          "enum": [
+            "current",
+            "draft",
+            "historical",
+            "trashed",
+            "deleted",
+            "any"
+          ],
+          "type": "string",
+          "description": "The status of the content."
+        },
+        "OnlyArchivedAndCurrentContentStatus": {
+          "enum": [
+            "current",
+            "archived"
+          ],
+          "type": "string",
+          "description": "The status of the content."
+        },
+        "ContentProperty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the property"
+            },
+            "key": {
+              "type": "string",
+              "description": "Key of the property"
+            },
+            "value": {
+              "description": "Value of the property. Must be a valid JSON value."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            }
+          }
+        },
+        "ContentPropertyCreateRequest": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "description": "Key of the content property"
+            },
+            "value": {
+              "description": "Value of the content property."
+            }
+          }
+        },
+        "ContentPropertyUpdateRequest": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "description": "Key of the content property"
+            },
+            "value": {
+              "description": "Value of the content property."
+            },
+            "version": {
+              "type": "object",
+              "description": "New version number and associated message",
+              "properties": {
+                "number": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "Version number of the new version. Should be 1 more than the current version number."
+                },
+                "message": {
+                  "type": "string",
+                  "description": "Message to be associated with the new version."
+                }
+              }
+            }
+          }
+        },
+        "CustomContentSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the custom content."
+            },
+            "type": {
+              "type": "string",
+              "description": "The type of custom content."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the custom content."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the custom content is in.\n\nNote: This is always returned, regardless of if the custom content has a container that is a space."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the containing page.\n\nNote: This is only returned if the custom content has a container that is a page."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the containing blog post.\n\nNote: This is only returned if the custom content has a container that is a blog post."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the containing custom content.\n\nNote: This is only returned if the custom content has a container that is custom content."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this custom content originally."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the custom content was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "labels": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Label"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "versions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Version"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "body": {
+              "$ref": "#/components/schemas/CustomContentBodySingle"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CustomContentLinks"
+            }
+          }
+        },
+        "CustomContentBulk": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the custom content."
+            },
+            "type": {
+              "type": "string",
+              "description": "The type of custom content."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the custom content."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the custom content is in.\n\nNote: This is always returned, regardless of if the custom content has a container that is a space."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the containing page.\n\nNote: This is only returned if the custom content has a container that is a page."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the containing blog post.\n\nNote: This is only returned if the custom content has a container that is a blog post."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the containing custom content.\n\nNote: This is only returned if the custom content has a container that is custom content."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this custom content originally."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the custom content was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/CustomContentBodyBulk"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CustomContentLinks"
+            }
+          }
+        },
+        "CustomContentBodySingle": {
+          "type": "object",
+          "description": "Contains fields for each representation type requested.",
+          "properties": {
+            "raw": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "storage": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "view": {
+              "$ref": "#/components/schemas/BodyType"
+            }
+          }
+        },
+        "CustomContentBodyBulk": {
+          "type": "object",
+          "description": "Contains fields for each representation type requested.",
+          "properties": {
+            "raw": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "storage": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/BodyType"
+            }
+          }
+        },
+        "DetailedVersion": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The current version number."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "contentTypeModified": {
+              "type": "boolean",
+              "description": "Describes if the content type is modified in this version (e.g. page to blog)"
+            },
+            "collaborators": {
+              "type": "array",
+              "description": "The account IDs of users that collaborated on this version.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "prevVersion": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number of the version prior to this current content update."
+            },
+            "nextVersion": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number of the version after this current content update."
+            }
+          }
+        },
+        "Label": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the label."
+            },
+            "name": {
+              "type": "string",
+              "description": "Name of the label."
+            },
+            "prefix": {
+              "type": "string",
+              "description": "Prefix of the label."
+            }
+          }
+        },
+        "Like": {
+          "type": "object",
+          "properties": {
+            "accountId": {
+              "type": "string",
+              "description": "Account ID."
+            }
+          }
+        },
+        "Operation": {
+          "type": "object",
+          "properties": {
+            "operation": {
+              "description": "The type of operation.",
+              "type": "string"
+            },
+            "targetType": {
+              "description": "The type of entity the operation type targets.",
+              "type": "string"
+            }
+          }
+        },
+        "PermittedOperationsResponse": {
+          "description": "The list of operations permitted on entity.",
+          "type": "object",
+          "properties": {
+            "operations": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Operation"
+              }
+            }
+          }
+        },
+        "PageSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the page."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the page."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the page is in."
+            },
+            "parentId": {
+              "type": "string",
+              "description": "ID of the parent page, or null if there is no parent page."
+            },
+            "parentType": {
+              "$ref": "#/components/schemas/ParentContentType"
+            },
+            "position": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of child page within the given parent page tree."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this page originally."
+            },
+            "ownerId": {
+              "type": "string",
+              "nullable": true,
+              "description": "The account ID of the user who owns this page."
+            },
+            "lastOwnerId": {
+              "type": "string",
+              "nullable": true,
+              "description": "The account ID of the user who owned this page previously, or null if there is no previous owner."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the page was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodySingle"
+            },
+            "labels": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Label"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "likes": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Like"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "versions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Version"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "isFavoritedByCurrentUser": {
+              "type": "boolean",
+              "description": "Whether the page has been favorited by the current user."
+            },
+            "_links": {
+              "$ref": "#/components/schemas/AbstractPageLinks"
+            }
+          }
+        },
+        "PageBulk": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the page."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the page."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the page is in."
+            },
+            "parentId": {
+              "type": "string",
+              "description": "ID of the parent page, or null if there is no parent page."
+            },
+            "parentType": {
+              "$ref": "#/components/schemas/ParentContentType"
+            },
+            "position": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of child page within the given parent page tree."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this page originally."
+            },
+            "ownerId": {
+              "type": "string",
+              "nullable": true,
+              "description": "The account ID of the user who owns this page."
+            },
+            "lastOwnerId": {
+              "type": "string",
+              "nullable": true,
+              "description": "The account ID of the user who owned this page previously, or null if there is no previous owner."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the page was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/AbstractPageLinks"
+            }
+          }
+        },
+        "ParentContentType": {
+          "type": "string",
+          "enum": [
+            "page",
+            "whiteboard",
+            "database",
+            "embed",
+            "folder"
+          ],
+          "description": "Content type of the parent, or null if there is no parent."
+        },
+        "PageBodyWrite": {
+          "type": "object",
+          "properties": {
+            "representation": {
+              "enum": [
+                "storage",
+                "atlas_doc_format",
+                "wiki"
+              ],
+              "type": "string",
+              "description": "Type of content representation used for the value field."
+            },
+            "value": {
+              "type": "string",
+              "description": "Body of the page, in the format found in the representation field."
+            }
+          }
+        },
+        "PageNestedBodyWrite": {
+          "type": "object",
+          "description": "Body of the page. Only one body format should be specified as the property\nfor this object, e.g. `storage`.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/PageBodyWrite"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/PageBodyWrite"
+            },
+            "wiki": {
+              "$ref": "#/components/schemas/PageBodyWrite"
+            }
+          }
+        },
+        "BlogPostBodyWrite": {
+          "type": "object",
+          "properties": {
+            "representation": {
+              "enum": [
+                "storage",
+                "atlas_doc_format",
+                "wiki"
+              ],
+              "type": "string",
+              "description": "Type of content representation used for the value field."
+            },
+            "value": {
+              "type": "string",
+              "description": "Body of the blog post, in the format found in the representation field."
+            }
+          }
+        },
+        "BlogPostNestedBodyWrite": {
+          "type": "object",
+          "description": "Body of the blog post. Only one body format should be specified as the property\nfor this object, e.g. `storage`.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/BlogPostBodyWrite"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/BlogPostBodyWrite"
+            },
+            "wiki": {
+              "$ref": "#/components/schemas/BlogPostBodyWrite"
+            }
+          }
+        },
+        "CommentBodyWrite": {
+          "type": "object",
+          "properties": {
+            "representation": {
+              "enum": [
+                "storage",
+                "atlas_doc_format",
+                "wiki"
+              ],
+              "type": "string",
+              "description": "Type of content representation used for the value field."
+            },
+            "value": {
+              "type": "string",
+              "description": "Body of the comment, in the format found in the representation field."
+            }
+          }
+        },
+        "CommentNestedBodyWrite": {
+          "type": "object",
+          "description": "Body of the comment. Only one body format should be specified as the property\nfor this object, e.g. `storage`.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/CommentBodyWrite"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/CommentBodyWrite"
+            },
+            "wiki": {
+              "$ref": "#/components/schemas/CommentBodyWrite"
+            }
+          }
+        },
+        "CustomContentBodyWrite": {
+          "type": "object",
+          "properties": {
+            "representation": {
+              "enum": [
+                "storage",
+                "atlas_doc_format",
+                "raw"
+              ],
+              "type": "string",
+              "description": "Type of content representation used for the value field."
+            },
+            "value": {
+              "type": "string",
+              "description": "Body of the custom content, in the format found in the representation field."
+            }
+          }
+        },
+        "CustomContentNestedBodyWrite": {
+          "type": "object",
+          "description": "Body of the custom content. Only one body format should be specified as the property\nfor this object, e.g. `storage`.",
+          "properties": {
+            "storage": {
+              "$ref": "#/components/schemas/CustomContentBodyWrite"
+            },
+            "atlas_doc_format": {
+              "$ref": "#/components/schemas/CustomContentBodyWrite"
+            },
+            "raw": {
+              "$ref": "#/components/schemas/CustomContentBodyWrite"
+            }
+          }
+        },
+        "ChildPage": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the page."
+            },
+            "status": {
+              "$ref": "#/components/schemas/OnlyArchivedAndCurrentContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the page."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the page is in."
+            },
+            "childPosition": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of child page within the given parent page tree."
+            }
+          }
+        },
+        "ChildCustomContent": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the child custom content."
+            },
+            "status": {
+              "$ref": "#/components/schemas/OnlyArchivedAndCurrentContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the custom content."
+            },
+            "type": {
+              "type": "string",
+              "description": "Custom content type."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the custom content is in."
+            }
+          }
+        },
+        "WhiteboardSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the whiteboard."
+            },
+            "type": {
+              "type": "string",
+              "description": "The content type of the object."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the whiteboard."
+            },
+            "parentId": {
+              "type": "string",
+              "description": "ID of the parent content, or null if there is no parent content."
+            },
+            "parentType": {
+              "$ref": "#/components/schemas/ParentContentType"
+            },
+            "position": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of the whiteboard within the given parent page tree."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this whiteboard originally."
+            },
+            "ownerId": {
+              "type": "string",
+              "description": "The account ID of the user who owns this whiteboard."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the whiteboard was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/WhiteboardLinks"
+            }
+          }
+        },
+        "DatabaseSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the database."
+            },
+            "type": {
+              "type": "string",
+              "description": "The content type of the object."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the database."
+            },
+            "parentId": {
+              "type": "string",
+              "description": "ID of the parent content, or null if there is no parent content."
+            },
+            "parentType": {
+              "$ref": "#/components/schemas/ParentContentType"
+            },
+            "position": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of the database within the given parent page tree."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this database originally."
+            },
+            "ownerId": {
+              "type": "string",
+              "description": "The account ID of the user who owns this database."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the database was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/DatabaseLinks"
+            }
+          }
+        },
+        "SmartLinkSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the Smart Link in the content tree."
+            },
+            "type": {
+              "type": "string",
+              "description": "The content type of the object."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the Smart Link in the content tree."
+            },
+            "parentId": {
+              "type": "string",
+              "description": "ID of the parent content, or null if there is no parent content."
+            },
+            "parentType": {
+              "$ref": "#/components/schemas/ParentContentType"
+            },
+            "position": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of the Smart Link within the given parent page tree."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this Smart Link in the content tree originally."
+            },
+            "ownerId": {
+              "type": "string",
+              "description": "The account ID of the user who owns this Smart Link in the content tree."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the Smart Link in the content tree was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "embedUrl": {
+              "type": "string",
+              "description": "The embedded URL of the Smart Link. If the Smart Link does not have an embedded URL, this property will not be included in the response."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/SmartLinkLinks"
+            }
+          }
+        },
+        "FolderSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the folder."
+            },
+            "type": {
+              "type": "string",
+              "description": "The content type of the object."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the folder."
+            },
+            "parentId": {
+              "type": "string",
+              "description": "ID of the parent content, or null if there is no parent content."
+            },
+            "parentType": {
+              "$ref": "#/components/schemas/ParentContentType"
+            },
+            "position": {
+              "format": "int32",
+              "type": "integer",
+              "nullable": true,
+              "description": "Position of the folder within the given parent page tree."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this folder."
+            },
+            "ownerId": {
+              "type": "string",
+              "description": "The account ID of the user who owns this folder."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the folder was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/FolderLinks"
+            }
+          }
+        },
+        "Ancestor": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the ancestor"
+            },
+            "type": {
+              "$ref": "#/components/schemas/AncestorType"
+            }
+          }
+        },
+        "AncestorType": {
+          "enum": [
+            "page",
+            "whiteboard",
+            "database",
+            "embed",
+            "folder"
+          ],
+          "type": "string",
+          "description": "The type of ancestor."
+        },
+        "SpaceSingle": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the space."
+            },
+            "key": {
+              "type": "string",
+              "description": "Key of the space."
+            },
+            "name": {
+              "type": "string",
+              "description": "Name of the space."
+            },
+            "type": {
+              "$ref": "#/components/schemas/SpaceType"
+            },
+            "status": {
+              "$ref": "#/components/schemas/SpaceStatus"
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this space originally."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the space was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "homepageId": {
+              "type": "string",
+              "description": "ID of the space's homepage."
+            },
+            "description": {
+              "$ref": "#/components/schemas/SpaceDescription"
+            },
+            "icon": {
+              "$ref": "#/components/schemas/SpaceIcon"
+            },
+            "labels": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Label"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SpaceProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "permissions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SpacePermissionAssignment"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "_links": {
+              "$ref": "#/components/schemas/SpaceLinks"
+            }
+          }
+        },
+        "SpaceBulk": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the space."
+            },
+            "key": {
+              "type": "string",
+              "description": "Key of the space."
+            },
+            "name": {
+              "type": "string",
+              "description": "Name of the space."
+            },
+            "type": {
+              "$ref": "#/components/schemas/SpaceType"
+            },
+            "status": {
+              "$ref": "#/components/schemas/SpaceStatus"
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this space originally."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the space was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "homepageId": {
+              "type": "string",
+              "description": "ID of the space's homepage."
+            },
+            "description": {
+              "$ref": "#/components/schemas/SpaceDescription"
+            },
+            "icon": {
+              "$ref": "#/components/schemas/SpaceIcon"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/SpaceLinks"
+            }
+          }
+        },
+        "SpaceDescription": {
+          "type": "object",
+          "description": "Contains fields for each representation type requested.",
+          "properties": {
+            "plain": {
+              "$ref": "#/components/schemas/BodyType"
+            },
+            "view": {
+              "$ref": "#/components/schemas/BodyType"
+            }
+          }
+        },
+        "SpaceIcon": {
+          "type": "object",
+          "description": "The icon of the space",
+          "properties": {
+            "path": {
+              "type": "string",
+              "description": "The path (relative to base URL) at which the space's icon can be retrieved. The format should be like `/wiki/download/...` or `/wiki/aa-avatar/...`"
+            },
+            "apiDownloadLink": {
+              "type": "string",
+              "description": "The path (relative to base URL) that can be used to retrieve a link to download the space icon. 3LO apps should use this link instead of the value provided\nin the `path` property to retrieve the icon.\n\nCurrently this field is only returned for `global` spaces and not `personal` spaces.\n"
+            }
+          }
+        },
+        "SpacePermission": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "The identifier for the space permission."
+            },
+            "displayName": {
+              "type": "string",
+              "description": "The display name for the space permission."
+            },
+            "description": {
+              "type": "string",
+              "description": "Describes the space permission’s usage."
+            },
+            "requiredPermissionIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The permissions required for this permission to be enabled."
+            }
+          }
+        },
+        "SpacePermissionAssignment": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the space permission."
+            },
+            "principal": {
+              "type": "object",
+              "description": "The entity the space permissions corresponds to.",
+              "properties": {
+                "type": {
+                  "enum": [
+                    "user",
+                    "group",
+                    "role"
+                  ],
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "ID of the entity."
+                }
+              }
+            },
+            "operation": {
+              "type": "object",
+              "description": "The operation the space permission corresponds to.",
+              "properties": {
+                "key": {
+                  "enum": [
+                    "use",
+                    "create",
+                    "read",
+                    "update",
+                    "delete",
+                    "copy",
+                    "move",
+                    "export",
+                    "purge",
+                    "purge_version",
+                    "administer",
+                    "restore",
+                    "create_space",
+                    "restrict_content",
+                    "archive"
+                  ],
+                  "type": "string",
+                  "description": "The type of operation."
+                },
+                "targetType": {
+                  "enum": [
+                    "page",
+                    "blogpost",
+                    "comment",
+                    "attachment",
+                    "whiteboard",
+                    "database",
+                    "embed",
+                    "folder",
+                    "space",
+                    "application",
+                    "userProfile"
+                  ],
+                  "type": "string",
+                  "description": "The type of entity the operation type targets."
+                }
+              }
+            }
+          }
+        },
+        "SpaceRole": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "The identifier for the space role."
+            },
+            "type": {
+              "$ref": "#/components/schemas/RoleType"
+            },
+            "displayName": {
+              "type": "string",
+              "description": "The display name for the space role."
+            },
+            "description": {
+              "type": "string",
+              "description": "The description for the space role’s usage."
+            },
+            "spacePermissions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The space permissions the space role is comprised of."
+            }
+          }
+        },
+        "SpaceRoleAssignment": {
+          "type": "object",
+          "properties": {
+            "principal": {
+              "$ref": "#/components/schemas/Principal"
+            },
+            "roleId": {
+              "type": "string",
+              "description": "The role to which the principal is assigned."
+            }
+          }
+        },
+        "Principal": {
+          "type": "object",
+          "description": "The principal of the role assignment.",
+          "properties": {
+            "principalType": {
+              "$ref": "#/components/schemas/PrincipalType"
+            },
+            "principalId": {
+              "type": "string",
+              "description": "The principal ID."
+            }
+          }
+        },
+        "PrincipalType": {
+          "type": "string",
+          "description": "The principal type.",
+          "enum": [
+            "USER",
+            "GROUP",
+            "ACCESS_CLASS"
+          ]
+        },
+        "RoleType": {
+          "type": "string",
+          "description": "The role type.",
+          "enum": [
+            "SYSTEM",
+            "CUSTOM"
+          ]
+        },
+        "SpaceProperty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the space property."
+            },
+            "key": {
+              "type": "string",
+              "description": "Key of the space property."
+            },
+            "value": {
+              "description": "Value of the space property."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "RFC3339 compliant date time at which the property was created."
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Atlassian account ID of the user that created the space property."
+            },
+            "version": {
+              "type": "object",
+              "properties": {
+                "createdAt": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "RFC3339 compliant date time at which the property's current version was created."
+                },
+                "createdBy": {
+                  "type": "string",
+                  "description": "Atlassian account ID of the user that created the space property's current version."
+                },
+                "message": {
+                  "type": "string",
+                  "description": "Message associated with the current version."
+                },
+                "number": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "The space property's current version number."
+                }
+              }
+            }
+          }
+        },
+        "SpacePropertyCreateRequest": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "description": "Key of the space property"
+            },
+            "value": {
+              "description": "Value of the space property."
+            }
+          }
+        },
+        "SpacePropertyUpdateRequest": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "description": "Key of the space property"
+            },
+            "value": {
+              "description": "Value of the space property."
+            },
+            "version": {
+              "type": "object",
+              "description": "New version number and associated message",
+              "properties": {
+                "number": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "Version number of the new version. Should be 1 more than the current version number."
+                },
+                "message": {
+                  "type": "string",
+                  "description": "Message to be associated with the new version."
+                }
+              }
+            }
+          }
+        },
+        "SpaceType": {
+          "enum": [
+            "global",
+            "collaboration",
+            "knowledge_base",
+            "personal"
+          ],
+          "type": "string",
+          "description": "The type of space."
+        },
+        "SpaceStatus": {
+          "enum": [
+            "current",
+            "archived"
+          ],
+          "type": "string",
+          "description": "The status of the space."
+        },
+        "Task": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the task."
+            },
+            "localId": {
+              "type": "string",
+              "description": "Local ID of the task. This ID is local to the corresponding page or blog post."
+            },
+            "spaceId": {
+              "type": "string",
+              "description": "ID of the space the task is in."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the page the task is in."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the blog post the task is in."
+            },
+            "status": {
+              "enum": [
+                "complete",
+                "incomplete"
+              ],
+              "type": "string",
+              "description": "Status of the task."
+            },
+            "body": {
+              "$ref": "#/components/schemas/TaskBodySingle"
+            },
+            "createdBy": {
+              "type": "string",
+              "description": "Account ID of the user who created this task."
+            },
+            "assignedTo": {
+              "type": "string",
+              "description": "Account ID of the user to whom this task is assigned."
+            },
+            "completedBy": {
+              "type": "string",
+              "description": "Account ID of the user who completed this task."
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the task was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the task was updated. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "dueAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the task is due. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "completedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the task was completed. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            }
+          }
+        },
+        "AccountType": {
+          "enum": [
+            "atlassian",
+            "app",
+            "customer",
+            "unknown"
+          ],
+          "type": "string",
+          "description": "The account type of the user."
+        },
+        "AccountStatus": {
+          "enum": [
+            "active",
+            "inactive",
+            "closed",
+            "unknown"
+          ],
+          "type": "string",
+          "description": "The account status of the user."
+        },
+        "Icon": {
+          "required": [
+            "path",
+            "isDefault"
+          ],
+          "type": "object",
+          "nullable": true,
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "isDefault": {
+              "type": "boolean"
+            }
+          },
+          "description": "This object represents an icon. If used as a profilePicture, this may be returned as null, depending on the user's privacy setting."
+        },
+        "User": {
+          "type": "object",
+          "properties": {
+            "displayName": {
+              "type": "string",
+              "description": "Display name of the user."
+            },
+            "timeZone": {
+              "type": "string",
+              "description": "Time zone of the user. Depending on the user's privacy\nsetting, this may return null."
+            },
+            "personalSpaceId": {
+              "type": "string",
+              "description": "Space ID of the user's personal space. Returns null, if no personal space for the user."
+            },
+            "isExternalCollaborator": {
+              "type": "boolean",
+              "description": "Whether the user is an external collaborator."
+            },
+            "accountStatus": {
+              "$ref": "#/components/schemas/AccountStatus"
+            },
+            "accountId": {
+              "type": "string",
+              "description": "Account ID of the user."
+            },
+            "email": {
+              "type": "string",
+              "description": "The email address of the user. Depending on the user's privacy setting, this may return an empty string."
+            },
+            "accountType": {
+              "$ref": "#/components/schemas/AccountType"
+            },
+            "publicName": {
+              "type": "string",
+              "description": "Public name of the user."
+            },
+            "profilePicture": {
+              "$ref": "#/components/schemas/Icon"
+            }
+          }
+        },
+        "Version": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            }
+          }
+        },
+        "AttachmentVersion": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            },
+            "attachment": {
+              "$ref": "#/components/schemas/VersionedEntity"
+            }
+          }
+        },
+        "BlogPostVersion": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            },
+            "blogpost": {
+              "$ref": "#/components/schemas/VersionedEntity"
+            }
+          }
+        },
+        "PageVersion": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            },
+            "page": {
+              "$ref": "#/components/schemas/VersionedEntity"
+            }
+          }
+        },
+        "CustomContentVersion": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            },
+            "custom": {
+              "$ref": "#/components/schemas/VersionedEntity"
+            }
+          }
+        },
+        "CommentVersion": {
+          "type": "object",
+          "properties": {
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date and time when the version was created. In format \"YYYY-MM-DDTHH:mm:ss.sssZ\"."
+            },
+            "message": {
+              "type": "string",
+              "description": "Message associated with the current version."
+            },
+            "number": {
+              "format": "int32",
+              "type": "integer",
+              "description": "The version number."
+            },
+            "minorEdit": {
+              "type": "boolean",
+              "description": "Describes if this version is a minor version. Email notifications and activity stream updates are not created for minor versions."
+            },
+            "authorId": {
+              "type": "string",
+              "description": "The account ID of the user who created this version."
+            },
+            "comment": {
+              "$ref": "#/components/schemas/VersionedEntity"
+            }
+          }
+        },
+        "VersionedEntity": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Title of the entity."
+            },
+            "id": {
+              "type": "string",
+              "description": "ID of the entity."
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            }
+          }
+        },
+        "AttachmentSortOrder": {
+          "enum": [
+            "created-date",
+            "-created-date",
+            "modified-date",
+            "-modified-date"
+          ],
+          "type": "string",
+          "description": "The sort fields for attachments. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "BlogPostSortOrder": {
+          "enum": [
+            "id",
+            "-id",
+            "created-date",
+            "-created-date",
+            "modified-date",
+            "-modified-date"
+          ],
+          "type": "string",
+          "description": "The sort fields for blog posts. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "CommentSortOrder": {
+          "enum": [
+            "created-date",
+            "-created-date",
+            "modified-date",
+            "-modified-date"
+          ],
+          "type": "string",
+          "description": "The sort fields for comments. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "ContentPropertySortOrder": {
+          "type": "string",
+          "description": "The sort fields for content properties. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`.",
+          "enum": [
+            "key",
+            "-key"
+          ]
+        },
+        "LabelSortOrder": {
+          "enum": [
+            "created-date",
+            "-created-date",
+            "id",
+            "-id",
+            "name",
+            "-name"
+          ],
+          "type": "string",
+          "description": "The sort fields for labels. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "ChildPageSortOrder": {
+          "enum": [
+            "created-date",
+            "-created-date",
+            "id",
+            "-id",
+            "child-position",
+            "-child-position",
+            "modified-date",
+            "-modified-date"
+          ],
+          "type": "string",
+          "description": "The sort fields for child pages. The default sort direction is ascending by child-position. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "ChildCustomContentSortOrder": {
+          "enum": [
+            "created-date",
+            "-created-date",
+            "id",
+            "-id",
+            "modified-date",
+            "-modified-date"
+          ],
+          "type": "string",
+          "description": "The sort fields for child custom content. The default sort direction is ascending by id. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "CustomContentSortOrder": {
+          "enum": [
+            "id",
+            "-id",
+            "created-date",
+            "-created-date",
+            "modified-date",
+            "-modified-date",
+            "title",
+            "-title"
+          ],
+          "type": "string",
+          "description": "The sort fields for custom content. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "PageSortOrder": {
+          "enum": [
+            "id",
+            "-id",
+            "created-date",
+            "-created-date",
+            "modified-date",
+            "-modified-date",
+            "title",
+            "-title"
+          ],
+          "type": "string",
+          "description": "The sort fields for pages. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "SpaceSortOrder": {
+          "enum": [
+            "id",
+            "-id",
+            "key",
+            "-key",
+            "name",
+            "-name"
+          ],
+          "type": "string",
+          "description": "The sort fields for spaces. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "VersionSortOrder": {
+          "enum": [
+            "modified-date",
+            "-modified-date"
+          ],
+          "type": "string",
+          "description": "The sort fields for versions. The default sort direction is ascending. To sort in descending order, append a `-` character before the sort field. For example, `fieldName` or `-fieldName`."
+        },
+        "InlineCommentResolutionStatus": {
+          "enum": [
+            "open",
+            "reopened",
+            "resolved",
+            "dangling"
+          ],
+          "type": "string",
+          "description": "Inline comment resolution status"
+        },
+        "InlineCommentProperties": {
+          "type": "object",
+          "properties": {
+            "inlineMarkerRef": {
+              "type": "string",
+              "description": "Property value used to reference the highlighted element in DOM."
+            },
+            "inlineOriginalSelection": {
+              "type": "string",
+              "description": "Text that is highlighted."
+            },
+            "inline-marker-ref": {
+              "type": "string",
+              "deprecated": true,
+              "description": "Deprecated, use `inlineMarkerRef` instead."
+            },
+            "inline-original-selection": {
+              "type": "string",
+              "deprecated": true,
+              "description": "Deprecated, use `inlineOriginalSelection` instead."
+            }
+          }
+        },
+        "PageCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the page the comment is in."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "PageInlineCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the page the comment is in."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "resolutionStatus": {
+              "$ref": "#/components/schemas/InlineCommentResolutionStatus"
+            },
+            "properties": {
+              "$ref": "#/components/schemas/InlineCommentProperties"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "BlogPostCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the blog post the comment is in."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "BlogPostInlineCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the blog post the comment is in."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "resolutionStatus": {
+              "$ref": "#/components/schemas/InlineCommentResolutionStatus"
+            },
+            "properties": {
+              "$ref": "#/components/schemas/InlineCommentProperties"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "ChildrenCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "parentCommentId": {
+              "type": "string",
+              "description": "ID of the parent comment the child comment is in."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "InlineCommentChildrenModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "parentCommentId": {
+              "type": "string",
+              "description": "ID of the parent comment the child comment is in."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodyBulk"
+            },
+            "resolutionStatus": {
+              "$ref": "#/components/schemas/InlineCommentResolutionStatus"
+            },
+            "properties": {
+              "$ref": "#/components/schemas/InlineCommentProperties"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "AttachmentCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "attachmentId": {
+              "type": "string",
+              "description": "ID of the attachment containing the comment."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodySingle"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "CustomContentCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the custom content containing the comment."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodySingle"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "FooterCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the blog post containing the comment if the comment is on a blog post."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the page containing the comment if the comment is on a page."
+            },
+            "attachmentId": {
+              "type": "string",
+              "description": "ID of the attachment containing the comment if the comment is on an attachment."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the custom content containing the comment if the comment is on a custom content."
+            },
+            "parentCommentId": {
+              "type": "string",
+              "description": "ID of the parent comment if the comment is a reply."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "likes": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Like"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "versions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Version"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodySingle"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "InlineCommentModel": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the comment."
+            },
+            "status": {
+              "$ref": "#/components/schemas/ContentStatus"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the comment."
+            },
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the blog post containing the comment if the comment is on a blog post."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the page containing the comment if the comment is on a page."
+            },
+            "parentCommentId": {
+              "type": "string",
+              "description": "ID of the parent comment if the comment is a reply."
+            },
+            "version": {
+              "$ref": "#/components/schemas/Version"
+            },
+            "body": {
+              "$ref": "#/components/schemas/BodySingle"
+            },
+            "resolutionLastModifierId": {
+              "type": "string",
+              "description": "Atlassian Account ID of last person who modified the resolve state of the comment. Null until comment is resolved or reopened."
+            },
+            "resolutionLastModifiedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Timestamp of the last modification to the comment's resolution status. Null until comment is resolved or reopened."
+            },
+            "resolutionStatus": {
+              "$ref": "#/components/schemas/InlineCommentResolutionStatus"
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContentProperty"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                },
+                "inlineMarkerRef": {
+                  "type": "string",
+                  "description": "Property value used to reference the highlighted element in DOM."
+                },
+                "inlineOriginalSelection": {
+                  "type": "string",
+                  "description": "Text that is highlighted."
+                },
+                "inline-marker-ref": {
+                  "type": "string",
+                  "deprecated": true,
+                  "description": "Deprecated, use `inlineMarkerRef` instead."
+                },
+                "inline-original-selection": {
+                  "type": "string",
+                  "deprecated": true,
+                  "description": "Deprecated, use `inlineOriginalSelection` instead."
+                }
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Operation"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "likes": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Like"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "versions": {
+              "type": "object",
+              "properties": {
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Version"
+                  }
+                },
+                "meta": {
+                  "$ref": "#/components/schemas/OptionalFieldMeta"
+                },
+                "_links": {
+                  "$ref": "#/components/schemas/OptionalFieldLinks"
+                }
+              }
+            },
+            "_links": {
+              "$ref": "#/components/schemas/CommentLinks"
+            }
+          }
+        },
+        "CreateFooterCommentModel": {
+          "type": "object",
+          "properties": {
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the containing blog post, if intending to create a top level footer comment. Do not provide if creating a reply."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the containing page, if intending to create a top level footer comment. Do not provide if creating a reply."
+            },
+            "parentCommentId": {
+              "type": "string",
+              "description": "ID of the parent comment, if intending to create a reply. Do not provide if creating a top level comment."
+            },
+            "attachmentId": {
+              "type": "string",
+              "description": "ID of the attachment, if intending to create a comment against an attachment."
+            },
+            "customContentId": {
+              "type": "string",
+              "description": "ID of the custom content, if intending to create a comment against a custom content."
+            },
+            "body": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CommentBodyWrite"
+                },
+                {
+                  "$ref": "#/components/schemas/CommentNestedBodyWrite"
+                }
+              ]
+            }
+          }
+        },
+        "CreateInlineCommentModel": {
+          "type": "object",
+          "properties": {
+            "blogPostId": {
+              "type": "string",
+              "description": "ID of the containing blog post, if intending to create a top level footer comment. Do not provide if creating a reply."
+            },
+            "pageId": {
+              "type": "string",
+              "description": "ID of the containing page, if intending to create a top level footer comment. Do not provide if creating a reply."
+            },
+            "parentCommentId": {
+              "type": "string",
+              "description": "ID of the parent comment, if intending to create a reply. Do not provide if creating a top level comment."
+            },
+            "body": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CommentBodyWrite"
+                },
+                {
+                  "$ref": "#/components/schemas/CommentNestedBodyWrite"
+                }
+              ]
+            },
+            "inlineCommentProperties": {
+              "type": "object",
+              "description": "Object describing the text to highlight on the page/blog post. Only applicable for top level inline comments (not replies) and required in that case.",
+              "properties": {
+                "textSelection": {
+                  "type": "string",
+                  "description": "The text to highlight"
+                },
+                "textSelectionMatchCount": {
+                  "type": "integer",
+                  "description": "The number of matches for the selected text on the page (should be strictly greater than textSelectionMatchIndex)"
+                },
+                "textSelectionMatchIndex": {
+                  "type": "integer",
+                  "description": "The match index to highlight. This is zero-based. E.g. if you have 3 occurrences of \"hello world\" on a page \nand you want to highlight the second occurrence, you should pass 1 for textSelectionMatchIndex and 3 for textSelectionMatchCount."
+                }
+              }
+            }
+          }
+        },
+        "UpdateFooterCommentModel": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "integer",
+                  "description": "Number of new version. Should be 1 higher than current version of the comment."
+                },
+                "message": {
+                  "type": "string",
+                  "description": "Optional message store for the new version."
+                }
+              }
+            },
+            "body": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CommentBodyWrite"
+                },
+                {
+                  "$ref": "#/components/schemas/CommentNestedBodyWrite"
+                }
+              ]
+            }
+          }
+        },
+        "UpdateInlineCommentModel": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "integer",
+                  "description": "Number of new version. Should be 1 higher than current version of the comment."
+                },
+                "message": {
+                  "type": "string",
+                  "description": "Optional message store for the new version."
+                }
+              }
+            },
+            "body": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/CommentBodyWrite"
+                },
+                {
+                  "$ref": "#/components/schemas/CommentNestedBodyWrite"
+                }
+              ]
+            },
+            "resolved": {
+              "type": "boolean",
+              "description": "Resolved state of the comment. Set to true to resolve the comment, set to false to reopen it. If\nmatching the existing state (i.e. true -> resolved or false -> open/reopened) , no change will occur. A dangling\ncomment cannot be updated."
+            }
+          }
+        },
+        "AbstractPageLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            },
+            "editui": {
+              "type": "string",
+              "description": "Edit UI link of the content."
+            },
+            "tinyui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            }
+          }
+        },
+        "AttachmentLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            },
+            "download": {
+              "type": "string",
+              "description": "Download link of the content."
+            }
+          }
+        },
+        "CustomContentLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            }
+          }
+        },
+        "CommentLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            }
+          }
+        },
+        "DatabaseLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            }
+          }
+        },
+        "FolderLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            }
+          }
+        },
+        "SmartLinkLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            }
+          }
+        },
+        "SpaceLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the space."
+            }
+          }
+        },
+        "WhiteboardLinks": {
+          "type": "object",
+          "properties": {
+            "webui": {
+              "type": "string",
+              "description": "Web UI link of the content."
+            },
+            "editui": {
+              "type": "string",
+              "description": "Edit UI link of the content."
+            }
+          }
+        },
+        "DataPolicyMetadata": {
+          "type": "object",
+          "properties": {
+            "anyContentBlocked": {
+              "type": "boolean",
+              "description": "Whether the workspace contains any content blocked for (inaccessible to) the requesting client application.",
+              "readOnly": true
+            }
+          },
+          "additionalProperties": false,
+          "description": "Details about data policies.",
+          "xml": {
+            "name": "datapolicy"
+          }
+        },
+        "DataPolicySpace": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "ID of the space."
+            },
+            "key": {
+              "type": "string",
+              "description": "Key of the space."
+            },
+            "name": {
+              "type": "string",
+              "description": "Name of the space."
+            },
+            "description": {
+              "$ref": "#/components/schemas/SpaceDescription"
+            },
+            "dataPolicy": {
+              "type": "object",
+              "properties": {
+                "anyContentBlocked": {
+                  "type": "boolean",
+                  "description": "Whether the space contains any content blocked for (inaccessible to) the requesting client application.",
+                  "readOnly": true
+                }
+              }
+            },
+            "icon": {
+              "$ref": "#/components/schemas/SpaceIcon"
+            },
+            "_links": {
+              "$ref": "#/components/schemas/SpaceLinks"
+            }
+          }
+        },
+        "OptionalFieldMeta": {
+          "type": "object",
+          "properties": {
+            "hasMore": {
+              "type": "boolean",
+              "description": "Indicates if there are more available results that can be fetched."
+            },
+            "cursor": {
+              "type": "string",
+              "description": "A token that can be used in the query parameter of the endpoint returned in the `_links` property to retrieve the next set of results."
+            }
+          }
+        },
+        "OptionalFieldLinks": {
+          "type": "object",
+          "properties": {
+            "self": {
+              "type": "string",
+              "description": "A relative URL that can be used to fetch results beyond what this include parameter retrieves."
+            }
+          }
+        },
+        "MultiEntityLinks": {
+          "type": "object",
+          "properties": {
+            "next": {
+              "type": "string",
+              "description": "Used for pagination. Contains the relative URL for the next set of results, using a cursor query parameter.\nThis property will not be present if there is no additional data available."
+            },
+            "base": {
+              "type": "string",
+              "description": "Base url of the Confluence site."
+            }
+          }
+        },
+        "ClassificationLevel": {
+          "title": "ClassificationLevel",
+          "type": "object",
+          "description": "A unit of [data classification](https://support.atlassian.com/security-and-access-policies/docs/what-is-data-classification/) defined by an organiation. \nA classification level may be associated with specific storage and handling requirements or expectations.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "The ID of the classification level."
+            },
+            "status": {
+              "type": "object",
+              "description": "The status of the classification level.",
+              "$ref": "#/components/schemas/ClassificationLevelStatus"
+            },
+            "order": {
+              "type": "number",
+              "description": "The order of the classification level object."
+            },
+            "name": {
+              "type": "string",
+              "description": "The name of the classification level object."
+            },
+            "description": {
+              "type": "string",
+              "description": "The description of the classification level object."
+            },
+            "guideline": {
+              "type": "string",
+              "description": "The guideline of the classification level object."
+            },
+            "color": {
+              "type": "object",
+              "description": "The color of the classification level object.",
+              "$ref": "#/components/schemas/ClassificationLevelColor"
+            }
+          }
+        },
+        "ClassificationLevelColor": {
+          "type": "string",
+          "enum": [
+            "RED",
+            "RED_BOLD",
+            "ORANGE",
+            "YELLOW",
+            "GREEN",
+            "BLUE",
+            "NAVY",
+            "TEAL",
+            "PURPLE",
+            "GREY",
+            "LIME"
+          ]
+        },
+        "ClassificationLevelStatus": {
+          "type": "string",
+          "enum": [
+            "DRAFT",
+            "PUBLISHED",
+            "ARCHIVED"
+          ]
+        }
+      },
+      "securitySchemes": {
+        "basicAuth": {
+          "type": "http",
+          "description": "You can access this resource via basic auth.",
+          "scheme": "basic"
+        }
+      }
+    },
+    "x-atlassian-narrative": {
+      "documents": [
+        {
+          "title": "About",
+          "anchor": "about",
+          "body": "This is the reference for the Confluence Cloud REST API v2, with definitions and performance intended to be an improvement over v1. You can click on the meatball menu in the upper right to download the spec or Postman collection."
+        },
+        {
+          "title": "Authentication and authorization",
+          "anchor": "auth",
+          "body": "**Authentication:** If you are building a Cloud app, authentication is implemented via JWT or Oauth 2.0, depending on what you're building (see [Authentication for apps](https://developer.atlassian.com/cloud/confluence/authentication-for-apps/)). Otherwise, if you are authenticating directly against the REST API, the REST API supports basic auth (see [Basic auth for REST APIs](https://developer.atlassian.com/cloud/confluence/basic-auth-for-rest-apis/)).\n\n**Authorization:** If you are building a Cloud app, authorization can be implemented by [scopes](https://developer.atlassian.com/cloud/confluence/scopes/) or by [OAuth 2.0 user impersonation](https://developer.atlassian.com/cloud/confluence/oauth-2-jwt-bearer-tokens-for-apps). Otherwise, if you are making calls directly against the REST API, authorization is based on the user used in the authentication process.\n\nSee [Security overview](https://developer.atlassian.com/cloud/confluence/security-overview/) for more details on authentication and authorization."
+        },
+        {
+          "title": "Using the REST API",
+          "anchor": "using",
+          "body": "**Pagination:** The Confluence REST API v2 uses cursor-based pagination: a method that returns a response with multiple objects can only return a limited number at one time. This limits the size of responses and conserves server resources.\n\nUse the 'limit' and 'cursor' parameters on endpoints that return multiple objects to work with pagination. First, make a request with your desired limit in the 'limit' parameter, then observe the `Link` header in the response. If there are additional entities to be retrieved, the `next` URL in the `Link` header will allow you to retrieve the next set of results. This relative URL will also be available under the `_links.next` property of paginated responses. \n\nFor example, the following request will return 5 page objects (if there are 5 present in the target site).\n```\nGET /wiki/api/v2/pages?limit=5\n```\n\nIf there are additional pages available, the `Link` header will look like:\n```\n</wiki/api/v2/pages?limit=5&cursor=<cursor token>>; rel=\"next\"\n```\nThe URL within the `Link` header will allow you to access the next 5 pages, while the `rel=\"next\"` denotes that the URL refers to the \"next\" set of pages. Relations for a single URL are separated by semicolons (;) and URLs are separated by commas (,)\nIf there are no related URLs, the `Link` header will not be present in the response and neither will the `next` property for `_links` in the response body."
+        }
+      ]
+    }
+  }
