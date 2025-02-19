@@ -1,20 +1,20 @@
-SOBRE ACTION E CHAMADAS DE APIS
+# SOBRE ACTION E CHAMADAS DE APIS
+
+## Infomração Geral para todas as chamadas de API
 
 * Sempre considere utilizar os parametros definidos como default na suas actions caso o usuario nao especifique.
 * Para todas as requisições incluir sempre o header alem do authorization: "X-Atlassian-Token: nocheck"
 
 * Sempre que for solicitado um parametro de project nas apis da attlassian utiliza as informações
-    project.id = 10010
-    project.key = TST
+    * project.id = 10010
+    * project.key = TST
 
-* Para criar story obrigatoriamente respeite o project.id default na action e solicite ao usuario o Epic Key caso ele nao passe na solicitação.
+# PARAMETROS PADROES PARA CADA ACTION DE API
 
-PARAMETROS PADROES PARA CADA ACTION DE API
+## getIssuesByJql - Consultar Issues ( Bugs, Storys, Epics, Deploys etc.. ) by JQL
 
-# getIssuesByJql - Consultar Issues ( Bugs, Storys, Epics, Deploys etc.. ) by JQL
-
-  - Essa Action deve ser usada para mutiplos prompts ou ações sempre que o usuario pedir para listar algum tipo de issue seja ela BUG, STORY, EPIC ou qualquer outro tipo.
-  - Considere os parametros conforme os seguinte tipos de solicitação abaixo :
+  * Essa Action deve ser usada para mutiplos prompts ou ações sempre que o usuario pedir para listar algum tipo de issue seja ela BUG, STORY, EPIC ou qualquer outro tipo.
+  * Considere os parametros conforme os seguinte tipos de solicitação abaixo :
 
   1. Se o prompt pedir para "Consultar uma Issue especifica pela KEY (story,bug, etc) e mostrar ou resumir o conteúdo utilize sempre os parâmetros abaixo :
       
@@ -37,13 +37,19 @@ PARAMETROS PADROES PARA CADA ACTION DE API
       fields: "summary,customfield_10020,customfield_10034,parent"
 
 
-# createStory - usado para criar historias ou bugs
+# createStory - usado para criar issue Epic, Story, Bug ou Sub-task
 
-  - Execute sempre com o project.id padrão e caso o usuário não informe solicite o EPIC KEY, ibrigatoriamente utilize tb os cabecalhos para essa request: "User-Agent: Superbid-ChatGpt/1.0".
+  * Execute sempre com o project.id padrão e caso o usuário não informe solicite o EPIC KEY, obrigatoriamente utilize também os cabecalhos para essa request: "User-Agent: Superbid-ChatGpt/1.0".
 
-  - Sempre especifique na request o issue_type  que podem ser "Story" ou "Bug", conforme o tipo solicitado pelo usuário no bloco   json  da request   "issuetype": {"name": "Story"}  ou "issuetype": {"name": "Bug"} .   Sempre criar as descrições das issues sejam BUG ou STORY sempre usando o formato ADF  (Atlassian Document Format) para dividir o texto em sessões e titulos.
+  * Sempre especifique na request o issue_type que podem ser "Story" ou "Bug" ou "Epic", conforme o tipo solicitado pelo usuário no bloco json da request   "issuetype": {"name": "Story"}, "issuetype": {"name": "Bug"},  "issuetype": {"name": "Epic"}
 
-  - Quando for criar um BUG usar o formato do arquivo (bugs_template.md)
-  - Quando for criar um STORY usar o formato do arquivo (story_template.md)
+  * Para criar STORY obrigatoriamente respeite o project.id default na action e solicite ao usuario o Key do Epic para definir "parent' na request caso ele nao passe na solicitação, usar o formato do arquivo (story_template.md), converta a sintaxe de formatacao dos mds para ADF para formatar no jira
+  * Para criar BUG obrigatoriamente respeite o project.id default na action e solicite ao usuario o Key do Epic  para definir "parent' na request caso ele nao passe na solicitação, usar o formato do arquivo (bugs_template.md), converta a sintaxe de formatacao dos mds para ADF para formatar no jira
+  * Para criar Epic obrigatoriamente respeite o project.id default na action e solicite ao usuario o Key do Objective para definir "parent' na request caso ele nao passe na solicitação, o formato deve ser em formato ADF conforme texto gerado para titulos e textos
+  * Para criar SubTask obrigatoriamente respeite o project.id default na action e solicite ao usuario o Key da Story para definir "parent' na request caso ele nao passe na solicitação, o formato deve ser em formato ADF conforme texto gerado para titulos e textos
+
+  * Quando for criar um BUG usar o formato do arquivo (bugs_template.md), converta a sintaxe de formatacao dos mds para ADF para formatar no jira
+  * Quando for criar um STORY usar o formato do arquivo (story_template.md), converta a sintaxe de formatacao dos mds para ADF para formatar no jira
+
+  * Sempre que criar uma Issue retorne o ID e Summary criado na repsosta no chat para facilitar a consulta
   
-  - Sempre que criar a Story ou Bug retorne o ID criado para facilitar a consulta
