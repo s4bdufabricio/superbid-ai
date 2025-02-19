@@ -146,3 +146,15 @@ Prompt 2: Elaborar conteudo do EPIC
 Agora me crie um esboço de um EPIC com um paragrafo resumindo o signoff para a description e inclua o link da pagina confluence após a descrição,
 depois disso vou validar o conteúdo e te passar o objetive KEY para criarmos ele no jira.
 ```
+
+Prompt 3: Criar Epic
+
+```
+Pode criar o epic abaixo do objective TST-1975
+```
+
+Prompt 4: Explicando Cenário atual para gerar as Story do Epic
+
+```
+Baseado no conteudo do signoff voce pdoe me sugerir quais de historias devem ser criadas, após minha validação e ok podemos criar abaixo do epic criado anteriormente.
+```
