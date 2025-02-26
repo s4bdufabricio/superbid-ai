@@ -1,0 +1,170 @@
+40440f0,Joshua Maia Rodrigues,2024-10,translate add access_question_room
+3aa2734,Walisson Rodrigo,2024-10,PLAT-2729 - added translations for english american and british
+b734374,Walisson Rodrigo,2024-10,PLAT-2729 - add new role for platform-storage-api
+a54fbd8,Walisson Rodrigo,2024-10,PLAT-2875 - add new role for storage-platform-api to bypass max limit in spreadsheet upload
+07f2db3,mathmartins-sb,2024-09,feat: add judicial submodule translation in Spanish locales
+37aae53,larissa alves da silva,2024-09,feat: add NPR label
+a076f95,levi-sr93,2024-09,chore: add bidtv-manager role translations
+d851bb6,Victor Grechi,2024-07,feat: adding translation for event catalog roles.
+1b6c8c8,rosarioconde,2024-06,feat: add translations BR and ES
+16cb0a8,rosarioconde,2024-06,feat: add translations BR and ES
+6354df9,rosarioconde,2024-06,feat: add translations BR and ES
+2f53585,Ailson Ramos Moreira,2024-05,new transalations
+e7b4481,Ailson Ramos Moreira,2024-05,new transalations
+a6b9736,Ailson Ramos Moreira,2024-05,new transalations
+4b613f5,Ailson Ramos Moreira,2024-05,new transalations
+849af6c,Odailson Silva,2024-05,conflicts
+7fe176d,mathmartins-sb,2024-04,Add translations for "view_center_cost" in i18n locales
+96454b5,Philipe Schneider,2024-04,EDG-1684 - Change role label
+d38a078,levisr39,2024-04,feat: add retry_offer translations
+bb2aa58,mathmartins-sb,2024-04,Add missing translations for create_draft_product in i18n locales
+b09a781,Ailson Ramos Moreira,2024-03,new translates admin module
+937c50c,Ailson Ramos Moreira,2024-03,new translates admin module
+d07795e,Andre Pasqualotto,2024-03,adding raffle permissions to i18n
+faa42be,Walisson Rodrigo,2024-02,PLAT-1820 - add create_draft_product translations for storage-api
+8a6a5f8,Walisson Rodrigo,2024-02,PLAT-1820 - add create_draft_product translations for storage-api
+c44d60d,larissa alves da silva,2024-02,fix: edit label value
+deb3603,Carlos Henrique,2024-02,Hotfix: change total sellers params
+bef90e7,Carlos Henrique,2024-01,Hotfix: change filter query to groups
+ee9e145,Carlos Henrique,2024-01,Fix sellers groups
+022c18f,Carlos Henrique,2024-01,Hotfix group sellers filter
+69e06c9,Carlos Henrique,2024-01,Labels hotfixes on seller groups
+4a56b9e,Carlos Henrique,2024-01,feat: PO-1600 refactor on economic group filters
+2d6ec28,brenda.souza,2024-01,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-admin-platform into po-1578-ajuste-layout
+e9ea53c,Walisson Rodrigo,2023-12,PLAT-1587 - feat: add new role translation for storage
+99a7848,brenda.souza,2024-01,ajuste label
+45c740e,Carlos Henrique,2023-12,Fix label economic group to GE
+5cdbb1a,Carlos Henrique,2023-12,Hotfix: added news erros of economic group
+5cc4e18,Carlos Henrique,2023-12,Feat: create economic group
+18a7af4,Carlos Henrique,2023-12,Bugfix: added correct document type
+d9ee0bf,Carlos Henrique,2023-12,Feat: refact on filters and edit/create economic groups
+617297e,Leonardo Telles,2023-12,fix: react-hook-form version
+6d6b536,Flavio Andrade,2023-11,MF Animais registrados
+6b71f32,Carlos Henrique,2023-12,Bugfix/PO-1375
+e834c17,Walisson Rodrigo,2023-11,feat: add translation for new permission on storage
+f32fd9e,levisr39,2023-11,chore: add translations for bidtv-manager permissions
+08942a1,Walisson Rodrigo,2023-11,feature: add new role to show filter PDA. update translations
+a9bd9f1,Gislene Carvalho,2023-11,Merge branch 'develop' of codecommit://sb-admin-platform into add_async_event_publishing
+70069e5,Gislene Carvalho,2023-11,Async event publishing
+0a17516,Walisson Rodrigo,2023-11,feature: add new translation for new permission on storage-platform
+e472333,Gislene Carvalho,2023-10,Add i18n labels
+a873b66,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-admin-platform into add-label-edit-logistical-values
+d606c0d,Gislene Carvalho,2023-10,Add new label for dit_logistical_values role
+a3dc2c2,Carlos Henrique,2023-10,Hotfix: added loader to reload roles correctly
+d1b013b,Gislene Carvalho,2023-10,Add new role: choose_optional_contact
+14c0a40,Tiago Oliveira,2023-10,code refactoring
+1a74a0e,Tiago Oliveira,2023-10,new translations for contract
+e4f62e8,Tiago Oliveira,2023-10,new translations for contract
+e9bbbb0,Carlos Henrique,2023-09,bugfix: fix invite role
+9e2acad,Walisson Rodrigo,2023-09,feat: translate new role to export from storage
+1557130,Odailson Silva,2023-09,remove yarn.lock
+36a8d41,Odailson Silva,2023-09,fix: baseUrl
+bd6a4db,Odailson Silva,2023-09,feat: label config_payment_habilitation 2
+6715579,Odailson Silva,2023-09,feat: label config_payment_habilitation
+108bdb4,Carlos Henrique,2023-09,Bugfix: Fix create user page on change persona type
+6e52b52,Flavio Andrade,2023-08,update
+a0b7591,Carlos Henrique,2023-08,Merge branch 'develop' of codecommit://sb-admin-platform into feat/usersv2
+4fa0c04,Carlos Henrique,2023-08,Feat: create new page to invite and edit users and change role mapping selection to autocomplete
+3dbe02a,Gislene Carvalho,2023-08,Add tag about config choose event self by persona
+d76c129,Gislene Carvalho,2023-08,Add new jurisdiction about after market
+3e393d1,Walisson Rodrigo,2023-08,feat: add translate for roles storage. fixes eslint
+002d043,Carlos Henrique,2023-07,hotfix: added translate to role
+19d4676,Carlos Henrique,2023-07,Bugfix: changed role to update user button
+42e5726,Flavio Andrade,2023-07,refatoring
+0092013,Gislene Carvalho,2023-07,update apiUrl file
+a643dda,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-admin-platform into feature/EDG-758-add-event-roles
+7921390,Gislene Carvalho,2023-07,Add new tags i18n
+f4a2cbb,Carlos Henrique,2023-07,Bugfix: change select on role mapping tab
+6d781ae,Ulises Bravo,2023-07,added view_liquidity_index translations
+0ed6239,Odailson Silva,2023-06,fix: label
+bdad1e0,Odailson Silva,2023-06,feat: gestao usuario
+d94054f,Carlos Henrique,2023-06,Bugfix: client select on role-mapping
+7e71803,Carlos Henrique,2023-06,bugfix: Fix parameter service accounts enabled on edit client service
+f36291a,Gislene Carvalho,2023-06,Add new label i18n
+2668892,Gislene Carvalho,2023-06,Add new label i18n
+cdbfa24,Walisson Rodrigo,2023-06,feat: add mission labels with transtions
+6d80d04,Walisson Rodrigo,2023-06,refactor: remove labels for test permissions
+364852a,Walisson Rodrigo,2023-06,refactor: Replicated organization pattern and permissions with Spanish translations
+9b3c03f,Walisson Rodrigo,2023-06,feat: Added the permissions coming from the api. Refactored the organization of items by groups. Separation of non-api permissions
+163ed15,Gislene Carvalho,2023-06,Add new i18n tags about event config module
+29bd260,Carlos Henrique,2023-06,feat: added tab role mapping
+8f9f539,Carlos Henrique,2023-03,Bugfix: Adjustment on permission modal and translate roles
+3d6ed38,Carlos Henrique,2023-02,Bugfix css input label
+3aa56a8,Carlos Henrique,2023-02,Bugfix: try to fix input label
+b488094,Carlos Henrique,2023-02,Bugfix: fix css on business group editor
+9b08346,Carlos Henrique,2023-02,Bugfix: handle undefined object error
+c0be824,Carlos Henrique,2023-02,Bugfix: layout mobile
+78e753b,Carlos Henrique,2023-02,Bugfix(po-773): Bugfix filter and layout
+2824ed1,Carlos Henrique,2023-02,feat(po-789): updated screen to edit and create business group
+3af5f0d,Carlos Henrique,2023-02,Feat(PO-788): ui/ux adjusment on business group list
+511973d,Carlos Henrique,2023-01,Bugfix/PO-748: Added new errors message, fix business filter input and fix user select on business detail
+4c342a2,Carlos Henrique,2023-01,Feat: mapped the errors returned by the api.
+b05cdbe,Carlos Henrique,2023-01,Bugfix: fix get back role name
+a2ce500,Carlos Henrique,2023-01,bugfix(PO-741): Adjusment on create and update users
+d5709dd,Carlos Henrique,2023-01,feature(PO-735): added user and seller filter on business group list
+8ef2054,Carlos Henrique,2023-01,Fix flow to  event manager can create business group
+de7cd65,Carlos Henrique,2022-12,Feat(PO-708): added feature to update and create business group
+418a9e2,Carlos Henrique,2022-12,Feat(PO-697): added business group page list
+35f225d,Carlos Henrique,2022-12,Bugfix: Fix users filter on delet user
+cda414c,Carlos Henrique,2022-12,Bugfix(PO-685/PO-686): fix invite user feature
+32fd1fc,Carlos Henrique,2022-11,Fix client pagination]
+fdfe53f,Carlos Henrique,2022-11,Bugfix: added access type button and fix pagination
+462c689,Carlos Henrique,2022-11,Bugfix: fix user pagination
+ddb826f,Carlos Henrique,2022-11,Bugfix(PO-649): fix user email width
+b9335aa,Carlos Henrique,2022-11,fix pagination
+cab42e1,Carlos Henrique,2022-11,Bugfix: fix clients pagination
+55f9e4b,Carlos Henrique,2022-11,Bugfix(PO-643): change idkeycloak to client id on delete function
+a0c0fca,Carlos Henrique,2022-11,Bugfix: adjustment on decrese roles and added button to delete specific role
+1f16b5a,Raphael Pinheiro,2022-08,bugfix(update-user): sending the idKeycloak instead od id into PUT
+d112c04,Raphael Pinheiro,2022-08,bugfix(invite): some bugfixes fixed
+edc1743,Raphael Pinheiro,2022-08,feat(user-invite): removed keycloak id from body
+e98e163,Raphael Pinheiro,2022-08,bugfix(invite-user): treatment when create
+27f7add,Raphael Pinheiro,2022-08,bugfix(invite-user): treatment when create
+8681601,Raphael Pinheiro,2022-07,feat(invite-user): necessary changes due to api changes
+9a5ac50,Raphael Pinheiro,2022-07,feat(roles): refactor of permission modal and other stuff to adapt to bff changes
+5780572,Carlos Henrique,2022-07,Feature: fetch user data to mark checkbox with her rules
+63e8000,Raphael Pinheiro,2022-07,feat(PO-476): added clear filters, and many bugfixes
+bd4489a,Carlos Henrique,2022-07,Feature(PO-444): added modal to edit user roles
+846b0dd,Raphael Pinheiro,2022-07,feat(PO-476): improvements into client page and detail
+ff99ef6,Raphael Pinheiro,2022-07,feat(PO-448): created new page for client creation and updates
+d88e8c7,Carlos Henrique,2022-07,feature(PO-441): removed ; on css
+410e9a9,Carlos Henrique,2022-07,some layout adjustments
+d9281d1,Carlos Henrique,2022-07,feature(PO-441): remove total users created
+8c14325,Carlos Henrique,2022-07,feature(PO-441): adjustment on card layout and added filter to users
+058bb19,Raphael Pinheiro,2022-07,feat(normalization): changed menu and header parcel imports alias
+69cf63d,Carlos Henrique,2022-04,Changed params roles to clients
+11d6e57,Carlos Henrique,2022-04,Bugfix/PO-256: fix translation delet user modal
+4e69616,Raphael Pinheiro,2022-04,feat(PO-235): added i18n into the project
+e9bb303,henriqueviana,2022-03,bugfix: stg env
+6cd5b77,henriqueviana,2022-03,feat: update invite to platform mananger
+3c67d66,Raphael Pinheiro,2022-02,feat(admin-role): changed admin role
+236ea06,Henrique Falco,2022-02,bugfix: changed icon colors
+30281b9,Raphael Pinheiro,2022-02,bugfix(env): adjustments in environments and little bugfix
+03ba94d,Raphael Pinheiro,2022-02,feat(env): webpack plugin added for webpack
+e22b666,Raphael Pinheiro,2022-02,bugfix(invite): fix logic for create and update user
+7299caa,Raphael Pinheiro,2022-02,feat(keycloak-access): changed from realmAccess to realmResource content
+46d25f6,henriqueviana,2022-02,Merge branch 'develop' into feature/PO-98
+a4611d0,henriqueviana,2022-02,feat: WIP spyke conflicts css
+eeee6c0,Raphael Pinheiro,2022-02,bugfix(edit): fixed 2 major bugs in edit user
+ad2d3e4,Raphael Pinheiro,2022-02,feat(edit-user): edit user and many other improvements
+225ffac,Raphael Pinheiro,2022-02,feat(send-invite): improvements into invite user feat
+ca156a2,Raphael Pinheiro,2022-02,Merge branch 'develop' into feature/delete-user
+50f0540,henriqueviana,2022-02,feat: update code to PR
+d0b54ed,henriqueviana,2022-02,merge: merging with develop
+ff6c651,henriqueviana,2022-02,feat: implementing autocomplete in invite-user-modal
+08c8d85,Raphael Pinheiro,2022-02,feat(error): error boundary
+4975395,Raphael Pinheiro,2022-02,feat(services): changed service imports
+b698c38,Raphael Pinheiro,2022-02,feat(delete-user): added service, and confirmation dialog for user delete
+2ca9d3f,henriqueviana,2022-02,[feature/PO-43] WIP - implementing auto-complete
+6c4997e,Raphael Pinheiro,2022-02,feat(delete): application adjustments
+052133e,henriqueviana,2022-02,[feature/PO-43] WIP - implementing auto-complete
+de41d05,Henrique Falco,2022-02,Squashed commit of the following
+1b19eb6,Henrique,2022-02,Squashed commit of the following
+e4b74f6,Henrique Falco,2022-01,[feat/route-guard] Added router guard on invite route
+774870d,henriqueviana,2022-01,feat: implementing services of admin
+d782a3f,henriqueviana,2022-01,feat: update responsive css
+f5af84f,Raphael Pinheiro,2022-01,bugifx(admin): margin fix
+857a81e,Raphael Pinheiro,2022-01,bugifx(admin): select icon
+00ee1ec,Raphael Pinheiro,2022-01,bugifx(admin): layout adjustments and improvements
+625185b,Raphael Pinheiro,2022-01,feat(admin): implementation of invite modal
+95debde,Raphael Pinheiro,2022-01,feat(init): project initialization

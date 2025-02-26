@@ -1,0 +1,768 @@
+7fa7ec1,Abigail Palmero,2024-12,feat(LATAM-1560): Add translations for category and subcategory
+eafa3f2,Abigail Palmero,2024-12,feat(LATAM-1560): Add translations for category and subcategory
+c642e56,mathmartins-sb,2024-12,refactor: Replace direct photo extraction with extractUrls method for improved readability
+b597453,mathmartins-sb,2024-12,fix: Safely access yardStatus in YardexProducts to handle optional stage description
+949dbe7,Abigail Palmero,2024-12,feat(LATAM-1479): Add locale language to product GET
+de27ea1,Abigail Palmero,2024-12,feat(LATAM-1479): Add locale language to product GET
+2ecb9ce,Walisson Rodrigo,2024-12,PLAT-3882 - fix create judicial when process already exists
+9d48666,mathmartins-sb,2024-11,fix: Safely access yardStatus in YardexProducts to handle optional stage description
+b7104c0,mathmartins-sb,2024-11,fix: Update yardStatus mapping in YardexProducts to use stage description
+c6b606b,mathmartins-sb,2024-11,fix: Update yardStatus mapping in YardexProducts to use stage instead of status
+1033c4c,mathmartins-sb,2024-11,fix: Improve model property handling in YardexProducts to ensure fallback for unknown types
+1ab0fe0,mathmartins-sb,2024-11,fix: Safely access product type properties in YardexProducts model construction
+755df06,mathmartins-sb,2024-11,feat: Add integration tests for YardexService and include nock for HTTP mocking
+b79e598,mathmartins-sb,2024-11,feat: Enhance YardexProducts response structure and trim chassis number
+8c7755d,mathmartins-sb,2024-11,PLAT-2732 - fix: Update pagination handling in YardexService to include page parameter in request
+af677a7,mathmartins-sb,2024-11,PLAT-2732 - fix: Update pagination handling in YardexService to include page parameter in request
+df46676,mathmartins-sb,2024-11,PLAT-2732 - feat: Add Yardex API integration with new interfaces and controller methods
+caf9a68,mathmartins-sb,2024-10,Refactor YardexProductsController route for finding seller CNPJ
+6b51bb6,mathmartins-sb,2024-10,feat: Add Yardex module and RolesGuard
+7736ac2,mathmartins-sb,2024-11,fix: reorder offer assignment in getCellValue method for exports.service
+5530ea4,Philipe Schneider,2024-11,TST-2136 - Mapping new field and erros from lotting
+6b52b73,mathmartins-sb,2024-11,refactor: update court ID parameter and add getCourtAll method in JudicialController and JudicialService
+40426c4,Walisson Rodrigo,2024-10,PLAT-2409 - fix test on exports.service
+a818aba,Walisson Rodrigo,2024-10,PLAT-2409 - change mapped judicial fields to new names on get product
+901682b,Abigail Palmero,2024-10,feature: LATAM-1502 Export products as xls with states provided by seller country
+1f0598f,mathmartins-sb,2024-10,Refactor ProductFiltersBuilder to include processoNumero in filters
+d202ea5,mathmartins-sb,2024-10,Refactor pagination logic in ProductsController
+e2ef562,brendaguinarte,2024-10,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-storage-api into tst-2481-map-quantity
+6592f30,brendaguinarte,2024-10,tst-2481
+c651be4,Abigail Palmero,2024-10,feature(LATAM-1421): Added latam translations to geolocation on product
+1018478,mathmartins-sb,2024-10,Refactor getMyIntegration method to handle null sellerId parameter
+c371274,mathmartins-sb,2024-10,Refactor getMyIntegration method to handle null sellerId parameter
+e0f26c1,Walisson Rodrigo,2024-10,FIX - change account token to keycloack token on operation-query api to get sellers using filter by name
+87277fe,Walisson Rodrigo,2024-10,PLAT-2875 - fix limit on body in requests using axios.
+3f3cd88,brendaguinarte,2024-10,tst-2481-map-quantity
+131c5ba,Walisson Rodrigo,2024-09,fix tests about spreadsheet
+809bf74,Walisson Rodrigo,2024-09,fix dtos to export data and generate spreadsheet
+d4a3a09,Walisson Rodrigo,2024-09,PLAT-2409 - fix dto to export and remove fields from spreadsheet if used legacy code
+a8dbe89,mathmartins-sb,2024-09,Fix validation for location field in JudicialDto
+5d36004,Walisson Rodrigo,2024-09,disable whitelist config on ValidationPipe
+56afd6f,Abigail Palmero,2024-09,fix: storage-export validations
+6bd94cb,Abigail Palmero,2024-08,feature: LATAM-1322 Add product bulk export as spreadsheet countryId
+831e960,Abigail Palmero,2024-09,feature: LATAM-1329 Add on storage bff the possibility to search translations by category and subcategory
+258e256,Walisson Rodrigo,2024-08,* fix dto validation. * fix HttpFilter Generic to return message error on BadRequestExeceptions. * fix error on validation token jwt when token is empty.
+aeddfbc,Walisson Rodrigo,2024-08,feat: judical with new endpoints and methods on controller
+da99a60,Walisson Rodrigo,2024-08,feat: add putJudicial to save data
+1d68db6,Walisson Rodrigo,2024-08,feat: Add judicial module and controller
+e2db21c,Walisson Rodrigo,2024-08,feat: add routes get to search data on judicial api
+c2e29b1,Abigail Palmero,2024-08,feature: LATAM-1284 show all products when there are no filters selected
+1a7605c,Abigail Palmero,2024-08,fix typo
+e6bbce5,Abigail Palmero,2024-08,fix: LATAM-1216 Exportação de produtos com valores 0 (undefined)
+e541d62,Leonardo Telles,2024-07,fix: handle filters solr
+f85acf1,mathmartins-sb,2024-07,refactor: Simplify createWorksheetByCategory method in ExportService
+d55606d,mathmartins-sb,2024-07,feat: Add sortByLotNumber helper function for sorting by lot number in products
+86f0bba,mathmartins-sb,2024-07,refactor: Add sortByLotNumber helper function for sorting by lot number in products
+bc27faf,Leonardo Telles,2024-06,temp: enable google api
+4c90988,mathmartins-sb,2024-06,chore: Add atLeastCity parameter to SbLocationApi's request params
+4d734e0,mathmartins-sb,2024-06,feat: Update OffersController to create single offer with ICreateOffer interface
+1eeea03,mathmartins-sb,2024-06,refactor: Update OffersApiCore post method to handle single offer creation
+f7dae9d,mathmartins-sb,2024-06,refactor: Improve objectToString helper function
+acdc5b3,mathmartins-sb,2024-06,feat: Add logging of request body in ApiCoreService
+5e60570,mathmartins-sb,2024-06,refactor: Update parseISO usage in ExportService to handle optional properties
+c7f18e9,mathmartins-sb,2024-06,refactor: Update parseISO usage in ExportService to handle optional properties
+4fe4538,mathmartins-sb,2024-06,refactor: Update parseISO usage in ExportService to handle optional properties
+aaf2e96,mathmartins-sb,2024-06,refactor: Add exportFeature parameter to ProductsApiCore get method
+bcaf424,mathmartins-sb,2024-06,refactor: Update ExportService to calculate total values based on quantity in lot
+4502b09,mathmartins-sb,2024-06,chore: Update npm dependency to date-fns v3.6.0
+0abe2ed,Leonardo Telles,2024-06,temp: enable google provider
+a762b74,Leonardo Telles,2024-06,Merge branch 'master' into terminal/merge_master_into_stg
+b781dfd,Leonardo Telles,2024-06,fix: fix url encode when getting sellers
+0a70059,Leonardo Telles,2024-06,fix: fix url encode when getting sellers
+cff0538,thiago,2024-06,retirada virgula
+3476b2b,mathmartins-sb,2024-05,refactor: Remove commented out code for product update authorization check
+7034947,mathmartins-sb,2024-05,chore: Update WebhookService to use lowercase variable name for webhookService
+bd14ff2,mathmartins-sb,2024-05,refactor: Update partner integration webhook handling in WebhookService
+33b24fa,mathmartins-sb,2024-05,chore: Add webhook handling for attachments in ProductsController
+0f99eda,mathmartins-sb,2024-05,chore: Update ExportService to calculate total values based on quantity in lot
+5b4cdc6,Leonardo Telles,2024-05,temp: enable google provider
+177db8c,mathmartins-sb,2024-05,feat: Add response location places to findPlaces endpoint in LocationController
+fcec21c,mathmartins-sb,2024-05,refactor: Update location API endpoints and configurations
+a90a6cc,mathmartins-sb,2024-03,Update user-agent to agent in location-api.ts
+4e82dca,mathmartins-sb,2024-03,Add findPlaces endpoint to LocationController
+aeca0e0,mathmartins-sb,2024-03,Add use_real_location flag to location API configuration
+37bd36f,mathmartins-sb,2024-03,Remove unused import statement
+cad47b0,mathmartins-sb,2024-03,Add logger to PartnerIntegrationService
+918dda9,mathmartins-sb,2024-03,Update environment and location API configurations
+9a7a681,Walisson Rodrigo,2024-05,add updates on lp spreadsheet and fixes bugs on mount string + id on lists and spreadsheets names
+184b275,mathmartins-sb,2024-05,refactor: Add correlationId filter to ProductFiltersBuilder
+2a65072,mathmartins-sb,2024-05,refactor: Add valid offer status constants and use them in product controller
+8b9b3c8,Walisson Rodrigo,2024-05,PLAT-1716 - fix download files header to enable frontend to receive filename
+d60f619,Walisson Rodrigo,2024-04,PLAT-1716 - refactor to send correct parameters from downloaded file on request
+61c48cd,mathmartins-sb,2024-05,feat: Add DatabaseInitService for ensuring indexes on module initialization
+9ade1e3,Leonardo Telles,2024-04,fix: convert commercial real estate
+3769da9,Leonardo Telles,2024-04,fix: generate zip file
+c3fdc8f,mathmartins-sb,2024-04,Refactor code to import and use the Response object from the express module
+a8d7870,mathmartins-sb,2024-04,Refactor ApiCoreService and ProductsApiCore to execute dossier
+63cdad8,Walisson Rodrigo,2024-04,PLAT-2023 - bugfix on export spreadsheet without LP worksheet
+541bb39,mathmartins-sb,2024-04,Refactor AppModule to exclude '/_/_/health' from SecurityMiddleware
+9ae2da4,mathmartins-sb,2024-04,Refactor user.interface.ts, jwt-token.interface.ts, package.json, app.module.ts, products.controller.spec.ts, and products.controller.ts
+c8207e1,Walisson Rodrigo,2024-04,PLAT-1936 - fix name worksheet
+ff403a6,Walisson Rodrigo,2024-04,PLAT-1936 - migrate string base64 to file on assets folder
+a356d5d,Walisson Rodrigo,2024-04,PLAT-1936 - add hidden value and column to ignore resume and nonCategorized worksheet on import process
+18fdbd0,Walisson Rodrigo,2024-04,PLAT-1936 - fix problems when eventManagerId not sended in filters
+ee6b99a,Walisson Rodrigo,2024-04,PLAT-1936 - add nonCategorized workbook when not have data mapped to export
+b33959c,Walisson Rodrigo,2024-04,PLAT-1936 - add new spreadsheet formatted with data and headers required
+0ab8418,Walisson Rodrigo,2024-04,PLAT-1716 * add new route to export storage spreadsheet using selected productIds * add filter to productIds to get data on auction-lotting using one request * adapt get on coreApi to use v1 endpoint when are needed * add utils to formatDates and send fixed the name of file when spreadsheet are downloaded from bulk * add notification endpoint on .env
+09ec11e,Walisson Rodrigo,2024-03,PLAT-1716 - add export route on controller. add function on serve to send data to export async using bulk
+be0008c,mathmartins-sb,2024-03,Add endpoint to get economic groups by seller ID
+1aa0dd5,mathmartins-sb,2024-03,Update imports and add deleteProducts method
+15a07b4,mathmartins-sb,2024-03,Add bulk status update functionality
+e4ab8ff,mathmartins-sb,2024-03,Add statusCode property to WebhookAudit and update webhook service to handle status code
+db70270,mathmartins-sb,2024-03,Fix webhook service bug
+a4cd32f,mathmartins-sb,2024-03,Add urlCalled and createdAt properties to WebhookAudit schema and update createWebhookAudit method
+f00b3f8,mathmartins-sb,2024-03,Add intelligent registration origin enum value
+f146d32,mathmartins-sb,2024-03,Add publicKey.pem and fix import paths in partner-integration.controller.ts
+c0fc3a9,Leonardo Telles,2024-03,temp: enable callGoogleApi
+99f7bd1,mathmartins-sb,2024-03,Remove unnecessary files and update dependencies
+a63601a,mathmartins-sb,2024-03,Add publicKey.pem to Dockerfile
+601a113,mathmartins-sb,2024-03,Add enum validation for webhook event
+05a7b52,mathmartins-sb,2024-03,Add webhook endpoint and update partner integration URL
+c32f589,mathmartins-sb,2024-03,Add encrypt interface, fix import paths, and add encrypt service
+c57c660,mathmartins-sb,2024-03,Add webhook module and related files
+71c3816,Walisson Rodrigo,2024-03,PLAT-1720 - add swc on project
+8146dec,Walisson Rodrigo,2024-03,PLAT-1720 * fix tests files * fix path src on import files * fix cityId sending array empty on filter products
+9274d49,Walisson Rodrigo,2024-03,PLAT-1720 * add new dto to update in mass * add new route to receive data and send to bulk api * implement call on externalApi to send data to bulk.
+e7484da,mathmartins-sb,2024-02,Refactor ExportService to extract value from productCustomJson and get property value
+4aaddd1,W-Nemetz,2024-03,PLAT-1804 added search by CNPJ on sellers field
+e146ee7,mathmartins-sb,2024-02,Remove console.log statements from ProductFiltersBuilder
+5e07ae6,mathmartins-sb,2024-02,Refactor city filtering in GetProductDto and ProductFiltersBuilder
+1870380,Abigail Palmero,2024-02,Feat: Latam-713 modified states list to show state name instead of state code
+f8e93ca,mathmartins-sb,2024-02,Refactor productCustomJson parsing in ExportService
+1e5ac03,Leonardo Telles,2024-02,temporary: disable call to google api
+b061c48,Leonardo Telles,2024-02,Merge branch 'master' into merge_master_into_stg
+009bc1f,Matheus,2024-02,hotfix: move vehicle debts if
+5829311,Leonardo Telles,2024-02,fix: get location when deleting product
+0300449,Matheus,2024-02,feat: new location endpoints
+1e6013f,Leonardo Telles,2024-02,temporary: enable call to google api
+0d56f7e,Matheus,2024-02,hotfix: remove address verification
+f22941e,Matheus,2024-02,feat; add logs from process sheet
+ba96bc6,Matheus,2024-02,refactor: remove console.log
+1f0047c,Matheus,2024-02,fix: map new fields export service
+c68d265,Matheus,2024-02,fix: remove logic
+f4dbd5c,Philipe Schneider,2024-01,Mesclar a ramificação "digitalization/equalize_branchs" em master
+8e188ab,Abigail Palmero,2024-01,feat: LATAM-737 Added eventCurrency to product-history data
+5b10763,Leonardo Telles,2024-01,Merge branch 'stg' into master
+44fa23f,Matheus,2024-01,PLAT-1645 - add judicial columns to exports service spec
+281e305,Matheus,2024-01,PLAT-1645 - add new columns to judicial spreadsheet
+d849c1b,Abigail Palmero,2024-01,feat: LATAM-744 added more locations to mocks
+7c2a27e,Leonardo Telles,2024-01,feat: changes the type of the externalId to string
+78ef1a7,Matheus,2024-01,Fix typo in auctionIds field name
+5dfad0c,Matheus,2024-01,PLAT-1526 - fix type conversion issue in ProductFiltersBuilder
+f3682eb,Matheus,2023-12,Update auctionId to be an optional number in ListProductsDto
+765b224,Matheus,2023-12,feat: add auctionId field to GetProductDto and ListProductsDto
+50c3cc1,Walisson Rodrigo,2023-12,feat: update path file certificate fixed
+eda4f39,Walisson Rodrigo,2023-12,feat: update docker file fixed
+e1fabb0,Walisson Rodrigo,2023-12,feat: update docker file with new certify
+452da02,Walisson Rodrigo,2023-12,feat: update path file certificate fixed
+e780e62,Walisson Rodrigo,2023-12,feat: update docker file fixed
+908008e,Walisson Rodrigo,2023-12,feat: update docker file with new certify
+44e40b4,Matheus,2023-12,PLAT-1520 - update pricing column headers
+17f2c93,Walisson Rodrigo,2023-12,PLAT-1344 * feat: add tests to economic group. * refactor: rename test to fix your name. * refactor: remove not used code from service. * feat: add AxiosHandlerError from ApiCore to prevent basic errors received from server on try get data. * feat: update product-params-builder to use sellerIds to filter by economicGroup
+7c22606,Walisson Rodrigo,2023-12,PLAT-1344: feat: first implementation for get economic group
+ce0baab,Walisson Rodrigo,2023-12,feat: update settings vscode
+2b3a619,Matheus,2023-12,PLAT-1520 - add logistics columns to pricing spreadsheet
+a8cac9c,Philipe Schneider,2023-12,PLAT-1520 - Add new fields when create an offer with logistic fields
+e9b59f2,Matheus,2023-12,Update pricing column headers
+223fcc8,Walisson Rodrigo,2023-12,feat: update totals in zip and spreadsheet import when history receive flag update
+ccf53d6,Matheus,2023-12,Refactor pricingColumns key in spreadsheet-columns helper
+09c7eac,Walisson Rodrigo,2023-11,feature: add custom message error when is default message returned on filter exceptions
+d419449,Matheus,2023-11,feat: add seller reference value
+151baa9,Abigail Palmero,2023-11,Feature: LATAM-573 Part 2
+abe7af3,Abigail Palmero,2023-11,Fix: LATAM-591 SalesAgent not showing for latam
+26e7d69,Abigail Palmero,2023-11,added /portal endpoint for getting available portals
+a101169,Abigail Palmero,2023-11,fixed import for tests
+282f459,Abigail Palmero,2023-11,Feature: LATAM-573 added states on spreadsheet for latam countries
+d355b5b,Leonardo Telles,2023-11,feat: increase subcategory list limit
+8631336,Walisson Rodrigo,2023-11,feature: make optional eventManagerId and sellerId on export spreadsheet when is zip
+eb2a706,Walisson Rodrigo,2023-11,feat: enable code to return eventManagerIds using sellerId to filter
+437a26c,Walisson Rodrigo,2023-11,feat: add new parameter eventManagerId on zip upload process
+4f76bdf,Leonardo Telles,2023-10,Merge branch 'master' into merge_master_into_stg
+e0e3bdf,Matheus,2023-10,feat
+3e24de5,Matheus,2023-10,feat
+621e014,Matheus,2023-10,feat
+7a2e5bd,Matheus,2023-10,feat
+6dc1781,Matheus,2023-10,feat
+09d6e8e,Abigail Palmero,2023-10,fixed method
+dd238c5,Abigail Palmero,2023-10,Replaced geolocalized place by placeID from FE
+90d1485,Abigail Palmero,2023-10,Optimization
+91c2db0,Abigail Palmero,2023-10,Replaced geolocalized place by placeID from FE
+0fbc995,Abigail Palmero,2023-10,fixed method
+568cf9a,Abigail Palmero,2023-10,Replaced geolocalized place by placeID from FE
+7615d6e,Abigail Palmero,2023-10,Optimization
+faf78b8,Abigail Palmero,2023-10,Replaced geolocalized place by placeID from FE
+e7d1aa8,Matheus,2023-10,feat
+b130e94,Matheus,2023-10,feat
+55178b6,Walisson Rodrigo,2023-10,feat: optimization get errors details using findOne and remove complex array errors on list all
+d1a6b6f,Walisson Rodrigo,2023-10,feat: optimization get errors details using findOne and remove complex array errors on list all
+a0cb4f9,Matheus,2023-10,wip
+657200e,Matheus,2023-10,feat
+e7e53e5,Matheus,2023-09,feat: partner
+0caefc7,Matheus,2023-09,feat: partner
+a7857cb,Matheus,2023-09,feat: partner
+6d65d21,Philipe Schneider,2023-09,ARQT-62 - Add new status for product
+8a7c97f,Matheus,2023-09,feat: labels
+4e217d4,Matheus,2023-08,feat: add bulk unstructured
+cb54e3e,Walisson Rodrigo,2023-09,fix code merged from console codecommit
+4d4f89c,AWSReservedSSO_SuperBidDeveloperAccess_930c3ef9fbf1cbcc/walisson.oliveira@superbid.net,2023-09,Conflitos resolvidos no console.
+a4fa498,Matheus,2023-09,fix: location
+909a080,Walisson Rodrigo,2023-09,fix problem with big ranges using pagination to increment at limit of 1000 items by interaction geted from api
+a848411,Walisson Rodrigo,2023-09,fix assets on test because regex remove undescore from selectable columns.
+3ba691c,Walisson Rodrigo,2023-09,fix: add try catches and logs to prevent invalid data or groups with problem of return from lotting.
+b9ba671,Walisson Rodrigo,2023-09,fixes on controller to work with sellers users
+6cc56bb,Matheus,2023-09,fix: new method to filter params
+12f290d,Matheus,2023-09,fix: new method to filter params
+7b20d2f,Walisson Rodrigo,2023-09,fix: caracters invalids on mount wokbooks and selecteable items
+b026502,Walisson Rodrigo,2023-09,fix import path not updated in previous refactor
+72a3695,Walisson Rodrigo,2023-09,refactor: move schemas classes to respective schema file. remove files interface because is a schema class. update references on controller, module and test with refactor
+0f00158,Walisson Rodrigo,2023-09,feat: add new schema to save filter audit infos on mongo
+d07b09d,Walisson Rodrigo,2023-09,fix: caracters invalids on mount wokbooks and selecteable items
+324d244,Walisson Rodrigo,2023-09,grouping by category exported items on spreadsheet
+a9c215e,Walisson Rodrigo,2023-09,fix columns on json different from spreadsheet. refactor code
+a1051b0,Walisson Rodrigo,2023-09,fix columns on json different from spreadsheet. refactor code
+4f790a2,Walisson Rodrigo,2023-09,fix columns not displayed on spreadsheet.
+8684a87,Walisson Rodrigo,2023-09,fix test
+4c67c0e,Walisson Rodrigo,2023-09,add new column when stay exporting data using spreadsheet from storage
+9951320,Walisson Rodrigo,2023-09,validation to prevent search more data with 180 days
+3b7a100,Walisson Rodrigo,2023-09,add methods and parameters to populate spreadsheet with data from storage
+5b46b3a,Walisson Rodrigo,2023-09,fix endpoint to export from storage with logic to get data and generate spreadsheet
+afeadf5,Walisson Rodrigo,2023-09,fix parameter on list products to export
+2894433,Walisson Rodrigo,2023-09,add title to spreadsheet
+05e36b7,Leonardo Telles,2023-09,Merge branch 'stg' into master
+7f2f655,Matheus,2023-09,fix: remove wrong implementation
+457a87e,Matheus,2023-09,fix: remove wrong implementation
+6b5ef6e,Matheus,2023-09,fix: rename param
+cd5ee4e,Matheus,2023-09,fix: update
+3df5608,Matheus,2023-09,feat: remove secret manager
+166f0d5,Matheus,2023-09,fix: remove cache
+bb303d7,Matheus,2023-09,Merge branch 'feat/add-service-cache' of codecommit://sb-storage-api into feat/add-service-cache
+57acfbc,Matheus,2023-09,refactor: remove secret manager
+d0a1b9e,Matheus,2023-08,feat: google cache
+c317e76,Matheus,2023-09,update config
+89f863c,Matheus,2023-09,Merge branch 'feat/add-service-cache' of codecommit://sb-storage-api into feat/add-service-cache
+f5a1058,Matheus,2023-09,refactor: remove secret manager
+bd8f349,Matheus,2023-09,fix: update bulk delete
+d23578b,Matheus,2023-09,feat: new fields
+6293709,Walisson Rodrigo,2023-08,hotfix: add startUpload and uploadId to prevent errors in production on first request on mongo to save parts chunk on s3
+9328227,Walisson Rodrigo,2023-08,hotfix: add startUpload and uploadId to prevent errors in production on first request on mongo to save parts chunk on s3
+fb3106c,Matheus,2023-08,feat: update secret manager
+e8e203c,Matheus,2023-08,feat: google cache
+ae2c794,Matheus,2023-08,fix: update InvalidOfferStatusForProduct message
+d891c6d,Matheus,2023-08,feat: google cache
+c0fe51f,Matheus,2023-08,feat: update product env
+d9cfb82,Matheus,2023-08,feat: update envs
+79cf453,Matheus,2023-08,feat: update envs
+4843762,Matheus,2023-08,feat: add bulk delete product
+a9a749a,Matheus,2023-08,test: add location on create product
+f4d600f,Matheus,2023-08,feat: add location on create product
+9cb8c67,Matheus,2023-08,test: move location logic to bff
+c0c9259,Matheus,2023-08,test: add reverse location endpoint
+23c03c6,Matheus,2023-08,test: add location api
+6e253e8,Matheus,2023-08,feat: add location api
+ceace9f,Matheus,2023-08,feat: add bulk delete product
+14d73b5,Matheus,2023-08,feat: bulk delete product
+6faa45f,Victor Luis Grechi,2023-08,feat: adding error message.
+cc3b8df,Matheus,2023-08,refactor: remove vehicleDebts
+d441304,Walisson Rodrigo,2023-08,fix: download files in zip changed
+3149597,Walisson Rodrigo,2023-08,feat: add new image to explain how change your zip after downloading
+bd7e936,Walisson Rodrigo,2023-08,fix: query argument not defined isZip name to get only isZip value from query params
+c3c9055,Walisson Rodrigo,2023-08,fix: param isZip need by a string to run withou errors
+54b73dc,Matheus,2023-08,feat: add vehicleDebts  pricingColumns
+c1e0157,Walisson Rodrigo,2023-07,feat: throwing errors add await on promises. remove code not necessary on controller. fixes eslint
+5e64e38,Walisson Rodrigo,2023-07,feat: fix throwing errors add await and remove code not used.
+20c6bc0,Walisson Rodrigo,2023-07,feat: add more information on ExceptionFilter
+5fa532a,Walisson Rodrigo,2023-07,fix: handleAxiosError throwing error and use await to generate json response with error
+a7d5d36,Walisson Rodrigo,2023-07,refactor: fix handleError internal. remove ApiCoreModule dependencie on remove handleErrorCoreApi
+0675b81,Walisson Rodrigo,2023-07,fix: eslint format. remove log hit cache
+9d8984d,Walisson Rodrigo,2023-07,feat: add HttpExceptionFilter to format and filter exception errors on response requests
+0eab206,Walisson Rodrigo,2023-07,refactor error-handle to api core to prevent message duplicated
+a299b05,Walisson Rodrigo,2023-07,add logs on handleError and remove complete error from log
+2cdfdf7,Walisson Rodrigo,2023-07,feat: update axios lib and add cross-env to fix differences between .env in linux and windows
+7d0ba8b,Victor Luis Grechi,2023-07,feat: implemented filter in findAll function on event-manager controller.
+d16ef4e,Philipe Schneider,2023-07,PLAT-225 - Define maxBody and maxContent length without limit
+066b262,Philipe Schneider,2023-07,PLAT-1098 - Pass keycloak token when logged user is seller to call economic-group
+f3d0322,Philipe Schneider,2023-07,PLAT-646 - Change label for externalId and referenceCode
+a061da3,Philipe Schneider,2023-07,PLAT-1062 - Add cell note for judicial resource
+2007089,Philipe Schneider,2023-07,PLAT-881 - Add a cel note for judicial field subaccount
+a05abb8,Philipe Schneider,2023-07,PLAT-881 - Adjust test
+14ea386,Philipe Schneider,2023-07,PLAT-881 - Adjust test
+e8ed8d4,Philipe Schneider,2023-07,Merge branch 'PLAT-881' of codecommit::sa-east-1://sbws-users@sb-storage-api into PLAT-881
+3633559,Philipe Schneider,2023-07,PLAT-881 - Add validation for new judicial field sub account
+eb9e392,Philipe Schneider,2023-07,PLAT-881 - Add validation for new judicial field sub account
+4f9a090,Walisson Rodrigo,2023-07,refactor: remove code not user. Use ErrorHandler to normalize errors messages in services and controllers.
+8eaf2dc,Walisson Rodrigo,2023-07,add ErrorHandle in services and controllers to normalize errors messages
+653eb14,Walisson Rodrigo,2023-07,feat: send isZip query param to bulk
+9560958,Walisson Rodrigo,2023-07,feat: add QueryParam isZip to send for bulk to return a zip file with spreadsheet errors inside zip
+cb70993,Walisson Rodrigo,2023-07,refactor: remove token cached from log aws
+ee741f5,Walisson Rodrigo,2023-07,fix: url to send attachments send undefined to false objects
+e238c93,Walisson Rodrigo,2023-07,fix: update image on assets for creation zip
+5255f1c,abbytec,2023-07,improved code quality
+4604180,abbytec,2023-07,added liquidity index endpoint to platform-analytics
+04ef24d,Walisson Rodrigo,2023-06,feat: upload zip in chunks direct on s3
+ea445e5,Walisson Rodrigo,2023-06,validation return on call bulk
+b80de65,Walisson Rodrigo,2023-06,eslint format and fix identation
+ac57b60,Walisson Rodrigo,2023-06,remove timeout from server
+c6f060d,Walisson Rodrigo,2023-06,fix: add cell notation for externalId numeric
+175f2c1,Walisson Rodrigo,2023-06,feat: implementation to sender data to bulk-product-api after receive a request
+301cbaf,Walisson Rodrigo,2023-06,feat: new route to receive files using chunks
+a733b01,Walisson Rodrigo,2023-06,refactor: change timeout to one minute
+ba6ec76,Walisson Rodrigo,2023-06,feat: add permissions to receive big sizes for files and jsons. new lib to use static folder
+18f3161,Victor Luis Grechi,2023-06,Merge branch 'feature/RURAL-34' of codecommit://sb-storage-api into feature/RURAL-34
+356468c,Victor Luis Grechi,2023-06,feat: improving message on cell note.
+8c27741,Victor Luis Grechi,2023-06,feat: added common column media.videoUrl to /products/spreadsheet/generate.
+e883cd5,Walisson Rodrigo,2023-06,feat: add message error if not has memory to proccess big files zip
+94ad254,Walisson Rodrigo,2023-06,feat: add timeout interceptor to upload big files zip
+cf4be42,Victor Luis Grechi,2023-06,Merge branch 'feature/RURAL-34' of codecommit://sb-storage-api into feature/RURAL-34
+b0cb6c1,Victor Luis Grechi,2023-06,feat: improving message on cell note.
+ebcda86,Victor Luis Grechi,2023-06,feat: added common column media.videoUrl to /products/spreadsheet/generate.
+4f86255,Victor Luis Grechi,2023-06,feat: improving message on cell note.
+cf960d8,Victor Luis Grechi,2023-06,feat: added common column media.videoUrl to /products/spreadsheet/generate.
+64b509e,Walisson Rodrigo,2023-06,fix: move files to assets folder in src. add copy assets in docker
+1784c33,Walisson Rodrigo,2023-06,feat: add images to explain how edit zip folders
+22b05ab,Victor Luis Grechi,2023-05,Merge branch 'feature/RURAL-35' of codecommit://sb-storage-api into feature/RURAL-35
+9b8cb60,Victor Luis Grechi,2023-05,feat: added POST /products/{id}/attachment/video-url to be sent to auction-lotting.
+263c0bd,Victor Luis Grechi,2023-05,feat: added POST /products/{id}/attachment/video-url to be sent to auction-lotting.
+3e9a0eb,Leonardo Telles,2023-05,feat: add sellerId to send to auction-lotting
+d547667,Leonardo Telles,2023-05,fix: change leia file with external code
+375fc03,Leonardo Telles,2023-05,feat: add zip history endpoint
+9a2b011,Walisson Rodrigo,2023-05,fix: asserts in tests files and path files
+8c4ff85,Walisson Rodrigo,2023-05,refator: rules eslint and brackets
+7e8f8c0,Walisson Rodrigo,2023-05,bugfix: add status published to update infos
+3f983c3,Walisson Rodrigo,2023-05,refactor: improve logic to valid status published
+7b8d608,Walisson Rodrigo,2023-05,refactor: generic logic to filter all status and remove not allowed status by default
+c13f556,Leonardo Telles,2023-05,feat: remove unused library stream-buffers
+be7cf6e,Leonardo Telles,2023-05,fix: zip file upload return
+8832dc2,Leonardo Telles,2023-04,feat: add upload zip endpoint
+3f57819,Walisson Rodrigo,2023-04,feat: folder and name file on generate spreadsheet inside zip
+aedfa10,Walisson Rodrigo,2023-04,feature: concrete function to generate the zip within the service export
+332241a,Walisson Rodrigo,2023-04,feature: implement isZip if sended parameter
+529e523,Walisson Rodrigo,2023-04,feature: parameter isZip
+00aed9b,Walisson Rodrigo,2023-04,add library to create zip
+df25541,thiago.grillo,2023-04,correcao no filtro de seller
+b6bd380,thiago.grillo,2023-04,correcao no envio do seller na listagem de produto
+870ba2a,thiago.grillo,2023-04,retirando comentarios
+9264056,thiago.grillo,2023-04,modificacao no filtro por seller
+f5205c3,thiago.grillo,2023-04,correcao na regra de bloquei do indisponivel
+6db2b62,julio.santos,2023-04,wip planilha
+4c8708b,julio.santos,2023-04,wip planilha
+e27540a,Walisson Rodrigo,2023-04,bugfix: test assert
+8367aa2,Walisson Rodrigo,2023-04,feature: change headers in spreadsheets
+c29d105,thiago.grillo,2023-04,adicionando filtro de externalId
+64df2ff,Walisson Rodrigo,2023-04,refactor: remove messages in spread and validaiton
+f1445aa,Walisson Rodrigo,2023-04,feature: validation creation if reservedPrice is null
+ec3c176,Walisson Rodrigo,2023-04,feature: remove required fields and add more information in spreadsheat
+c9a11f9,Leonardo Telles,2023-04,fix: fix keycloak token
+9a77be1,julio.santos,2023-03,fix token
+b541eb8,thiago.grillo,2023-03,comentando o freshdesk e alterando a forma de envio do token para o endpoint steps
+d080e93,Felipe Mauricio Silva,2023-03,incluindo partnerIntegrationId
+9dc1293,Felipe Mauricio Silva,2023-03,incluindo status reasons id
+0ca3f39,Felipe Mauricio Silva,2023-03,removendo  comentario
+c50afe6,Felipe Mauricio Silva,2023-03,incluindo updatedAt no atualizar Produto
+81eac23,thiago.grillo,2023-03,correcao no is number string
+dbc8f9c,thiago.grillo,2023-03,correcao no filtro de produto
+f7ba125,thiago.grillo,2023-03,adicionando status retornado
+2586e88,Felipe Mauricio Silva,2023-03,Merge branch 'feature/PO-841' of codecommit::sa-east-1://sbws-users@sb-storage-api into feature/PO-841
+7e17a87,Felipe Mauricio Silva,2023-03,incluindo campo de atualização
+c281d96,Felipe Mauricio Silva,2023-03,incluindo campo
+de67ad4,Felipe Mauricio Silva,2023-03,incluindo campo date
+0bdb2f4,Felipe Mauricio Silva,2023-03,incluindo array de inteiros
+c966863,Felipe Mauricio Silva,2023-03,PO-836: Incluindo filtros
+be53e10,thiago.grillo,2023-03,correcao no put da api para AL
+a35985f,thiago.grillo,2023-03,correcao no controller e spec de product
+65aaddc,Felipe Mauricio Silva,2023-03,incluindo campo de atualização
+942947a,Felipe Mauricio Silva,2023-03,incluindo campo
+f68d6ca,Felipe Mauricio Silva,2023-03,incluindo campo date
+797b6a8,Leonardo Telles,2023-03,feat: add partnerIntegrationId filter
+1c3c806,thiago.grillo,2023-03,correcao no getReason
+2132b12,thiago.grillo,2023-03,correcao na comparacao de valores
+f332711,Felipe Mauricio Silva,2023-03,incluindo array de inteiros
+c0d7b5f,thiago.grillo,2023-03,modificacao nas conversoes para numerico
+41c3f4f,thiago.grillo,2023-03,adicionando validacoes de status e motivo
+4d1eb08,Felipe Mauricio Silva,2023-03,PO-836: Incluindo filtros
+94c7bfb,thiago.grillo,2023-03,troca de url de history para steps
+c6118e0,thiago.grillo,2023-03,retirando espaco
+9561e3c,thiago.grillo,2023-03,modificacao na url de history e alteracao no env de dev
+42b8ffc,thiago.grillo,2023-03,criando endpoint de history
+354c387,thiago.grillo,2023-03,removendo codigo comentado
+29ccae9,thiago.grillo,2023-03,removendo status do bff
+dcd00e0,Gabriel Mendes,2023-02,adjust combo box metrics
+8215338,Gabriel Mendes,2023-02,fix rename
+110e54a,Gabriel Mendes,2023-02,add metric hidden worksheet
+7384f1d,thiago.grillo,2023-02,tratando msg nos dtos
+7378dcd,thiago.grillo,2023-02,mergeando
+8d47b12,thiago.grillo,2023-02,correção nos testes unitários
+5eaef0f,Gabriel Mendes,2023-02,remove toggle feature
+be1cab7,thiago.grillo,2023-02,modificacoes no create e o findall
+726b0f1,thiago.grillo,2023-02,correção na validacao de status
+cd4e490,thiago.grillo,2023-02,correção no endpoint de product publish list
+4eb4c99,Henrique Viana,2023-02,feat: update interface of save offers
+ba11975,Henrique Viana,2023-02,feat: update interface of save offers
+3917f30,Gabriel Mendes,2023-02,Comment on spreadsheet when field is required
+e7f7363,thiago.grillo,2023-01,correção no label do enum publicado
+fd31705,thiago.grillo,2023-01,correção no teste unitário
+01d5ae0,thiago.grillo,2023-01,retirando console log
+0129f24,thiago.grillo,2023-01,modificacao nas consultas de produto e domain
+47adb46,Henrique Viana,2023-01,feat: update get products params to receive hasActiveOffer
+87a756d,thiago.grillo,2023-01,correção na descricao
+972c6fe,Gabriel Mendes,2023-01,resolved problem in spreadsheet
+141b831,thiago.grillo,2023-01,correção nas consultas
+82a4b24,thiago.grillo,2023-01,correção na obrigatoriedade
+3f603b3,thiago.grillo,2023-01,criado o endpoint para obter o motivo
+466a705,Philipe Schneider,2023-01,PLAT-690 - Fix error handler when return 400 code
+9a0037b,Philipe Schneider,2023-01,PLAT-690 - Fix error handler when return 400 code
+7918041,thiago.grillo,2023-01,Merge branch 'develop' into feature/getStatus
+ea78977,thiago.grillo,2023-01,criado o endpoint de status e modificação no findAll de products
+f7f41a8,Leonardo Telles,2023-01,Merge branch 'equalizar_branchs' into teste_develop
+9aebb5a,Leonardo Telles,2023-01,feat: save offer when importing products
+2cc7274,Gabriel Mendes,2023-01,add new endpoint for measure
+c45293c,Gabriel Mendes,2023-01,adjust increment var
+2a48019,Leonardo Telles,2023-01,feat: save offer when importing products
+43a4ddc,Leonardo Telles,2023-01,Merge branch 'master' into fix_problems_merge
+6687d4b,Leonardo Telles,2023-01,fixed conflicts
+1e08614,Gabriel Mendes,2023-01,add new endpoint for measure
+39b1e0a,Leonardo Telles,2023-01,feat: create endpoint to get audit
+d3f5edf,Leonardo Telles,2023-01,feat: create endpoint to get audit
+f4e32a0,Leonardo Telles,2023-01,feat: allows product editing
+07fc95a,Leonardo Telles,2023-01,feat: add reference and location filters
+fd0e5a0,Leonardo Telles,2023-01,feat: allows product editing
+0523bc6,Leonardo Telles,2023-01,feat: add reference and location filters
+f4f0c2e,Gabriel Mendes,2023-01,adjust increment var
+5460a20,Leonardo Telles,2022-12,fix: rollback product audit
+3efabd4,Leonardo Telles,2022-12,fix: rollback product audit
+dc8b59f,Gabriel Mendes,2022-12,remove required field to add toggleFeature
+e4dd843,Gabriel Mendes,2022-12,Adjust new fields in spreadsheet
+ffd8d1e,henriquevianaterra,2022-12,fix: get seller
+177604c,Leonardo Telles,2022-12,fix: offer status validation
+26632b1,Gabriel Mendes,2022-12,Ajust TDD
+7370ee8,henriquevianaterra,2022-12,feat: update statusId values
+76eb2f7,henriquevianaterra,2022-12,feat: remove items with begin underline in product-type, category and sub-category
+82a5485,Leonardo Telles,2022-12,fix build pipeline
+c6e2490,Leonardo Telles,2022-12,feat: check offer status when updating product
+fee22cd,Leonardo Telles,2022-12,fix: change the type of the product audit date field
+933b186,Leonardo Telles,2022-12,feat: records differences between the original product and the altered product
+521dc2a,Leonardo Telles,2022-12,feat: add auditing and logging in product edition
+c121992,Philipe Schneider,2022-12,Revert "PLAT-558 - New required fields when is pricing and vehicle category / show or hide when event is extra judicial"
+57c5e92,Philipe Schneider,2022-12,Revert "PLAT-558 Remove unnecessary commit"
+7a5b0e7,Philipe Schneider,2022-12,Revert "PLAT-558 adjust the test"
+a388e06,Philipe Schneider,2022-12,PLAT-558 adjust the test
+3d1550c,Philipe Schneider,2022-12,PLAT-558 Remove unnecessary commit
+bb8abb9,Philipe Schneider,2022-12,PLAT-558 - New required fields when is pricing and vehicle category / show or hide when event is extra judicial
+fc3c144,gabriel-mendes,2022-12,Conflitos resolvidos no console.
+4dfbaac,Gabriel Mendes,2022-12,Adjust TDD
+2db4602,henriquevianaterra,2022-12,feat: add partnerIntegrationId prop in product dto
+81ba2b2,henriquevianaterra,2022-12,feat: remove unused test
+f5ee409,henriquevianaterra,2022-12,feat: implementing endpoit that returns categories those hava subcategories
+cf26fe8,Gabriel Mendes,2022-11,adjust spreadsheet error generate
+5628e0c,Philipe Schneider,2022-11,Merge branch 'PLAT-449' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-storage-api into PLAT-449
+0db230b,Philipe Schneider,2022-11,PLAT-449 bug fix to replace spelling accent on seller listbox
+54b1f50,Philipe Schneider,2022-11,PLAT-449 bug fix to replace spelling accent on seller listbox
+a6afbea,henriqueviana,2022-11,feat: update get eventManager only portal 2 and MaisAtivo
+5f0b7e7,Philipe Schneider,2022-11,Merge remote-tracking branch 'origin/master' into merge-conflicts3
+9cac4dd,Gabriel Mendes,2022-10,fix: fix problem when try generate spreadsheet with seller
+a65fdd7,Gabriel Mendes,2022-10,TDD
+4a15eed,Gabriel Mendes,2022-10,fix: adjust flow seller to get eventManagerId
+98fcb72,henriqueviana,2022-10,feat: update tests to docker build
+383dceb,henriqueviana,2022-10,Merge branch 'develop' into bugfix/intercept-errors
+97a9104,henriqueviana,2022-10,bugfix: update message errors to intercept errors 404
+1321df8,Gabriel Mendes,2022-10,hotfix: fix problem in spreedsheat generate
+bef172a,Gabriel Mendes,2022-10,fix conflict
+5519cc7,gabriel-mendes,2022-10,Conflitos resolvidos no console.
+9c565ed,Gabriel Mendes,2022-10,hotfix: remove chasse field
+fd0151b,Gabriel Mendes,2022-10,hotfix: fix broken spreadsheet
+e616ad5,Gabriel Mendes,2022-10,fix: fix commit
+55c465d,Gabriel Mendes,2022-10,fix: fix problem in states combo box
+9853fa4,henriqueviana,2022-10,Merge branch 'develop' into bugfix/PLAT-453
+e4bfdc6,henriqueviana,2022-10,feat: update attribute id to sellerId in seller object
+5662b70,Philipe Schneider,2022-10,PLAT-434 - Add missing properties
+296f54c,Leonardo Telles,2022-10,Merge branch 'bugfix/PLAT-434' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-storage-api into bugfix/PLAT-434
+69aba64,Leonardo Telles,2022-10,PLAT-434 - Fix unit tests
+e3f2da3,Leonardo Telles,2022-10,PLAT-434 - Improvements error handler in external-api.service
+829dcc6,Philipe Schneider,2022-10,PLAT-434 - Refactory
+b543386,julio.santos,2022-10,refactory
+f69ba81,Philipe Schneider,2022-10,PLAT-434 - Improvements error-handler
+14bedc5,Philipe Schneider,2022-10,PLAT-434 - Fix merge conflicts on configuration.ts
+8717d9a,Philipe Schneider,2022-10,Fix merge conflicts
+19b5964,Leonardo Telles,2022-10,PLAT-434 Add new exceptions to error map
+b74b03b,Philipe Schneider,2022-10,PLAT-434 Add new structure to map error messages
+6ccb0de,Philipe Schneider,2022-10,PLAT-434 Add new structure to map error messages
+3cccc0a,Leonardo Telles,2022-10,PLAT-434 - Fix unit tests
+c49f455,Leonardo Telles,2022-10,PLAT-434 - Improvements error handler in external-api.service
+a50b0ea,henriqueviana,2022-10,feat: implementing rules in pricing columns to judicial events
+6dd4b57,Philipe Schneider,2022-10,PLAT-434 - Refactory
+3f0d740,julio.santos,2022-10,refactory
+df6f7bb,Philipe Schneider,2022-10,PLAT-434 - Improvements error-handler
+4f70f04,Philipe Schneider,2022-10,PLAT-434 - Fix merge conflicts on configuration.ts
+d38f1e6,Philipe Schneider,2022-10,Fix merge conflicts
+c5634ba,Leonardo Telles,2022-10,PLAT-434 Add new exceptions to error map
+fe9ab76,Philipe Schneider,2022-10,PLAT-434 Add new structure to map error messages
+4f0c1d0,Philipe Schneider,2022-10,PLAT-434 Add new structure to map error messages
+ca64057,Gabriel Mendes,2022-10,hotfix: change solr endpoint
+458b95d,Gabriel Mendes,2022-10,conflict: solved
+8b9732e,gabriel-mendes,2022-10,Conflitos resolvidos no console.
+fa49650,Gabriel Mendes,2022-10,hotfix: change endpoint name.
+ddac1f9,Gabriel Mendes,2022-10,hotfix: solved problem in seller select
+5e4ee02,Gabriel Mendes,2022-10,Submit only useful information for auction-lotting
+854bcc2,Gabriel Mendes,2022-10,change seller endpoint (Solr)
+53062d0,Gabriel Mendes,2022-10,change seller endpoint (Solr)
+4abcf8b,Gabriel Mendes,2022-09,fix: adjust TDD code
+88e3030,henriqueviana,2022-09,bugfix: update dto and column of groupsOffer
+b82a401,henriqueviana,2022-09,feat: updaterules for groupOfferId
+3ec3d4e,henriqueviana,2022-09,feat: update groupOffer to seller persona
+927a8c4,henriqueviana,2022-09,feat: update offerGroup column to persona seller
+511c663,henriqueviana,2022-09,feat: update offerGroup column to persona seller
+4206efa,henriqueviana,2022-09,feat: update tests
+2a50c6a,henriqueviana,2022-09,feat: update rules to sheet with pricing and persona equal seller
+8238abd,henriqueviana,2022-09,feat: set rules to generate pricing columns when eventModalityId is not null
+48b12d7,henriqueviana,2022-09,feat: update tests to columns order
+8a555d5,henriqueviana,2022-09,Merge branch 'develop' into feature/PLAT-388
+c638194,henriqueviana,2022-09,feat: removing validate persona in get stores request
+160766f,Gabriel Mendes,2022-09,feat: change worksheet cell position
+ab63cde,henriqueviana,2022-09,refactory: update groupName of offers columns
+bb2190f,henriqueviana,2022-09,feat: implement log errors in call of measures and offers-resources
+11dc4ba,henriqueviana,2022-09,feat: create offers-resources interface
+4d7e5e5,henriqueviana,2022-09,feat: update export.service to insert pricing columns
+8616473,henriqueviana,2022-09,feat: implement request offers/resources from auction-lotting
+20d02a2,henriqueviana,2022-09,feat: insert stores in ExportSpreadsheetDto
+7f4a1cf,henriqueviana,2022-09,feat: insert groupOfferId in SellersExportSpreadsheetDto
+baae78b,henriqueviana,2022-09,refactory: extract generate columns of sheet to your own files
+3e9ebe8,henriqueviana,2022-09,feat: implement request in measures from auction-lotting
+b3301e8,henriqueviana,2022-09,merge: merging with develop
+388611b,henriqueviana,2022-09,feat: WIP - implementing pricing columns
+71e21af,Leonardo Telles,2022-09,refactor: use enum RegistrationOrigin
+70ddeae,Leonardo Telles,2022-09,feat: add type RegistrationOrigin
+961a4ea,Leonardo Telles,2022-09,feat: identify product by registration origin
+44f2731,Gabriel Mendes,2022-09,Merge branch 'feat/plat-378' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-storage-api into feat/plat-378
+c58d372,Gabriel Mendes,2022-09,fix: adjusts after review
+3bcf769,Gabriel Mendes,2022-09,feat: fix review commit
+0b39721,Gabriel Mendes,2022-09,fix:adjust width field
+8463a5a,Gabriel Mendes,2022-09,feat: add select in state cell
+01ca0c2,Gabriel Mendes,2022-09,fix: adjusts after review
+0c277a9,Gabriel Mendes,2022-09,feat: fix review commit
+dd90620,Gabriel Mendes,2022-09,fix:adjust width field
+4587128,Gabriel Mendes,2022-09,feat: add select in state cell
+2f8d01c,henriqueviana,2022-09,feat: implement stores endpoint
+10cf80f,Douglas,2022-08,fix: invalid event manager in spreadsheet geenrator
+d4e0e0a,Leonardo Telles,2022-08,feat: remove categories that are not used
+47187fa,Douglas,2022-08,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-storage-api into develop
+e2757d8,Douglas,2022-08,feat: handling invalid address error from auction lotting
+380ae9c,Douglas,2022-08,test: address and judicial
+35bc4b5,Douglas,2022-08,fix: column name
+9c23e71,henriqueviana,2022-08,feat: remove encodeURI of shortDesc in filter of product
+5aa67b4,henriqueviana,2022-08,feat: update shortDesc filter to receive marks
+8d2c900,henriqueviana,2022-08,merging with develop
+9ef8450,henriqueviana,2022-08,test: implementing tests to filters of products
+c2f41e8,henriqueviana,2022-08,feat: WIP - update shortDesc query param to use encode uri
+b8b37e1,henriqueviana,2022-08,feat: WIP - implementing new items in filter of products
+69daec5,henriqueviana,2022-08,removing unused code and update unit tests
+2c7c0cd,Douglas,2022-08,test: removing docker test call
+8ca427a,Douglas,2022-08,fix: rollback keycloak user using api core
+064d56f,henriqueviana,2022-08,Merge branch 'develop' into bugfix/edit-product
+45d9025,henriqueviana,2022-08,fix: comment tests to poc
+1c1ed72,Leonardo Telles,2022-08,fix: pass keycloak token to attachments
+23841dd,Leonardo Telles,2022-08,fix: pass keycloak token to deleteAttachments
+9da9c7e,Leonardo Telles,2022-08,Merge branch 'develop' into fix/pass_token_get_attachment
+263d51a,Leonardo Telles,2022-08,fix: pass keycloak token to getAttachment
+7ed503c,henriqueviana,2022-08,fix: update controller and service of product to receive keycloak_token
+e28daaf,Leonardo Telles,2022-08,fix: pass the correct token to getById method
+706cf0a,Leonardo Telles,2022-08,fix: pipeline break
+2c7e33c,Leonardo Telles,2022-08,Merge branch 'develop' into fix/send-token-to-getbyid
+e89092e,Leonardo Telles,2022-08,fix: send keycloak token to getById
+b5dcaf0,Leonardo Telles,2022-08,Merge branch 'develop' into fix/event-manager
+cdfc4bf,Leonardo Telles,2022-08,fix: eventManagerId spreadsheet creation
+791ae9c,henriqueviana,2022-08,feat: WIP - passing keycloak_token insted of secret manager token in get of product
+e99a05c,henriqueviana,2022-08,feat: WIP - passing keycloak_token insted of secret manager token in product api-core service call
+b26aa16,henriqueviana,2022-08,feat: WIP - passing keycloak_token insted of secret manager token in product api-core service call
+fb9a626,henriqueviana,2022-08,feat: update get products passing multitenancy_id
+1fde6d1,henriqueviana,2022-08,Merge branch 'develop' into feature/PLAT-342
+0bb3d25,henriqueviana,2022-07,feat: update fields of judicial with label Processo in columns
+4ab2185,henriqueviana,2022-07,merging with develop
+bd7fea3,henriqueviana,2022-07,merging with develop
+44b0fd2,henriqueviana,2022-07,feat: update keys of fields of judicial
+96bc3af,henriqueviana,2022-07,tests: update tests
+bc85855,henriqueviana,2022-07,Merging with develop
+669302d,henriqueviana,2022-07,tests: update tests
+3446107,henriqueviana,2022-07,feat: implement link in judicial columns to generate spreadsheet
+57c27fc,Douglas,2022-07,ci: running tests
+901b896,Douglas,2022-07,test: fix token test
+6caf04d,henriqueviana,2022-07,WIP - implemeting tests in storage
+3ef9d6f,henriqueviana,2022-07,test: WIP - implementing and update tests in storage
+a5cb322,henriqueviana,2022-06,fix: update export.service to concat id of ccf in value
+489ac2e,Douglas,2022-06,feat: implementing generate spreadsheet with errors
+e990343,Douglas,2022-06,feat: spreadsheet endpoints
+8daec0e,Douglas,2022-06,feat: spreadsheet improvements
+6732f24,Douglas,2022-06,fix: send token to bulk api
+f824c1e,Douglas,2022-06,fix: ssl for bulk api
+80da609,Douglas,2022-06,feat: update bulk api url
+537a68c,Douglas,2022-06,fix: health public endpoint
+24fca61,henriqueviana,2022-06,fix: show event manager column for all personas
+4bfbe7b,henriqueviana,2022-06,fix: ci pipeline
+c862018,henriqueviana,2022-06,fix: removing package.lock to ci
+3d7eb07,henriqueviana,2022-06,fix: removing package.lock to ci
+28fb7b4,Douglas,2022-06,ci: fix
+aa72ccc,henriqueviana,2022-06,Merge branch 'develop' into feature/PLAT-281
+5cafc1e,henriqueviana,2022-06,bugfix: update SpreadsheetController in generate sheet to await createWorkbook
+feb6492,henriqueviana,2022-06,bugfix: fix error when event body is null and increasing test coverage
+d13f856,henriqueviana,2022-06,feat: suggested fixes in PR and increasing test coverage
+714526d,Alexandre,2022-05,feat: add a event manager object on product interface
+f7bc443,henriqueviana,2022-06,clear: removing unused code
+d5a88bf,henriqueviana,2022-06,merge: merging with develop
+6501069,henriqueviana,2022-06,feat: implementing event manager column in sheet what requested by seller
+0c543fe,henriqueviana,2022-06,feat: implementing event manager column in sheet what requested by seller
+6c67cd9,Douglas,2022-06,feat: correlation id now it comes from storage
+1f8d66e,Douglas,2022-05,refactor: remove unused middleware
+cbcbab4,Douglas,2022-05,feat: external api module
+2a85054,Douglas,2022-05,fix: list cells
+8675531,Douglas,2022-05,fix: spreadsheet common column names
+f2cff67,Alexandre,2022-05,debug: remove swagger with error on build
+f93b013,Alexandre,2022-05,feat: remove "Grupo de Oferta" from spreadsheet
+602cdeb,Ale,2022-05,feat: create a event column on export spreadsheet
+bd65123,Douglas,2022-05,style: team default settings
+80b91e1,Alexandre,2022-05,debug: fix tests on API Core Builder
+02b7e39,Alexandre,2022-05,test
+ba57d8c,Alexandre,2022-05,debug: Testes on API Core modules
+bc5851c,Douglas,2022-05,Merge branch 'fix/products-list-params' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-storage-api into fix/products-list-params
+4624866,Douglas,2022-05,test: seller params builder
+87db26c,Douglas,2022-05,test: seller params builder
+6f44f50,Alexandre,2022-05,debug: Fix a seller id on seller column.
+4107eb6,Alexandre,2022-05,debug: Fix a seller object on export spreedsheet service.
+2f883e8,Douglas,2022-05,fix: removing params type from sellers list
+6ab805b,Douglas,2022-05,fix: sellers filters
+e377cce,Douglas,2022-05,fix: query param array
+704f950,Alexandre,2022-05,debug: review params on api core requests (products and sellers)
+6e0ab00,Alexandre,2022-05,debug: create a filter on request by param persona based on keycloack oauth
+50749ae,Brenda Reis Araújo de Souza,2022-05,ajuste final planilha e filter products
+58a9e06,Brenda Reis Araújo de Souza,2022-05,ajuste final planilha e filter products
+95461c3,Brenda Reis Araújo de Souza,2022-05,ajuste final planilha e filter products
+4e3473d,henriqueviana,2022-05,refactory: removing logs
+7b5ef3f,henriqueviana,2022-05,fix: bug in call of products with persona
+73612fb,henriqueviana,2022-05,fix: bug in get seller of api core when user persona is seller
+ea8dbd7,Brenda Reis Araújo de Souza,2022-04,adicinonando ids
+e66aa21,Brenda Reis Araújo de Souza,2022-04,adicinonando ids
+1fdb2c8,Brenda Reis Araújo de Souza,2022-04,acrescentando ajustes id na planilha
+a95d22b,henriqueviana,2022-04,feat: update files to PR
+92bc7ce,henriqueviana,2022-04,feat: update files to PR
+b754a36,henriqueviana,2022-04,feat: WIP - QA updates
+aef6731,henriqueviana,2022-04,feat: update files to lint
+1405025,henriqueviana,2022-04,feat: implement ordened columns in sheets
+83203f0,henriqueviana,2022-04,feat: update files to PR
+83e028b,henriqueviana,2022-04,Merge branch 'develop' into feature/PLAT-148
+e161b90,Leonardo Telles,2022-04,fix: changed eventManagerId field to eventManagerIds in sellers controller
+cc6da38,Leonardo Telles,2022-04,fix: remove lint line comment
+40afda5,Leonardo Telles,2022-04,fix: change seller filter from eventManagerId to eventManagerIds
+54a1389,henriqueviana,2022-04,feat: rollback alter name brands
+8d265bc,henriqueviana,2022-04,feat: reomve column 'Marca' and 'Model' when productTypeId is not equalnthe 10 or 11 or 15
+820b01b,henriqueviana,2022-04,bugfix: fix remove writeFile method of exceljs
+ca58353,henriqueviana,2022-04,bugfix: fix error in generate large lists
+0731bed,Douglas,2022-04,doc: update bearer token access
+48dd8ed,henriqueviana,2022-04,refactor: refactoring to PR
+e583400,henriqueviana,2022-04,refactor: refactoring to PR
+5c2c2ea,henriqueviana,2022-04,Merge branch 'develop' into feature/PLAT-140
+5bb7e89,henriqueviana,2022-04,feat: implementing error handler to reutn xls files
+84e6120,Douglas,2022-03,docs: update readme
+692cc6c,Douglas,2022-03,chore: readme for backend
+6b61713,Ale,2022-03,test: fix the tests for events, products, and sellers
+995c755,Ale,2022-03,perf: create a event status enum to describe a types of status.
+e1cb31e,Douglas,2022-03,refactory: removing event manager from seller dto
+2143339,Douglas,2022-03,feat: add hidden unique id for each column in the spreadsheet
+ad766b1,Ale,2022-03,feat: create a events query on api-core module and events endpoints
+527643a,Ale,2022-03,feat: create a events query on api-core module and events endpoints
+a6c3c3e,Ale,2022-03,fix: fixes on productTypeId validation on back-end
+692d911,Ale,2022-03,refactor: filters and create dtos
+8191c08,Ale,2022-03,refactor: add eventManagerId to controllers functions based on user decorator
+6e94dd0,Douglas,2022-03,Merge branch 'feat/create-spreadsheet-to-categories' into develop
+d53d850,Douglas,2022-03,feat: remove-prod-constraint
+b7afcfa,Vinicius Martins,2022-02,feat: create spreadsheet to categories informed
+ce5b896,Douglas,2022-02,fix: health check path
+8bc07ff,Douglas,2022-02,chore: package audit
+68057b4,Douglas,2022-02,test: middlewares
+6c6ff1d,Douglas,2022-02,fix: test
+14947a6,Douglas,2022-02,feat: bearer token and persona middlewares
+97d6f64,Douglas,2022-02,test: removing timeout test
+9341daa,Vinicius Martins,2022-02,feat: create default spreadsheet of products
+78da28e,Vinicius Martins,2022-01,feat: create services layer to products
+289e435,Douglas,2022-01,ci: timeout test
+e50025f,Douglas,2022-01,refactor: config names
+aa035b2,Douglas,2022-01,test: unit and e2e
+7b00715,Douglas,2022-01,feat: create and update product in mongo. refs #DIG-65
+3ae8cc7,Vinicius Martins,2022-01,fix/add-cors-wildcard and remove api timetou
+1c61447,Vinicius Martins,2022-01,fix: increase timeout
+7e8df28,Vinicius Martins,2022-01,feat: create get of models
+73a1af6,Vinicius Martins,2022-01,feat: create get of brands
+cd6777d,Vinicius Martins,2022-01,feat: create event managers filter by portal id
+bfbc02d,Vinicius Martins,2022-01,feat: create e2e base tests
+1a3e6c6,Douglas,2021-12,fix: dockerfile
+2b9ef7f,Douglas,2021-12,Merge branch 'dockerfile' into develop
+66c6318,Bruno Palermo,2021-12,Dockerfile refator to use distroless + caching
+ea20c33,Douglas,2021-12,fix: changing mongo host when debugging
+b8e0adb,Douglas,2021-12,fix: mongo url password encode
+c1a47ad,Douglas,2021-12,feat: using mongodb
+fa1d59c,Douglas,2021-12,test: removing test
+3331d12,Vinicius Martins,2021-12,feat: add filter of event manager
+33e9777,Vinicius Martins,2021-12,feat: create event manager api
+1bdeb73,Douglas,2021-12,test: using AWS_SECRET_MONGO
+a2c842a,Douglas,2021-12,test: mongo secrets
+5d6fdbe,Vinicius Martins,2021-12,fix: apply code review changes
+aa31707,Vinicius Martins,2021-12,feat: create mapper from ccf of api core to front
+c4bdb1e,Douglas,2021-12,fix: add aws region
+e2c76aa,Douglas,2021-12,feat: using aws secrets with modules
+c1a206d,Douglas,2021-12,fix: using AWS_SECRET_CORE
+538055d,Douglas,2021-12,fix: removing aws key from default env vars
+57ccdea,Douglas,2021-12,fix: more logs
+97ee1b3,Douglas,2021-12,fix: hard coded test
+3f9f2b3,Douglas,2021-12,fix: testing passing aws region
+4eef544,Douglas,2021-12,fix: using aws sdk v2
+9cddd94,Douglas,2021-12,fix: removing credentials
+06975cc,Douglas,2021-12,fix: change  aws sdk credentials lib
+fe208b5,Douglas,2021-12,fix: code in wrong place
+d627120,Douglas,2021-12,fix: temp logs for secrets
+32cfa2c,Douglas,2021-12,fix: AWS_SECRET_API_CORE to AWS_SECRET_CORE
+2c2b61c,Douglas,2021-12,fix: removing api core credentials config required
+cc82b5d,Douglas,2021-12,feat: using AWS_SECRET_API_CORE
+d3dd1ce,Douglas,2021-12,feat: removing sensitive data from git
+f15b0f5,Douglas,2021-12,feat: using secrets manager
+ed91d9b,Vinicius Martins,2021-12,feat: create mapper from ccf of api core to front
+1b61bba,Vinicius Martins,2021-12,chore: change variable names of method to map ccf
+67271c6,Vinicius Martins,2021-12,feat: create ccf fields conversor
+991bff2,Vinicius Martins,2021-12,fix: code review changes
+1323366,Vinicius Martins,2021-12,fix: create a new service to error handler
+05b2b7b,Vinicius Martins,2021-12,feat: create tests to error handler
+17d04d3,Vinicius Martins,2021-12,fix: add check of error message
+ad65b92,Vinicius Martins,2021-12,chore: block api in prod
+99539b7,Douglas,2021-12,bug: package missing
+ec0bf12,Douglas,2021-12,feat: api core error handling
+b169f30,Vinicius Martins,2021-12,feat: create get of sub category
+e25eb5a,Vinicius Martins,2021-11,feat: create get of category
+e3dbf3b,Vinicius Martins,2021-11,feat: create get of product type
+fb8a640,Vinicius Martins,2021-11,feat: create offers post
+98eb3b6,Douglas,2021-11,feat: delete token cache on 401 error
+948d53b,Douglas,2021-11,feat: replaced gate token for client credentials
+ed34d62,Douglas,2021-11,ci: moving config to src and new script to copy .env.*
+e433c02,Vinicius Martins,2021-11,feat: turn seller id in opition param
+8d51e6f,Vinicius Martins,2021-11,fix: change product post url
+6024d9f,Vinicius Martins,2021-11,feat: create get by id to products
+c2149ad,Vinicius Martins,2021-11,fix: tests and add tests to sellers controllers
+fc0e0a3,Vinicius Martins,2021-11,feat: create sellers get
+e0cf357,Douglas,2021-11,feat: config file based on node_env
+d4b2cad,Vinicius Martins,2021-11,feat: create unit tests to products controller
+3dce3b4,Douglas,2021-11,feat: rollback token cache
+ebd991e,Douglas,2021-11,feat: multiples files
+c754847,Douglas,2021-11,feat: typed methods
+3f3c13e,Douglas,2021-11,feat: refactory
+6a11987,Vinicius Martins,2021-11,fix: comunication with post and get of images
+5e01d51,Douglas,2021-11,feat: product attachments
+90f96c8,Vinicius Martins,2021-10,feat: add other states in product put
+6715416,Douglas,2021-10,ci: node env test
+c49117a,Vinicius Martins,2021-10,fix: token cache to comunicate with api core
+6ce3ab7,Vinicius Martins,2021-10,feat: create put of products
+a00d9a2,Vinicius Martins,2021-10,feat: create post of products
+45d3e5e,Vinicius Martins,2021-10,fix: change filter format on url builder
+2997fc6,Vinicius Martins,2021-10,feat: create pagination and filters on get products
+97ecae4,Douglas,2021-10,ci: ignore scripts in prod
+c2d8ec9,Douglas,2021-10,chore: lint-staged
+bc8586d,Douglas,2021-10,chore: husky
+546689b,Douglas,2021-10,feat: unit tests
+c41adbd,Douglas,2021-10,ci (api): dockerfile for prod and dev
+c1a9ecb,Vinicius Martins,2021-10,feat: configure lint and solve lint
+970cb15,Douglas,2021-10,feat: calling token api before products
+cfdd8e5,Douglas,2021-10,feat: update readme
+bb1c809,Douglas,2021-10,feat: first commit

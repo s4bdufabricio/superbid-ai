@@ -1,0 +1,1741 @@
+ef306c2a,Victor Grechi,2024-11,PO-2127: integrating with backend service.
+f301e17f,Victor Grechi,2024-11,PO-2127: implementing mocked question and notices list.
+5f3ac506,Carlos Henrique,2024-11,REEN(456): Adicionado os serviços para os usuários habilitados
+c0de56f5,mathmartins-sb,2024-11,fix(i18n): correct Portuguese translation for offers by group
+29b3a18f,mathmartins-sb,2024-11,fix(i18n): correct Portuguese translations for group visibility and offers
+e6e167eb,mathmartins-sb,2024-11,feat(i18n): add mass action messages for group offers in multiple locales
+ffc9c96f,Odailson Silva,2024-11,TST-2133 - feat: add new informations about quantity in track-offers
+d458cfc6,mathmartins-sb,2024-11,fix(i18n): update withdrawal restriction message to Spanish across multiple locales
+77a725f3,mathmartins-sb,2024-11,feat(i18n): add legal withdrawal restriction message for shopping events in multiple locales
+aeeae810,mathmartins-sb,2024-11,feat(i18n): add new message for shopping event withdrawal restriction
+bdf8a602,Victor Grechi,2024-11,PO-2120: implementing question room page.
+07e7d9e3,Carlos Henrique,2024-11,REEN: adicionado nova aba de habilitações
+250234c9,larissa alves da silva,2024-11,fix: verify event-documents permission
+50445114,Carlos Henrique,2024-11,REEN: adicionado serviços na tela de offertas/v2
+8f056bda,Carlos Henrique,2024-11,Hotfix trying to fix v2 routes
+11aded09,Carlos Henrique,2024-11,Hotfix v2 routes to stg
+d8cef592,Carlos Henrique,2024-11,Hotfix v2 routes
+7729f3e0,Carlos Henrique,2024-11,REEN-419: Adicionado funcionalidades nas telas de eventos v2
+8a1fcec2,larissa alves da silva,2024-11,fix(BidModal): add bid on installment type and quantity items column
+f6d4e04a,Victor Grechi,2024-11,feat: adding event condition to question room access button.
+98390678,Joshua Maia Rodrigues,2024-10,add botton count questions room
+db195477,Joshua Maia Rodrigues,2024-10,add button PublishedEventWuestionsRoomButton
+e101609b,mathmartins-sb,2024-10,Refactor DateUtils to fix time zone formatting issue
+1486306b,mathmartins-sb,2024-10,Update package.json to include date-fns-tz library
+7eef70fd,Carlos Henrique,2024-10,Merge branch 'develop' of codecommit://sb-event-platform into REEN-383
+4db84fd1,Carlos Henrique,2024-10,Feat: adicionada novas rotas v2
+97dc134e,Walisson Rodrigo,2024-10,PLAT-3045 - add new field on csv example. fix uftf8 error on generate csv and open on excel
+de25ce84,Carlos Henrique,2024-10,Feat: new route published auction
+51ead784,mathmartins-sb,2024-10,Add support for raffle event modality in OfferSummary component
+140c76ed,Carlos Henrique,2024-10,Feat: new archtecture to terminal
+9dc48e72,brendaguinarte,2024-10,tst-2826
+307903a5,brendaguinarte,2024-10,tst-2826
+ece5c01c,Odailson Silva,2024-10,Merge branch 'develop' into TST-2521
+65fe0eba,Odailson Silva,2024-10,TST-2521: feat - translations ModalOfferGroup
+dbe8363f,mathmartins-sb,2024-10,Refactor event status badge margin and fix package.json
+5353142c,mathmartins-sb,2024-10,Refactor event status badge margin
+a4ce02ad,Odailson Silva,2024-10,revert
+1925f179,Odailson Silva,2024-10,conflicts
+b71978f6,Walisson Rodrigo,2024-10,PLAT-2546 - add version and fix package.json
+22218bef,Walisson Rodrigo,2024-10,PLAT-2546 - add translations for error on CardOffer on cancel offer
+b4841861,larissa alves da silva,2024-09,fix: adjust double download
+a21bd8b1,larissa alves da silva,2024-09,fix: hidding select when is empty state
+b6535acb,larissa alves da silva,2024-09,fix: adjust on downloadFile import
+310d7cda,larissa alves da silva,2024-09,fix: adjust on intervalId
+5d824477,larissa alves da silva,2024-09,feat: adding NPR download modal
+943ac623,Martín Agüera,2024-09,feat: create timeWithTzFixed util
+a54a6c28,Martín Agüera,2024-09,feat: add timeWithTzFixed to Card and OffersSummary components
+9cff555d,brendaguinarte,2024-09,remove-history
+bc2e2093,brendaguinarte,2024-09,label-adjustment
+2e2cff0d,larissa alves da silva,2024-09,feat: add render snackbar validation
+4b7538c0,larissa alves da silva,2024-09,feat: add NPR option on menu offers
+4b41ccbf,Pedro Hotz Bronzato,2024-09,fix:package-json
+1caf4e8b,Pedro Hotz Bronzato,2024-09,fix:modal
+46744d9b,Pedro Hotz Bronzato,2024-09,fix:documents-modal-link
+f9c15352,Carlos Henrique,2024-08,Feat: remove feature toogle to negotiation microfront
+e27c2dde,larissa alves da silva,2024-08,fix: some adjustment in catalog modal
+62171708,larissa alves da silva,2024-08,feat: fullscreen catalog modal
+e887edd0,Leonardo Telles,2024-08,Merge branch 'stg' into terminal/merge_stg_into_develop
+5076f593,Leonardo Telles,2024-08,Merge branch 'master' into terminal/merge_master_into_stg
+82411734,Carlos Henrique,2024-08,Squashed commit of the following
+aeb5c0fd,Carlos Henrique,2024-08,hotfix: added validation to offer selected
+3c53db53,Martín Agüera,2024-07,refacor: add the condition in encodedFilters to send an array for many reference codes or a string for one reference code
+ecc39de2,larissa alves da silva,2024-07,feat: add translation for a new column in bidding ranking table
+87780cc5,Leonardo Telles,2024-07,Merge branch 'master' into terminal/merge_master_into_stg
+1e8d6840,Andre Pasqualotto,2024-07,removing log and unused import
+facdd222,Andre Pasqualotto,2024-07,cherrypick conflicts
+6c8c89d6,Andre Pasqualotto,2024-07,Adding otherHeaders and properties to interests and winners, latam translations and general refactor of some loading and error states
+c2774624,Andre Pasqualotto,2024-07,rebasing conflicts
+ea4e88ef,Andre Pasqualotto,2024-06,changing placeholders and minor fixes
+d46d8ed7,Andre Pasqualotto,2024-06,fixing participants query results with no users
+25a2d07f,Andre Pasqualotto,2024-06,adding translations to spanish
+cbd234c5,Andre Pasqualotto,2024-06,adjusting some loading states and components
+0aacc663,Andre Pasqualotto,2024-06,adding button to action menu to download buying-terms and fixing loading states across components
+e5531f9e,Martín Agüera,2024-07,fix: change text in FilterChildren.clear_filters key of "Filtros claros" to "Limpiar filtros"
+f800b503,larissa alves da silva,2024-07,fix: passing the selected event object to catalog microfront
+50b4f4c2,mathmartins-sb,2024-05,feat: Add new key/values for errors from back
+61954f71,larissa alves da silva,2024-07,feat: add catalog FF
+81f02245,larissa alves da silva,2024-07,fix: some adjustment
+68e8ae51,larissa alves da silva,2024-07,feat: some adjustment
+ca62d1bb,larissa alves da silva,2024-07,feat: add catalog btn and modal
+bf9a36f9,mathmartins-sb,2024-07,refactor: Update API URLs for pre environment
+4f242eed,mathmartins-sb,2024-07,refactor: Add isTypeExtraJudicialWithPostEvent flag to OfferSummary component
+6dd0b59d,Andre Pasqualotto,2024-07,removing log and unused import
+dec72b06,Andre Pasqualotto,2024-07,fixing conflict error
+8d139ced,Andre Pasqualotto,2024-07,Adding otherHeaders and properties to interests and winners, latam translations and general refactor of some loading and error states
+bdeed247,Andre Pasqualotto,2024-07,rebasing conflicts
+3a20e050,Andre Pasqualotto,2024-06,changing placeholders and minor fixes
+4a6ea037,Andre Pasqualotto,2024-06,fixing participants query results with no users
+53f40e84,Andre Pasqualotto,2024-06,adding translations to spanish
+36b2eaa9,Andre Pasqualotto,2024-06,adjusting some loading states and components
+75031805,Andre Pasqualotto,2024-06,adding button to action menu to download buying-terms and fixing loading states across components
+f7cae9b0,mathmartins-sb,2024-06,feat: Update OfferSummary component to use isAfterMarket flag
+965f5c43,mathmartins-sb,2024-06,feat: Add isAfterMarket flag to OfferSummary and Stages components
+2ca22073,Carlos Henrique,2024-06,Bugfix: Fix winner row on modal of bids
+b12e534a,mathmartins-sb,2024-06,refactor: update useGenerateOffers hook to accept additional filters
+05a68a85,Carlos Henrique,2024-06,Removing uncessesary comments
+1a1d02dd,Carlos Henrique,2024-06,Bugfix: adjusted negotiation history date on drawer
+925a82f7,Carlos Henrique,2024-06,Bugfix: fix bid modal empty
+90dfe285,Philipe Schneider,2024-06,Merge branch 'stg' into equalizeBranchDevWithStg
+459e611c,Philipe Schneider,2024-06,Merge branch 'master' into equalizeBranchMaster
+8c24af97,Carlos Henrique,2024-06,feat: migrate negotiation tab to new microfront
+4a66303e,Carlos Henrique,2024-06,Hotfix: added parameter to bid history request
+d4ddbd7a,Andre Pasqualotto,2024-06,adding methods to check for endDate in event tabs
+752b4748,Andre Pasqualotto,2024-06,fixing overflow and height when too much data in component
+a83bd86c,Andre Pasqualotto,2024-06,fix not showing hours in event summary
+9bd9e9d5,Martín Agüera,2024-06,fix: change see_details to view_details in proponentCard key of translations
+245422d8,Ailson Ramos Moreira,2024-06,Merge branch 'arm-tst-1991' of codecommit://sb-event-platform into arm-tst-1991
+74244278,Ailson Ramos Moreira,2024-06,change get note label to enum
+09884a44,Ailson Ramos Moreira,2024-06,Merge branch 'arm-tst-1991' of codecommit://sb-event-platform into arm-tst-1991
+b9f29d30,Ailson Ramos Moreira,2024-06,new label view note
+3e55811b,Ailson Ramos Moreira,2024-06,new label view note
+086e1e1d,Martín Agüera,2024-06,feat: add translations to menuActions of ProponentCard component
+5b24bd8e,Martín Agüera,2024-06,feat: add translation to español en refusedProponentCard key
+aba75a96,Carlos Henrique,2024-05,bugfix/PO-1833: adjusment on formated dates
+d4433e5e,Andre Pasqualotto,2024-05,adding permission to edit/delete events buttons
+3536e01a,Andre Pasqualotto,2024-05,adding event closed validation, removing inline styles and minor adjustments
+771faa7e,Carlos Henrique,2024-05,Bugfix: Added error event not finished
+40a21400,Andre Pasqualotto,2024-05,adding translations to interests modal
+23ca578a,Carlos Henrique,2024-05,Hotfix: added element to login tag to not translate
+fd47e99d,Carlos Henrique,2024-04,Bugfix(PO-1762): fix bug when negotiation offers
+f6420469,Odailson Silva,2024-04,Merge branch 'develop' into MACC-1607
+142f5d9c,Odailson Silva,2024-04,MACC-1607: feat: tabEnable to offers
+a65acaea,Philipe Schneider,2024-04,REEN-14 - Add new key/values for errors from back
+206f5ba5,Philipe Schneider,2024-04,REEN-14 - Add new key/values for errors from back
+4ca2291f,Philipe Schneider,2024-04,EDG-1646 - Add error message when seller doesnt have cost center
+b548ccc0,Odailson Silva,2024-04,Merge branch 'develop' into MACC-1607
+72d8166e,Odailson Silva,2024-04,MACC-1607: chore: remove features event-license
+9b35415a,Carlos Henrique,2024-04,Feat/PO-1784: added button to refresh negotiation offers
+03a00017,Odailson Silva,2024-04,MACC-1607: chore: remove features event-license
+2fee8a81,Andre Pasqualotto,2024-04,adding event closed rule to upload winners
+f4cddf05,Andre Pasqualotto,2024-04,translations files
+9c1d9ad5,Andre Pasqualotto,2024-04,Fixing plurals in component
+e76fc65c,Andre Pasqualotto,2024-04,Fixing csv example model on winners tab
+ea5c34b3,Abigail Palmero,2024-04,fix: LATAM-969
+89e1c4aa,Andre Pasqualotto,2024-04,removing logs
+68cabb0d,Andre Pasqualotto,2024-04,removing logs
+20402acc,Andre Pasqualotto,2024-04,removing testing variables
+da21c0eb,Andre Pasqualotto,2024-04,changing method to post
+1f70c8b9,Andre Pasqualotto,2024-04,changing disqualify method to generic + renaming
+fbe2f7aa,Andre Pasqualotto,2024-04,Adding action menu for winner, disqualify/confirm actions
+8efca284,Andre Pasqualotto,2024-04,adding offer Statuses on conditional
+fb468633,Andre Pasqualotto,2024-04,overwriting styles of menu components
+2fb92509,Andre Pasqualotto,2024-04,adding count to i18n keys to account for plurals/singular
+7da13470,Andre Pasqualotto,2024-04,adding status to enum winner raffle
+477f8bd8,Andre Pasqualotto,2024-04,adding translations
+f01e324d,Andre Pasqualotto,2024-04,adding checkmark icon to jsxIcons
+c5006943,Gislene Carvalho,2024-04,Fix rule to disable button
+12d972ee,Gislene Carvalho,2024-04,Disable button when totalBids > 0
+680d3a97,Abigail Palmero,2024-04,feature: LATAM-932 & LATAM-969 added portalId to email endpoints
+8444c7e0,Odailson Silva,2024-04,chore: remove toogleFeature accounts
+ba6c63c1,Carlos Henrique,2024-04,feat/PO-1754: added new microfront route and featureToggle
+479c34ea,Andre Pasqualotto,2024-04,Winners tab componentes, list and button
+841f6dd0,Andre Pasqualotto,2024-04,Winners tab integration and app flow/modals
+1871ce9b,Andre Pasqualotto,2024-04,adding api calls to service
+5ef6f17e,Andre Pasqualotto,2024-04,cursor pointer on styles of image/button
+065d61b3,Andre Pasqualotto,2024-04,adding position to table cell style
+e4174fc6,Andre Pasqualotto,2024-04,adding prop to button styles
+a9f3430c,Andre Pasqualotto,2024-04,adding translations winners tab
+92546ede,Andre Pasqualotto,2024-04,renaming enum
+43275dd4,Andre Pasqualotto,2024-04,Adding enum and translations
+eab14fb2,Philipe Schneider,2024-04,EDG-1533 - Add eventLink on event summary when status is 1 or 13
+332f9f34,Andre Pasqualotto,2024-04,adding function to component
+96954a4a,mathmartins-sb,2024-03,Refactor useGetEconomicGroup to use sellerId as a parameter
+95436455,mathmartins-sb,2024-03,Add useGetEconomicGroup hook and update Offers page
+c1d4f33b,Andre Pasqualotto,2024-03,removing unused variable + adding proptypes to component
+f43ba337,Andre Pasqualotto,2024-03,Adding snackbar to raffle context
+73a442dd,Andre Pasqualotto,2024-03,adding label to component and its translations
+a9e61a0e,Andre Pasqualotto,2024-03,adding eventCancelled status to components, delete method to event and translations keys
+e7f6534f,Andre Pasqualotto,2024-03,adding cancelled status to enum and translations
+95fd8cc0,Andre Pasqualotto,2024-03,Adding offerContext to raffle component
+80984be4,rosarioconde,2024-03,add i18n on negotiation
+7d0ede93,Carlos Henrique,2024-03,Hotfix: adjustment on translate
+a2c0fb5e,Andre Pasqualotto,2024-03,including props in offerTab/formatting
+e9416802,Andre Pasqualotto,2024-03,removing logs
+2b6419a4,Andre Pasqualotto,2024-03,fixing colums/data
+372f74c0,Andre Pasqualotto,2024-03,adding download interests to raffle service and tab
+7bcb76bd,Andre Pasqualotto,2024-03,adding list component to interest tab + pagination methods
+ef779945,Andre Pasqualotto,2024-03,fixing csv separator
+70b44236,Andre Pasqualotto,2024-03,adding pagination data to API call
+80360877,Andre Pasqualotto,2024-03,adding translations and fixing typo
+45121112,Andre Pasqualotto,2024-03,adding valid cpfs + header fix to csv-Examples
+5923e71b,Andre Pasqualotto,2024-03,removing redundant imports
+0deaad6d,Andre Pasqualotto,2024-03,removing unused/redundant imports
+62f791d4,Andre Pasqualotto,2024-03,Interest List Component
+86c8920d,Andre Pasqualotto,2024-03,adding component and tabs
+e213dd16,Andre Pasqualotto,2024-03,add i18n keys for interest list
+8565ce50,Carlos Henrique,2024-03,Merge branch 'develop' of codecommit://sb-event-platform into bugfix/PO-1729
+a5f7c18a,Odailson Silva,2024-03,Merge branch 'develop' into macc-1390/1391
+7e01c717,rosarioconde,2024-03,add constant for the default value
+acf4fdc0,rosarioconde,2024-03,refactor convertDateTimeZone
+ad49f262,Maico Rodrigo Caumo,2024-03,Merge remote-tracking branch 'origin/master' into stg
+d9e7cce9,Odailson Silva,2024-03,feat: rightOfPreferenceStatus and civilState
+563daf1b,Carlos Henrique,2024-03,Bugfix(PO-1729): hidden negotiation button to persona seller
+a6a9f47d,rosarioconde,2024-03,feat: display the negotiation date using convertDateTimeZone
+21fa3825,Gislene Carvalho,2024-03,Fixing remove call getOfferPublicationList
+b59eeb9b,Gislene Carvalho,2024-03,Minor adjusts on offer context
+a448361a,Odailson Silva,2024-03,MACC-1426: feat - toogle feature
+465a49a0,Odailson Silva,2024-03,Merge branch 'develop' into macc-1390/1391
+7b046178,Odailson Silva,2024-03,MACC-1426: conection parcel sb-event-license-platform
+53d5f8cc,Gislene Carvalho,2024-03,Adjusts render group offer errors
+c94b9a6b,Gislene Carvalho,2024-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1423-add-new-i18n-labels
+a4dcef8e,Andre Pasqualotto,2024-03,removing unused method
+007969c5,Andre Pasqualotto,2024-03,adding type of document to csv examples, removing status
+76620bde,Andre Pasqualotto,2024-03,removing inline css styles rebased
+d340e5e8,Andre Pasqualotto,2024-03,adding event status ids to component and  constants rebased
+e4c096d9,Andre Pasqualotto,2024-03,changing csv examples of winners
+57d77dc1,Andre Pasqualotto,2024-03,removing unused key
+f787b118,Andre Pasqualotto,2024-03,changing method names, removing duplicate method already in sb-utils
+8b941779,Andre Pasqualotto,2024-03,removing unecessary ternary
+80e29ecd,Andre Pasqualotto,2024-03,removing logs/adding comment to i18n file
+06ee41d7,Andre Pasqualotto,2024-03,adding constantes to filetypes
+4934ad27,Andre Pasqualotto,2024-03,adding file utils method to participants tab
+55f85548,Andre Pasqualotto,2024-03,prop types in component companysummary
+7bf2cf90,Andre Pasqualotto,2024-03,changing proptypes requirements/format
+50b0e07b,Andre Pasqualotto,2024-03,adding csv enum file with data
+7c45a331,Andre Pasqualotto,2024-03,adding proptypes and linter changes to componentes + csvModel in csv generator
+b5da5d5f,Andre Pasqualotto,2024-03,adding proptypes and minor changes from linter
+77c2c3d4,Andre Pasqualotto,2024-03,removing inline css/fixing button limits
+57f1e709,Andre Pasqualotto,2024-03,removing logs
+fa113765,Andre Pasqualotto,2024-03,removing logs
+5595c141,Andre Pasqualotto,2024-03,changing variable name to something more clear
+55bf9034,Andre Pasqualotto,2024-03,removing inline style
+4023bfd0,Andre Pasqualotto,2024-03,refactoring magic expressions into methods
+4cc1c461,Andre Pasqualotto,2024-03,Adding maxSize prop to upload component
+f82523f4,Andre Pasqualotto,2024-03,removing inline styles from components
+d56ff3dc,Andre Pasqualotto,2024-03,removing inline styles from modal title component
+174de77f,Andre Pasqualotto,2024-03,adding translations i18n
+1cefff1f,Andre Pasqualotto,2024-03,adding pagination and cell styles
+916c2a1e,Andre Pasqualotto,2024-03,loading skeletons to participants list
+7d8ad798,Andre Pasqualotto,2024-03,adding fixed table headers to participants list in i18n
+e2bcd25a,Andre Pasqualotto,2024-03,refactoring participants list to allow pagination, custom table headers
+82b69af7,Andre Pasqualotto,2024-03,adding tabs and changes to raffle event view
+cadf0ba1,Andre Pasqualotto,2024-03,style changes to components
+73d601ba,Andre Pasqualotto,2024-03,adding errors rows and generic error to result modal
+fc049a2c,Andre Pasqualotto,2024-03,upload file component changes
+8e2f0029,Andre Pasqualotto,2024-03,index raffle changes
+90354f91,Andre Pasqualotto,2024-03,renaming component and changes to make it more generic
+200a1ba6,Andre Pasqualotto,2024-03,raffle service winner methods
+39c612fb,Andre Pasqualotto,2024-03,changes to model csv generator
+eede063f,Andre Pasqualotto,2024-03,changing service returns
+a1a42cdb,Andre Pasqualotto,2024-03,adding method to component
+aa66a09b,Andre Pasqualotto,2024-03,adding backend variables to component
+6a84a433,Andre Pasqualotto,2024-03,file utils to download response as csv/other file
+bbf39182,Andre Pasqualotto,2024-03,adding component
+e4a8b234,Andre Pasqualotto,2024-03,commenting section while data is not defined (so far these are hard coded values)
+5f75cdcc,Andre Pasqualotto,2024-03,minor style changes
+11352b29,Andre Pasqualotto,2024-03,Adding translations to raffle-card and event context
+e905abeb,Andre Pasqualotto,2024-02,translations for raffleCard Component in group Offer
+1069fe8b,Andre Pasqualotto,2024-02,todo raffle latam fix position
+00f6772c,Andre Pasqualotto,2024-02,refactoring styles
+2fdbb56c,Andre Pasqualotto,2024-02,Refactoring component to a more generic and reusable format
+e0892323,Carlos Henrique,2024-03,Feat/PO-1689: added negotiation erros message
+d7151757,Odailson Silva,2024-03,Merge branch 'develop' into macc-1390/1391
+ebb5ce12,Odailson Silva,2024-03,MACC-1414: feat - rightOfPreferenceValidated
+1e1b00ee,Carlos Henrique,2024-03,Bugfix: Adjusment on negotiation translate
+18bd7e56,Gislene Carvalho,2024-03,Add new i18n labels
+8b12e4d7,Gislene Carvalho,2024-03,Merge branch 'develop' of codecommit://sb-event-platform into add-offer-context
+23a18c24,Carlos Henrique,2024-03,feat: added canceled history types on negotiation history modal
+5e35d1f6,Gislene Carvalho,2024-03,Merge branch 'develop' of codecommit://sb-event-platform into add-offer-context
+5f3b9748,Gislene Carvalho,2024-03,Add Offer context
+362277a2,Ailson Ramos Moreira,2024-03,Merge branch 'arm-tst-1831' of codecommit://sb-event-platform into arm-tst-1831
+945a91ab,Ailson Ramos Moreira,2024-03,add alert limit exceeded
+a10832cd,Odailson Silva,2024-03,Merge branch 'develop' into macc-1390/1391
+ce5eaebe,Ailson Ramos Moreira,2024-03,add alert limit exceeded
+18f56147,Abigail Palmero,2024-03,feat: LATAM-930 Added portalId on accept-proposal requests
+150aca0c,Odailson Silva,2024-03,fix: i18n
+5305b5b9,Odailson Silva,2024-03,MACC-1402: data user in modal send document
+1a37a375,Odailson Silva,2024-03,MACC-1390/1391: adjusts in acceptance terms flow
+3b0414a2,Gislene Carvalho,2024-03,Fix apiUrl values
+2b8f14fe,Gislene Carvalho,2024-03,fix i18n html close tags
+17556119,Gislene Carvalho,2024-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1422-add-new-i18n-labels
+2851ee67,Gislene Carvalho,2024-03,Add new i18n error group messages
+6f13e2be,Gislene Carvalho,2024-03,Add error group messages to i18n files
+14b0d1e3,Carlos Henrique,2024-03,Feat: added gestor login on negotiation history
+821b46ea,Carlos Henrique,2024-03,feat(po-1693): added validation to show approved files
+6b2b73e4,Gislene Carvalho,2024-03,Add new i18n labels
+73b9f24f,Abigail Palmero,2024-02,Fixed an import
+1492de51,Gislene Carvalho,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1257-hidden-advanced-settings-function
+9eac0a8e,Abigail Palmero,2024-02,Feature: Latam-920 added portalId to seller counterproposal
+7e5b6a0e,Gislene Carvalho,2024-02,Update apiUrl.js
+4ae4e1c0,Gislene Carvalho,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1257-hidden-advanced-settings-function
+bd6af093,Gislene Carvalho,2024-02,Update apiUrl.js
+b5e6347c,Gislene Carvalho,2024-02,fix i18n labels
+cf43c220,Gislene Carvalho,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1422-add-new-i18n-labels
+29958d72,Gislene Carvalho,2024-02,Add new i18n labels
+9863ed7a,Gislene Carvalho,2024-02,Add new i18n labels
+6087d069,Carlos Henrique,2024-02,Bugfix: change direct sale label of value
+240a7e3e,Carlos Henrique,2024-02,bugfix: fix the issue with decimal numbers on counter propostal
+10cd466a,Martín Agüera,2024-02,feat: remove condition of view CVP for all country
+407b285b,Carlos Henrique,2024-02,Removing uncessesary comments
+299815a0,Carlos Henrique,2024-02,hotfix: fix on pagesize, saving pagesize on query params
+25c42b3d,Gislene Carvalho,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1257-hidden-advanced-settings-function
+2098955f,Carlos Henrique,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into bugfix/PO-1672
+2c527f33,Carlos Henrique,2024-02,bugfix: PO-1672 adjusted directsale value
+c4973909,Odailson Silva,2024-02,feat: add modalityId in modalGroupOffer
+decea3b4,Gislene Carvalho,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into fix-negotiation-default-pagesize
+2504bd1a,Gislene Carvalho,2024-02,Fix negotiation tab pagination view
+c5878745,Odailson Silva,2024-02,wip: ajustes send-documentation e enable-user
+bd12df49,Gislene Carvalho,2024-02,Hidden advanced settings button and option
+c54edf28,Odailson Silva,2024-02,fix: pagination
+3da7e233,Odailson Silva,2024-02,remove console
+b0f35667,Odailson Silva,2024-02,fix: list preferences
+aaafdd4b,Odailson Silva,2024-02,Merge branch 'develop' into feature/adjusts-event
+bf5dbdaa,Odailson Silva,2024-02,feat: onSuccess sendDocument
+bdbff6d2,Gislene Carvalho,2024-02,Remode duplicate i18n label
+df33b3ab,Odailson Silva,2024-02,fix: preferences
+804c190d,Odailson Silva,2024-02,fix: eventModalityId send S
+795edeaa,Odailson Silva,2024-02,fix: getListPreferences data undefined
+884dd205,Odailson Silva,2024-02,fix: translation
+6b53d6e7,Odailson Silva,2024-02,refact: translation
+fbdcfc72,Odailson Silva,2024-02,wip: validation sendPreferences
+2925a2a8,Odailson Silva,2024-02,wip: traducao erro request
+b650bbc9,Maico Rodrigo Caumo,2024-02,Merge remote-tracking branch 'origin/stg' into develop
+c97a8107,Maico Rodrigo Caumo,2024-02,Merge remote-tracking branch 'origin/master' into stg
+cf9ad6c0,Odailson Silva,2024-02,wip: 2 eventId
+7a3702e7,Odailson Silva,2024-02,feat: urls
+1af7c122,Odailson Silva,2024-02,Merge branch 'master' into fix/eventId
+423a1a54,Odailson Silva,2024-02,fix: eventId in cards
+668a8d06,Odailson Silva,2024-02,fix: eventId in cards
+e0da27e6,Gislene Carvalho,2024-02,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1385-required-name-group-i18n-labels
+e6191a9b,Gislene Carvalho,2024-02,Add new i18n labels
+fda53de8,Odailson Silva,2024-02,Merge branch 'develop' into MACC-1247/modal-send-docs
+8fcf8454,Odailson Silva,2024-02,MACC-1298: new restriction type - terms translation
+b41d7df5,Gislene Carvalho,2024-02,add i18n labels
+1dfc49d5,Odailson Silva,2024-02,conflicts
+159a83bc,Odailson Silva,2024-02,wip: translation modal-send-documents
+fa4340d4,Odailson Silva,2024-02,wip: remove oute send-document
+3b03c54c,Odailson Silva,2024-02,fix: endpoint sendDocuments
+348bee04,Odailson Silva,2024-02,conflicts
+f81cc6aa,Odailson Silva,2024-02,conflicts
+323803f2,Maico Rodrigo Caumo,2024-02,Merge remote-tracking branch 'origin/stg' into develop
+794401a1,Odailson Silva,2024-02,wip: undefined
+8d6c9777,Maico Rodrigo Caumo,2024-02,Merge remote-tracking branch 'origin/master' into stg
+97af75e6,Odailson Silva,2024-02,wip: translation
+e978fff9,Odailson Silva,2024-02,wip: translation modal-send-documents
+abb556c2,Odailson Silva,2024-02,wip: remove oute send-document
+b3c10e22,Odailson Silva,2024-02,fix: endpoint sendDocuments
+9e2624d2,Odailson Silva,2024-02,MACC-1322: feat - hasRestrictionDocument
+00e62bbb,Odailson Silva,2024-02,feat: modal-send-documentation
+fceefab1,Odailson Silva,2024-01,feat: concat key card enabled user
+1e65236b,Odailson Silva,2024-01,fix: list enabled-user
+addee001,Odailson Silva,2024-01,fix: list enabled-user
+fbfbc99e,Martín Agüera,2024-01,hotfix: correction error in prod "Cannot read properties of null (reading 'toLocaleUpperCase')"
+1824fb6e,Martín Agüera,2024-01,fix: correction error in prod "Cannot read properties of null (reading 'toLocaleUpperCase')"
+e0710eba,Martín Agüera,2024-01,feat: add translations in BidLine component
+e3df64c2,Martín Agüera,2024-01,feat: add type_of_bid_installments and type_of_bid_in_cash in translations
+6c87fa15,Andre Pasqualotto,2024-01,removing logs
+7e31e6c8,Andre Pasqualotto,2024-01,optional chaining event.modalityId
+4f0350cd,Andre Pasqualotto,2024-01,feature conditional links raffle page based on modalityId
+b410c91e,Maico Rodrigo Caumo,2024-01,Merge remote-tracking branch 'origin/master' into stg
+6f08465f,Odailson Silva,2024-01,hotfix: solicitar documentacao
+9380dee5,Odailson Silva,2024-01,refact: label request documents
+6c37bdf6,Gislene Carvalho,2024-01,add json parse
+4c8667b0,Gislene Carvalho,2024-01,Improve restoration of navigation on reload, change tabs or pages, adjusts
+dac4848f,Gislene Carvalho,2024-01,remove console.log
+6ef0602f,Gislene Carvalho,2024-01,Improve restoration of navigation on reload, change tabs or pages
+ba82e703,Martín Agüera,2024-01,feat: change cpfCnpjFormatter to documentsFormatter and add new config
+5fe4c4b0,Martín Agüera,2024-01,feat: add DOCUMENT text and change cpfCnpjFormatter to documentsFormatter
+759673c9,rosarioconde,2024-01,LATAM-830: Changes in Negotiations, view the seller is name with separator and some translations
+5c58ab44,Andre Pasqualotto,2024-01,Fix import checkUserAccess, changed to props from Routes.js
+0ef98c41,Maico Rodrigo Caumo,2024-01,Merge remote-tracking branch 'origin/master' into stg
+4f8cf500,Odailson Silva,2024-01,revert apiUrls
+3bc469e7,Odailson Silva,2024-01,revert apiUrls
+bb5d653a,Odailson Silva,2024-01,feat: redirect new tab handleClickRestrictedUser
+a9f5be48,Carlos Henrique,2024-01,Fix translate direct sale
+e17b77fd,Carlos Henrique,2024-01,Updated direct sale value by offerType
+8ba4e3df,Odailson Silva,2024-01,merge
+6a033ca5,Odailson Silva,2024-01,feat: refact fetchEnabledUsers when success carduser
+ca428dd9,Odailson Silva,2024-01,merge
+fd8261d6,Odailson Silva,2024-01,chore: add translations
+c439874e,Andre Pasqualotto,2024-01,removing unused useEffect
+f61720df,Andre Pasqualotto,2024-01,removing console logs
+720b598e,Andre Pasqualotto,2024-01,Add tab content error to i18n and fixing missing component case
+e6d27549,Andre Pasqualotto,2024-01,raffle index page fixes/add features
+91979083,Andre Pasqualotto,2024-01,Fixes and including offers tab to raffle page
+fcbca996,Andre Pasqualotto,2024-01,translation raffle event page
+4145065f,Odailson Silva,2024-01,feat: refact fetchEnabledUsers when success carduser
+eb44f4dc,Odailson Silva,2024-01,save
+ad31c2a5,Odailson Silva,2024-01,MACC-1272: feat: request documentations for users
+54ac81ca,Carlos Henrique,2024-01,hotfix: negotiation type
+e538029a,Gislene Carvalho,2024-01,remove validate publish event
+6abf3109,Philipe Schneider,2024-01,Mesclar a ramificação "equalizeMasterWithStg" em master
+6742ac37,rosarioconde,2024-01,LATAM-730: Adjust styles in the events table tab accompany offers
+8d61f777,rosarioconde,2024-01,LATAM740: Add translation states for negotiation history modal
+6f65d7f9,Carlos Henrique,2024-01,feat: added platform fee to drawer
+8332cf1e,Maico Rodrigo Caumo,2024-01,Merge remote-tracking branch 'origin/master' into stg
+1396a7e4,Martín Agüera,2024-01,fix: correction ISO of money in direct-sale-components/proponent-card component
+9a71beba,Odailson Silva,2024-01,MACC-1226: fix - send direct preference
+d93feaa7,rosarioconde,2024-01,Add translations in negotiation history
+9813a88d,rosarioconde,2024-01,Add translations and modify type listings in Negotiations
+74a4191d,Maico Rodrigo Caumo,2024-01,Merge remote-tracking branch 'origin/stg' into develop
+d43d2ad6,Maico Rodrigo Caumo,2024-01,Merge remote-tracking branch 'origin/master' into stg
+b46ae55e,rosarioconde,2024-01,add a visits field in the events table tab accompany offers
+92cfe30d,Carlos Henrique,2024-01,Hotfix: disabled actions on negotiation page wen offer have ben paid
+740329ed,Odailson Silva,2024-01,MACC-1210: refact: logic button send-documents
+cfd3722d,Odailson Silva,2024-01,MACC-1210: fix: auctionId in send-document
+6589b22c,Odailson Silva,2024-01,MACC-1210: feat: request documentation in send-document
+ad2a6e3a,Martín Agüera,2024-01,feat: correction money type in counter-proposal-component component
+2affbe33,Carlos Henrique,2024-01,Feat: PO-1555 added button to negotiation module
+2c72e9f6,Carlos Henrique,2024-01,hotfix: fix negotiation router
+8873cf10,brenda.souza,2024-01,informe de retirada
+2050265b,brenda.souza,2024-01,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into PO-1579-status-retirada
+2282eb70,brenda.souza,2024-01,Ajuste status de retirada
+a959b334,Andre Pasqualotto,2024-01,raffle service api calls
+f46e63dd,Andre Pasqualotto,2024-01,raffle event page, components and styles
+ce048003,Andre Pasqualotto,2024-01,Adding assets(images, icons, jsxicons)
+47a6c049,Andre Pasqualotto,2024-01,Routes for raffle event page
+54fd67a7,Andre Pasqualotto,2024-01,i18n for raffle event page
+b95d5dc8,Tiago Oliveira,2024-01,change translations
+dd981f88,Ailson Ramos Moreira,2024-01,refactory exceede extract result
+611d86d5,Ailson Ramos Moreira,2024-01,refactory exceede extract result
+308b0577,Rodrigo Martins,2024-01,refactor: changing to arrow function
+35ba53dc,Ailson Ramos Moreira,2024-01,refactory validate filters applied function
+3079e69e,Ailson Ramos Moreira,2024-01,fix one filter and improvement label resulto to export
+f0c29a83,Tiago Oliveira,2024-01,change translations
+04672777,Gislene Carvalho,2024-01,Add in payment rule to show create offers tab
+bbf73902,brenda.souza,2024-01,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into po-1559-proposal-value
+f5f1185c,Ailson Ramos Moreira,2024-01,refactory exceede extract result
+6ff07a4b,Ailson Ramos Moreira,2024-01,refactory exceede extract result
+7e139bc0,Rodrigo Martins,2024-01,refactor: changing to arrow function
+17e6bc35,Ailson Ramos Moreira,2024-01,refactory validate filters applied function
+44747d36,Ailson Ramos Moreira,2024-01,fix one filter and improvement label resulto to export
+455778ec,Martín Agüera,2023-12,feat: add locale and currencyISO in negotiation-history-modal/table
+e299e815,Martín Agüera,2023-12,feat: change birdder for offer
+7d11c183,Rodrigo Martins,2023-12,Merge branch 'master' into resolve-conflitos-develop-master
+8cadbe1e,Carlos Henrique,2023-12,Removed api caller buyer list
+c82c20f4,brenda.souza,2023-12,send proposal value
+5f22834c,Ailson Ramos Moreira,2023-12,export events result
+58056135,Ailson Ramos Moreira,2023-12,remove commented line
+b24449f8,Ailson Ramos Moreira,2023-12,get total events from call api
+a6c6122a,Ailson Ramos Moreira,2023-12,remove commented line
+62ff34fd,Ailson Ramos Moreira,2023-12,get total events from call api
+845a526e,Ailson Ramos Moreira,2023-12,realocate export btn
+cf775f44,Ailson Ramos Moreira,2023-12,new api call to generate events report by filters
+45f13952,Ailson Ramos Moreira,2023-12,remove console.log
+9168419c,Ailson Ramos Moreira,2023-12,add label export events result
+b83e1bfd,Ailson Ramos Moreira,2023-12,reposicionando botão de export
+b63e2fff,Carlos Henrique,2023-12,Bugfix: removed actions to seller persona on offers with canceled request
+19682b18,brenda.souza,2023-12,ajuste
+164ad964,brenda.souza,2023-12,ajustes
+3d7e5d28,brenda.souza,2023-12,ajustes
+bb5cb0f1,brenda.souza,2023-12,ajustes
+9d4adb8c,brenda.souza,2023-12,rollback all offers list
+a7e81461,Ailson Ramos Moreira,2023-12,export events result
+4b3c14cd,brenda.souza,2023-12,add part and bids count
+42f9e57c,brenda.souza,2023-12,add part and bids count
+43799ef4,Carlos Henrique,2023-12,Bugfix: adjusment on negotiation time
+4997dbf8,Ailson Ramos Moreira,2023-12,remove commented line
+841bc322,Ailson Ramos Moreira,2023-12,Merge branch 'tst-1677' of codecommit://sb-event-platform into tst-1677
+f1b168cf,Ailson Ramos Moreira,2023-12,get total events from call api
+b02f24a8,Ailson Ramos Moreira,2023-12,Merge branch 'tst-1677' of codecommit://sb-event-platform into tst-1677
+c7e5c2b4,Ailson Ramos Moreira,2023-12,remove commented line
+98c3a64b,Ailson Ramos Moreira,2023-12,get total events from call api
+0bfb0b40,Ailson Ramos Moreira,2023-12,realocate export btn
+12bf5fef,Ailson Ramos Moreira,2023-12,get total events from call api
+98502f94,Ailson Ramos Moreira,2023-12,realocate export btn
+7ffe719e,Gislene Carvalho,2023-12,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1254-add-judicial-process-number-filter
+c9f7384a,Gislene Carvalho,2023-12,Minor adjusts
+b3a94d8b,Gislene Carvalho,2023-12,Add filter by judicial process number
+3927580e,Ailson Ramos Moreira,2023-12,Merge branch 'tst-1677' of codecommit://sb-event-platform into tst-1677
+242649cd,Ailson Ramos Moreira,2023-12,rebasing
+6f45a78e,Ailson Ramos Moreira,2023-12,remove console.log
+3fb105e1,Ailson Ramos Moreira,2023-12,new api call to generate events report by filters
+5edad84f,Carlos Henrique,2023-12,Feat: added fee platform value
+28a86173,rosarioconde,2023-12,add currency values on placeholder
+968e352b,Ailson Ramos Moreira,2023-12,remove console.log
+8495e06c,Ailson Ramos Moreira,2023-12,Merge branch 'tst-1677' of codecommit://sb-event-platform into tst-1677
+4445d173,Ailson Ramos Moreira,2023-12,add label export events result
+5cde93f3,Ailson Ramos Moreira,2023-12,add label export events result
+0dc6e049,Ailson Ramos Moreira,2023-12,Merge branch 'develop' of codecommit://sb-event-platform into develop
+b78f661d,Ailson Ramos Moreira,2023-12,reposicionando botão de export
+e25901bf,Carlos Henrique,2023-12,Fix: fixed status on negotiation drawer
+786d089b,Gislene Carvalho,2023-12,Ajusts visibility of error alert async publish return
+7076cb34,Odailson Silva,2023-12,Merge branch 'develop' into MACC-1/fix-docs
+0d308bcd,Odailson Silva,2023-12,MACC-1034: fix - send-document
+7e69ffb3,Odailson Silva,2023-12,MACC-1034: fix - send-document
+f654975c,Carlos Henrique,2023-12,Fix currency values on modal
+3d4e045c,Gislene Carvalho,2023-12,Add Missing parameter
+3a5e104d,Gislene Carvalho,2023-12,Add Missing parameter
+0d76d688,Carlos Henrique,2023-12,Fix: react-hook-form version
+fed46237,rosarioconde,2023-12,LATAM-674: add new spanish translations
+c7791044,Gislene Carvalho,2023-12,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1182-validate-event-to-be-pubished
+cb9f9dd7,Gislene Carvalho,2023-12,Publish offers status
+d810812a,Carlos Henrique,2023-12,Hotfix: hotfix on translate and currency values
+071b2193,Gislene Carvalho,2023-12,Adjusts call validate service
+9bd62d13,Gislene Carvalho,2023-12,Adjusts call validate service
+4c526c97,Gislene Carvalho,2023-12,Fix apiUrl.js
+1af06a82,Gislene Carvalho,2023-12,Validate event before to be published
+7eab0021,Gislene Carvalho,2023-12,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1198-async-publish-events-improvements
+2dff4a1f,Gislene Carvalho,2023-12,Improve async publish event flow - minor fixes
+9ebae477,Gislene Carvalho,2023-12,remove spaces
+a97680d2,Gislene Carvalho,2023-12,Improve async publish event flow
+3990e4a2,Martín Agüera,2023-12,fix: correction translation
+256af64f,Carlos Henrique,2023-12,Bugfix: fix PO-1495 and PO-1475
+aaa5365c,Carlos Henrique,2023-12,Hotfix: validate on negotiation to refuse bids
+0b56d043,Martín Agüera,2023-12,fix: correction key of selected_lots
+beaa87e7,Martín Agüera,2023-12,feat: add new translatitons in espanish
+3580b2d4,Carlos Henrique,2023-12,bugfix(po-1488): adjusted checkbox disabled validation
+6853540c,Carlos Henrique,2023-11,Bugfix: hotfix bids filter
+52c8d967,Abigail Palmero,2023-11,LATAM-640 added some new spanish translations
+21111aff,Abigail Palmero,2023-11,LATAM-640: Fixed rebase conflicts
+571976dc,Abigail Palmero,2023-11,LATAM-640: added missing translation
+16cd1522,Abigail Palmero,2023-11,LATAM-640: events_part2
+ad80885a,Abigail Palmero,2023-11,Latam-640: events_part1
+9c5077ad,Carlos Henrique,2023-11,Feat(PO-1456): addjusted refuse negotiation feature
+491141a6,Gislene Carvalho,2023-11,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1198-async-publish-event
+69c25c9f,Gislene Carvalho,2023-11,fix undefined values
+6d8089a5,Carlos Henrique,2023-11,Feat: Added refuse negotiation bulk
+c06b3089,Gislene Carvalho,2023-11,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1198-async-publish-event
+183c0537,Gislene Carvalho,2023-11,Adjusts async publish
+428e4186,Martín Agüera,2023-11,fix: correction total user in enabled users
+47aa853f,Gislene Carvalho,2023-11,Refactor Publish Event Flow
+822eeab8,Gislene Carvalho,2023-11,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1198-async-publish-event
+e7acf359,Gislene Carvalho,2023-11,Add async publish messages
+63338dac,Carlos Henrique,2023-11,Adjustment on translate and other fixes
+62e2ac2c,Carlos Henrique,2023-11,Fix translate on negotiation page
+e18f95f4,Martín Agüera,2023-11,feat: changet ("EnabledUsers.Filters.user_login_placeholder") to Status
+342f2e1a,Martín Agüera,2023-11,feat: remove status_name_placeholder key in Filters of EnabledUsers translations
+fa3d8da4,xaviacu13,2023-11,corrected code
+099b650d,xaviacu13,2023-11,setting translator to latam
+c7cbc5b5,xaviacu13,2023-11,merge develop
+ded0e2ec,Gislene Carvalho,2023-11,change apiurl
+4e648e7e,Gislene Carvalho,2023-11,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1178-change-event-title-modality
+c64f06c8,xaviacu13,2023-11,clean test code
+47260a7e,xaviacu13,2023-11,add new translators
+6bc1c4ca,xaviacu13,2023-11,corrected merge error
+ae87738f,xaviacu13,2023-11,corrected merge error
+4738d3b5,Gislene Carvalho,2023-11,Change titles event modality
+391962e1,Carlos Henrique,2023-11,Hotfix: removed feature toggle
+2bb271f0,Carlos Henrique,2023-11,hotfix/PO-1412: Adjustment on value and removed feature toggle
+997457b2,xaviacu13,2023-11,corrected merge error and update translate to pt-BR
+027f30e9,xaviacu13,2023-11,update translate to es.js
+9dae847a,Victor Grechi,2023-11,feat: added translation to grid itens per page.
+f2612cd3,Carlos Henrique,2023-11,Hotfixes: Some layout adjusments on negotiation page
+a0933f20,xaviacu13,2023-11,trantale negotiation-history-modal component
+7182546d,xaviacu13,2023-11,add traslate to negotiation component
+878cd372,xaviacu13,2023-11,corrected merge error
+ea0a0ffa,xaviacu13,2023-11,fix merge error
+7af2ffec,xaviacu13,2023-11,merge develop
+9540cff6,xaviacu13,2023-11,correct merge error
+fa4cbfcc,xaviacu13,2023-11,fix merge error
+3b091c67,xaviacu13,2023-11,add new words to translator
+9415c631,xaviacu13,2023-11,fix merge error
+83caa3a4,Martín Agüera,2023-11,feat: create TotalUsers component and add total of users
+6505baa2,Martín Agüera,2023-11,feat: add totalUser key in card of EnabledUsers translations
+dea927b5,Carlos Henrique,2023-11,Feat(PO-1298): Added negotiation history drawer to view bidder history
+d53dbe98,Gislene Carvalho,2023-11,Add i18n grid tags
+f637486c,Abigail Palmero,2023-11,hotfix: LATAM-425 filter not working propperly
+2ed977d8,Carlos Henrique,2023-11,Hotfix: some adjustments
+cda53b9f,Carlos Henrique,2023-11,Feat(PO-1293): added page size on negotiation list
+bd93ea89,xaviacu13,2023-11,revert changes in apiUrl
+c169fc5d,xaviacu13,2023-11,add translator to UploadGuide component
+78bbe78e,Martín Agüera,2023-11,feat: add select component and functionality for the user status
+2eac89ce,Martín Agüera,2023-11,feat: add groupOfferStatusIdList prop in getEnabledUsers function
+ca5f9180,Martín Agüera,2023-11,feat: add groupOfferStatusIdList to filters state
+2bfc5f0f,Martín Agüera,2023-11,feat: create status_name_placeholder prop in Filters of EnabledUsers translations
+acb0ce07,xaviacu13,2023-11,add translator to ResponsiveFilter component
+6ab35231,xaviacu13,2023-11,add traslator to OfferCashoutTab component
+a1b7fce6,xaviacu13,2023-11,add translator negotiation-conditional-tab component
+c717c002,rosarioconde,2023-10,adjust title styling
+dea2a5fe,Carlos Henrique,2023-10,PO-1294: made adjusments on negotiation page and negotiation history
+60feaec0,xaviacu13,2023-10,add translator to refuse component
+4ca0dcb1,xaviacu13,2023-10,add translate to refuse-batch component
+aef4aadb,xaviacu13,2023-10,add translator to no-content componet
+c6b54412,xaviacu13,2023-10,add translator to list-error component
+d0eba555,xaviacu13,2023-10,add i18n to counter-proposal component
+c8d024f3,rosarioconde,2023-10,add that the habilitator info (userAuctionHabilitatedBy) is hidden when the status is STATUS_RESTRICTED_LIBERATION
+03f01f54,Carlos Henrique,2023-10,Feat/PO-1313: created negotiation history modal
+0314e359,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into feature/add-i18n-tags
+8a6ec12f,Gislene Carvalho,2023-10,Add i18n grid tags
+38058907,Victor Grechi,2023-10,fix merge conflicts.
+029fe30e,Victor Grechi,2023-10,Mesclar a ramificação "master-sync" em master-backup
+6461bb4f,rosarioconde,2023-10,adjusts to event title
+5cbe5c11,xaviacu13,2023-10,add i18n to confirmation-dialog component
+1814332e,xaviacu13,2023-10,add i18n to action-buttons componet
+2a63bb0a,xaviacu13,2023-10,add translator to acept-counter component
+011c698f,xaviacu13,2023-10,add translator to accept component
+5231d4a8,xaviacu13,2023-10,add translator to card-direct-sales component
+a908f639,xaviacu13,2023-10,add translator to card component
+ea8245c2,xaviacu13,2023-10,add translator to ConfirmationModal component
+1e7b7a71,xaviacu13,2023-10,add translator to DirectSaleInformation component
+b3d194d9,xaviacu13,2023-10,add new items to translation for proposal component
+3153f663,xaviacu13,2023-10,add translator to filter component
+e78e01a6,xaviacu13,2023-10,add translation to successModal component
+69c18c11,xaviacu13,2023-10,add translation to status-emun component
+3f14eb2b,Carlos Henrique,2023-10,hotfix: change value to reserved price on modal couter-proposal
+c43ee11e,Carlos Henrique,2023-10,Hotfix: adjusted reserved price on negotiation page and modal
+1145ead9,Odailson Silva,2023-10,MACC-934: fix: actived buttons send docs
+6bf48afc,Carlos Henrique,2023-10,Hotfix: counter proposal type added
+8c49dffd,Carlos Henrique,2023-10,Hotfix: adjusment align on bid list title
+e6413036,Carlos Henrique,2023-10,Hotfix: hotfix refuse proposal on drawer
+b64b4890,Carlos Henrique,2023-10,Hotfix: always sending bid id on create negotiations
+ba7caae7,Carlos Henrique,2023-10,Hotfix: fix negotiation conditional and added sumary of event and offer
+082ac947,Carlos Henrique,2023-10,Hotfix: fix counter proposal refused by seller or event manager
+24d237c8,Carlos Henrique,2023-10,Feat: create negotiation page to direct sale and conditional events
+f6bd2004,rosarioconde,2023-10,Add display title and hide event panel
+321f2866,Carlos Henrique,2023-10,Refact: filter
+69fc5dbd,Carlos Henrique,2023-10,Bugfix params
+e8f6f3d2,Carlos Henrique,2023-10,hotfix direct-sale filter
+0feda279,Carlos Henrique,2023-10,merge branch
+c30e0792,Carlos Henrique,2023-10,Bugfix: adjusment on bid history
+9a3f2ee4,Gislene Carvalho,2023-10,Add missing eventManagerId property
+00c3e399,Carlos Henrique,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into hotfix/refuse-direct-sale
+ba5efba0,Carlos Henrique,2023-10,hotfix: added button to refuse offer on direct sale event
+3b9bd23e,Carlos Henrique,2023-10,feat(po-1203): added service to bulk trading
+0281915d,Gislene Carvalho,2023-10,Integration services
+e78e490d,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1051-add-new-project-status-filter
+401c8979,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1022-sharing-projects-flow
+d26909d6,Gislene Carvalho,2023-10,fix problems with sharing projects flow
+857be240,Abbytec,2023-10,Feature: propperly show dates
+bc77ffc5,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1022-sharing-projects-flow
+93889a54,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1015-change-event-card
+d47e063b,Gislene Carvalho,2023-10,Fix apiUrl.js
+6baabc7d,Carlos Henrique,2023-10,Hotfix: Removed export button role
+6593d1e5,Carlos Henrique,2023-10,Hotfix: Removed export button role
+4ac10280,Gislene Carvalho,2023-10,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1015-change-event-card
+5641447d,Martín Agüera,2023-10,feat: add useUserCountryInfo hook in offers-summary component
+b60e43e5,Martín Agüera,2023-10,feat: create useUserCountryInfo hook
+61c0fbda,Abbytec,2023-10,Feature: propperly show date messages
+1f1501b7,Abbytec,2023-10,Feature: propperly show dates
+eb5ac4a5,xaviacu13,2023-10,translate proponent-card
+0867bcc1,xaviacu13,2023-10,translate modal component
+9ba23623,xaviacu13,2023-10,translate accept-bid
+d7f1bff2,xaviacu13,2023-10,translate counter-proposal component
+e3088754,xaviacu13,2023-09,translate-datepicker-component
+5e213d33,Gislene Carvalho,2023-09,minor fixes and tests
+4c18d114,xaviacu13,2023-09,translate bid-modal-component
+35d9038d,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into fixbug/event-filters
+e52a3ff1,Gislene Carvalho,2023-09,Adjusts autocomplete behaviour
+f71ab866,Martín Agüera,2023-09,feat: add userAuctionHabilitatedBy prop to the components
+8ae20c2b,Martín Agüera,2023-09,feat: add habilitation_by key in Card of i18n
+5163a156,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into fixbug/event-filters
+fe28dcae,Carlos Henrique,2023-09,bugfix: fix list on negotiation bid has winner
+8bd4edd8,Carlos Henrique,2023-09,hotfix: adjusted negotiation filter
+7e73d08f,Carlos Henrique,2023-09,Bugfix(po-1296): fix menu icon on proposal accepted and other fixes
+69224b91,Carlos Henrique,2023-09,hotfix: added accepted proposal buyer type on enum
+af862550,Carlos Henrique,2023-09,Negotiation: fix negotiation direct sale flow
+72e3b77b,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into fixbug/event-filters
+c787a673,Gislene Carvalho,2023-09,Refinements
+354bea57,Odailson Silva,2023-09,MACC-832 - revert package.json and apiUrls
+6a54bfd7,Odailson Silva,2023-09,MACC-832 - fix: hidden buttons when active user (view-docs)
+bf6c68a1,Gislene Carvalho,2023-09,Adiciona novo filtro de status do projeto
+94d67abe,Gislene Carvalho,2023-09,Add fullDescDescription to event card
+f2b07596,Gislene Carvalho,2023-09,Event filter adjusts
+8926c2c0,Martín Agüera,2023-09,fix: correction enum of documents-types
+be9bf832,Martín Agüera,2023-09,fix: correction condition of show documents types
+76fb60eb,Victor Grechi,2023-09,Merge branch 'hotfix/view-docs' into develop-teste
+83564300,Gislene Carvalho,2023-09,minor adjusts
+57806ac4,Gislene Carvalho,2023-09,Add linked project flow
+67a214fc,Carlos Henrique,2023-09,Feat(PO-1235): added functionality to do negotiation
+88aeb0e9,Odailson Silva,2023-09,MACC-832 - refact: view button docs in enabled-user
+172b8eee,Odailson Silva,2023-09,MACC-832 - fix: view button docs in enabled-user
+e49e2f63,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1015-change-event-card
+26b3af39,Odailson Silva,2023-09,MACC-832 - refact: view button docs in enabled-user
+cbf0e9dd,Odailson Silva,2023-09,MACC-832 - fix: view button docs in enabled-user
+67ef6bda,Odailson Silva,2023-09,fix: tab enabled user
+5e8ad72b,Gislene Carvalho,2023-09,Change event card infos and styles
+fa80682f,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1013-disable-approve-button
+f6584e8d,Gislene Carvalho,2023-09,fix disabled button
+d668bdb4,Carlos Henrique,2023-09,feat(PO-1263): Added filter on direct sale page, and service to refuse offer
+599b94c4,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-1013-disable-approve-button
+c3e4b99d,Martín Agüera,2023-09,fix: add other condition to filter of userIdentification
+fcc58140,Martín Agüera,2023-09,fix: correction of documents types displayed in the panel
+42fcec35,Martín Agüera,2023-09,feat: create DocumentsTypes enum
+a6ffeb24,Gislene Carvalho,2023-09,change url
+ed4e106f,Gislene Carvalho,2023-09,Disable approve button
+fbcacdaf,xaviacu13,2023-09,changed equal sign
+f7fd63af,xaviacu13,2023-09,bug fix dateFormat error
+87bd5b36,Carlos Henrique,2023-09,Refact: refatored negotiation tab filter to direct sale inputs
+852f187a,Gislene Carvalho,2023-09,Fix event status tag color
+085ef998,Martín Agüera,2023-09,feat: add condition if there is no document data
+348c5ca3,Martín Agüera,2023-09,feat: remove filters of documents
+b18dc766,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into fixbug/EDG-962-fix-review-modal
+a6ae9623,Carlos Henrique,2023-09,feat: added direct sale information on drawer
+e91f8d37,Gislene Carvalho,2023-09,Fix refresh initial state comments when cancel action
+eb56ea97,Carlos Henrique,2023-09,Feat(PO-1187): added button on drawer to navigate to negotiation history
+7fe38cc2,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-423-sync-alerts
+d2cfc094,Gislene Carvalho,2023-09,Fix sync publish alerts
+2f7e677a,Carlos Henrique,2023-09,Added success modal and other adjusments
+e916566e,Carlos Henrique,2023-09,Feat(PO-1185): added bid page of direct sale event
+bc210bbe,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-423-sync-alerts
+fc356217,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into feature/adjusts-filters
+77a8fcd8,Gislene Carvalho,2023-09,fix import
+87281697,Gislene Carvalho,2023-09,fix import
+c2581425,Gislene Carvalho,2023-09,create new components - partial
+bee20e1c,brenda.souza,2023-09,adjust list styling
+ed1d60bc,Gislene Carvalho,2023-09,create new components
+4b536add,brenda.souza,2023-09,adjust list styling
+6ae8a358,brenda.souza,2023-09,adjust list styling
+0786d6a1,Gislene Carvalho,2023-09,Adjusts rule to show post event cards
+2efd4f03,Gislene Carvalho,2023-09,minor adjusts
+442fec4d,Gislene Carvalho,2023-09,Filter adjusts
+12e5b41b,Gislene Carvalho,2023-09,Fix clear icon action
+b329c0e4,Gislene Carvalho,2023-09,Merge branch 'develop' of codecommit://sb-event-platform into fixbug/EDG-889-filters
+bf489fae,Carlos Henrique,2023-09,Feat: created card to direct sale and features
+f4743d3e,brenda.souza,2023-09,adicionando recusa solicitada
+e6866441,Gislene Carvalho,2023-08,Fixes bugs filter layout
+3c245fba,Odailson Silva,2023-08,Merge branch 'develop' into feature/edg-932
+1a123eec,Odailson Silva,2023-08,port and base url
+015a8b70,Odailson Silva,2023-08,fix: useCallback
+16e2bfe9,Gislene Carvalho,2023-08,Remove invalid symbol from square badge status
+cb4a5455,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-974-add-post-event-tags
+4f7c02cc,xaviacu13,2023-08,merge dewvelop
+18ed72e0,xaviacu13,2023-08,move up the dateFormat function
+241a5730,Odailson Silva,2023-08,Merge branch 'develop' into feature/edg-932
+0bc63f58,Odailson Silva,2023-08,E945 - feat: btn edit
+68840f1c,xaviacu13,2023-08,add "moment-timezone" to package.json
+0511a99d,xaviacu13,2023-08,add import moment
+032a33ef,Tiago Cornalo,2023-08,Merge branch 'develop' into fix/LATAM-447_Show-document-and-type
+fb081835,Tiago Cornalo,2023-08,fix(users-card): :ambulance: Fixed document and type
+bc88f90d,xaviacu13,2023-08,move moment out of the dateFormat function
+c47a0ee5,Odailson Silva,2023-08,fix: roles for render enabled_user
+23631d52,xaviacu13,2023-08,dateFormat function improved
+03eb9c10,Gislene Carvalho,2023-08,rename variables
+80295119,xaviacu13,2023-08,show habilitation hour
+ccca47ba,Gislene Carvalho,2023-08,Add new i18n tags
+e4b9f546,Gislene Carvalho,2023-08,fix apiUrl
+e94c00c9,Odailson Silva,2023-08,fix: order selectedTab
+d801e127,Odailson Silva,2023-08,fix: marginBottom tab
+a0a4482f,Odailson Silva,2023-08,fix: default tab selected
+5be6b355,Odailson Silva,2023-08,fix: default tab selected
+e87dff2c,Odailson Silva,2023-08,fix: remove isActivedRestTabs
+ff999eda,Gislene Carvalho,2023-08,Add new tag project about post-events
+35b911cd,Odailson Silva,2023-08,fix: useMemo isViewUserEnabled and isActivedRestTabs
+35f95a2b,Odailson Silva,2023-08,Merge branch 'develop' into feature/edg-932
+e21b560a,Odailson Silva,2023-08,E-932: fix: enabled user
+95db7155,Gislene Carvalho,2023-08,fix apiUrl values
+d2e48945,Gislene Carvalho,2023-08,fixes minor bugs
+12eec0a3,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-923-new-filter
+04dd3215,Gislene Carvalho,2023-08,refactor new event filter
+2e2d0901,Odailson Silva,2023-08,EDG-932: refact - controller view view_offers and offers
+d9b695a9,Odailson Silva,2023-08,EDG-932: fix- logic for show create-offers and offers
+0d58ce6d,Carlos Henrique,2023-08,Removed comment bracket
+d4395c11,Carlos Henrique,2023-08,Update from master
+5cb890a0,Carlos Henrique,2023-08,Update branches
+d58a4913,Carlos Henrique,2023-08,hotfix: drawer negotiation status
+3d23214f,Carlos Henrique,2023-08,Hotfix: negotiation status and modal size
+5484491f,Carlos Henrique,2023-08,Modal adjustments and fix status
+9feebeb8,Odailson Silva,2023-08,EDG-913: fix - maxLength refused input
+2f3454e4,Carlos Henrique,2023-08,Negotiation: Adjusment on negotiation modals
+8df3dd84,Carlos Henrique,2023-08,Hotfix sb-events prod
+b9c3362c,Carlos Henrique,2023-08,Hotfix: Expiration date format
+5e9f617f,Flavio Andrade,2023-08,update
+64ea1bfd,Flavio Andrade,2023-08,update
+971591bc,Flavio Andrade,2023-08,update
+59c52141,Flavio Andrade,2023-08,update
+f9f9d674,Carlos Henrique,2023-08,Hotfix: adjusment negotiation modal
+20f9012b,Carlos Henrique,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/po-1131
+dd1c29b7,Carlos Henrique,2023-08,Hotfix: negotiation modal adjusments
+61b809d1,Carlos Henrique,2023-08,hotfix: adjustment on accept offer modal
+8690366d,Flavio Andrade,2023-08,update
+17d87213,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-923-new-filter
+e5882c6f,Gislene Carvalho,2023-08,fix apiUrl values for dev environment
+9d7797f2,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-890-add-review-comment-modal
+5365bdc7,Gislene Carvalho,2023-08,fix minor errors
+55993e66,Gislene Carvalho,2023-08,add new labels and enum about event status
+6db84959,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-923-new-filter
+51071a3b,Gislene Carvalho,2023-08,Ajustes no step de histórico de aprovação
+84eed6fa,Gislene Carvalho,2023-08,Minor adjusts
+282e704a,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-890-add-review-comment-modal
+557b8a45,Gislene Carvalho,2023-08,adjusts styled component stepper
+2f52f492,Carlos Henrique,2023-08,Hotfix: adjusment on rules to negoation tab
+19246f0f,Carlos Henrique,2023-08,Added default filter all_offers and adjusment on proposal modal
+c78c8276,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-890-add-review-comment-modal
+7ea2f780,Carlos Henrique,2023-08,Feature(PO-1119): new modal to negotiation offers
+10d4ec00,Gislene Carvalho,2023-08,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-890-add-review-comment-modal
+8a6e2a1e,Gislene Carvalho,2023-08,fix apiUrl
+44ad926d,Gislene Carvalho,2023-08,Ajusta quebra de estilo em stg
+65a3664d,Gislene Carvalho,2023-08,Add new type of filter events
+b1d4e2b8,Carlos Henrique,2023-08,Merge
+3e184207,Carlos Henrique,2023-08,hotfix: added translate
+05be8bac,Carlos Henrique,2023-08,Feat: adjusted value on negotiation card, added rules to filteroptions
+64e6540a,Gislene Carvalho,2023-07,Squashed commit of the following
+8900dd3c,Gislene Carvalho,2023-07,Refactor comment reason modal
+a6b5db6b,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-890-add-review-comment-modal
+54f5c76d,Flavio Andrade,2023-07,Merge branch 'feature/rural-150' of codecommit::sa-east-1://sb-event-platform into feature/rural-150
+35633f03,Flavio Andrade,2023-07,add thumbnailUrl prop
+629e7db3,Flavio Andrade,2023-07,add thumbnailUrl prop
+5e514a3f,Gislene Carvalho,2023-07,fix apiUrl infos
+75b182b3,Gislene Carvalho,2023-07,Refactoring names and properties
+d23dcfca,Gislene Carvalho,2023-07,Add timeline event flow by static steps
+1c1019f1,Carlos Henrique,2023-07,bugfix: added loader on bid modal
+a171cbc1,Carlos Henrique,2023-07,Bugfix: adjusment filter responsiveness
+a06bda85,Brenda Reis Araújo de Souza,2023-07,justify
+baa64d74,Gislene Carvalho,2023-07,Add rule to limit pageSize based on role create_event
+ece4ec49,Gislene Carvalho,2023-07,Add review event modal
+f845fafe,Gislene Carvalho,2023-07,Add new visibility rules to event detail
+ad3e1ffc,Brenda Reis Araújo de Souza,2023-07,testes
+a9f582f2,Brenda Reis Araújo de Souza,2023-07,Ajustes proposta
+e30b9fbb,Brenda Reis Araújo de Souza,2023-07,ajuste expirationHour
+57eef69f,Brenda Reis Araújo de Souza,2023-07,ajustes
+972a45dc,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-865-change-tag-color-project
+1ab04f75,Gislene Carvalho,2023-07,Fix color tag when status is project
+6f9d4952,Carlos Henrique,2023-07,hotfix: added new enum to negotiation history
+e826303e,Brenda Reis Araújo de Souza,2023-07,add svg
+1c052b07,Gislene Carvalho,2023-07,Comment approval info in event cards
+a547c62c,Gislene Carvalho,2023-07,Comment approval info in event cards
+789c4f53,Brenda Reis Araújo de Souza,2023-07,Altera label do botão
+06a5dac9,Brenda Reis Araújo de Souza,2023-07,Altera label do botão
+5f1dc5b2,Brenda Reis Araújo de Souza,2023-07,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/po-1107-label-botao
+f5bab125,Brenda Reis Araújo de Souza,2023-07,Altera label do botão
+1f4763e3,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into bugfix/EDG-859-fix-approve-flow-event
+014390f9,Gislene Carvalho,2023-07,minor adjusts
+a18694d8,Carlos Henrique,2023-07,Bugfix negotiation card
+4f8f2842,Brenda Reis Araújo de Souza,2023-07,ajuste do modal
+cbe34d16,Brenda Reis Araújo de Souza,2023-07,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/ajustes-modal
+f3bf5bbb,Brenda Reis Araújo de Souza,2023-07,po-1093
+2f04261d,Brenda Reis Araújo de Souza,2023-07,primeiro passo
+d24985f8,Brenda Reis Araújo de Souza,2023-07,refusal and send
+eee2c14e,Brenda Reis Araújo de Souza,2023-07,counter proposal label
+550c3b77,Brenda Reis Araújo de Souza,2023-07,enuns changes
+4a806cc9,Brenda Reis Araújo de Souza,2023-07,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/refuse-negotiation
+22ed750a,Rodrigo Martins,2023-07,feat: visualizar corretamente o status de meu evento ao acessar sua página de Mais Informações
+37e4f522,Brenda Reis Araújo de Souza,2023-07,refresh
+861160e9,Brenda Reis Araújo de Souza,2023-07,refresh
+327e7b30,Brenda Reis Araújo de Souza,2023-07,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/PO-1013
+6f997da1,Brenda Reis Araújo de Souza,2023-07,Adiciona hora
+6b1695c9,Carlos Henrique,2023-07,Bugfix: adjustment on offer value and added reload on submit negotiation
+a3d42f6a,Rodrigo Martins,2023-07,fix: review_event_return
+676d7d82,Rodrigo Martins,2023-07,feat: EDG-833 - Exibir corretamente a mensagem de EVENTO APROVADO após aprovar um evento enviado para revisão
+6abde3c5,Gislene Carvalho,2023-07,Integration with history service
+ffe8031d,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-791-add-history-event-drawer
+0967d03c,Gislene Carvalho,2023-07,Adjusts reprove event flow to close modal after action
+4c049099,Brenda Reis Araújo de Souza,2023-07,Altera modal de recusa individual
+14d65ab4,Gislene Carvalho,2023-07,Adjusts of integration service about reason modal
+4bbfa851,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-784-reprove-event-modal-reason
+32da9500,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-789-add-info-additional-event-carsd
+19f29abe,Gislene Carvalho,2023-07,Adjusts - Event Cards status approve flow
+d9999991,Carlos Henrique,2023-07,Feat: adjustments on accept proposal modal
+6159c69c,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-789-add-info-additional-event-carsd
+5ce57f77,Gislene Carvalho,2023-07,Fix segment select missing
+0301942c,Gislene Carvalho,2023-07,Add new drawer about event approve flow
+c7de1203,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-787-add-filter-select-agent
+0e94a066,Gislene Carvalho,2023-07,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-789-add-info-additional-event-carsd
+d02e40a0,Gislene Carvalho,2023-07,Minor Adjusts
+4a394157,Gislene Carvalho,2023-07,Add new reprove event modal action
+19c76d3e,Carlos Henrique,2023-07,Bugfix: adjustments to disable filter fields on list erros
+b5325a6b,Brenda Reis Araújo de Souza,2023-07,change filter name
+8a9a5906,Brenda Reis Araújo de Souza,2023-07,change filter name
+bbc82e0c,Carlos Henrique,2023-07,Bugfix: adjusment on negotiation tab
+32d281df,Gislene Carvalho,2023-07,Add new tags and icons to event cards lists
+d977e985,Carlos Henrique,2023-07,Bugfix: Adjustment on dto and enpoint of negotiation
+160557f5,Gislene Carvalho,2023-06,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-789-add-info-additional-event-carsd
+5523cb98,Gislene Carvalho,2023-06,Add sellerId to parameters to search seller agents related to
+580c8ab9,Carlos Henrique,2023-06,Bugfix: negotiation modal
+47a686ab,Gislene Carvalho,2023-06,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-787-add-filter-select-agent
+62e586fc,Gislene Carvalho,2023-06,Add new infos
+be114cef,Brenda Reis Araújo de Souza,2023-06,settings
+39c67778,Carlos Henrique,2023-06,Bugfix: added snackbar
+c26bc967,Gislene Carvalho,2023-06,adjusts front
+3a4834b7,Brenda Reis Araújo de Souza,2023-06,settings
+ebb553dc,Carlos Henrique,2023-06,Bugfix: fix negotiation filter
+2ca21993,Carlos Henrique,2023-06,bugfix: Adjustment on negotiation tab filters
+767b6eac,Gislene Carvalho,2023-06,rebase
+c15ff3d6,Gislene Carvalho,2023-06,Adjusts services params
+be3b373d,Gislene Carvalho,2023-06,Adjusts services params
+81cc22c7,Gislene Carvalho,2023-06,Add new filter
+dacac58e,Brenda Reis Araújo de Souza,2023-06,Ajustes css
+d65b738a,Carlos Henrique,2023-06,Bugfix: fix input on negotiaton modal
+3f45230b,Gislene Carvalho,2023-06,Remove console.logs and adjusts apiUrls
+81417b5e,Gislene Carvalho,2023-06,Adjusts rule to show button and css style
+3635cf6a,Gislene Carvalho,2023-06,Add auctioneer panel link
+b75f6323,Brenda Reis Araújo de Souza,2023-06,install dependence
+3ef14a21,Brenda Reis Araújo de Souza,2023-06,Page-to-modal
+e11283d3,Brenda Reis Araújo de Souza,2023-06,Ajustes solicitados
+3a831b6d,Gislene Carvalho,2023-06,Get event status id by service and remove session item
+651bca14,Brenda Reis Araújo de Souza,2023-06,Lista de Erros e ajustes
+7ea11814,Brenda Reis Araújo de Souza,2023-06,Ajustes api
+e763d564,Brenda Reis Araújo de Souza,2023-06,Ajustes endpoints
+f6b0ffc1,Brenda Reis Araújo de Souza,2023-06,Inserindo modais de confirmacao
+c3f39db0,Gislene Carvalho,2023-06,fix rules by roles
+48682f70,Brenda Reis Araújo de Souza,2023-06,Ajuste em componente de data
+eadf459e,Brenda Reis Araújo de Souza,2023-06,Ajuste em componente de data
+3d194888,Brenda Reis Araújo de Souza,2023-06,Ajuste em componente de data
+dfd1d334,Brenda Reis Araújo de Souza,2023-06,Ajustes solicitados em review
+01719915,Gislene Carvalho,2023-06,Fixes rules
+2a238146,Brenda Reis Araújo de Souza,2023-06,adicionando chamadas do backend
+d62f886d,Brenda Reis Araújo de Souza,2023-06,:sparkles: Tradução
+9c98b40e,Brenda Reis Araújo de Souza,2023-06,:sparkles: Componentes de interacao de negociacao
+cbca3acf,Gislene Carvalho,2023-06,Add rule by roles and event status
+a0f610cf,Carlos Henrique,2023-06,feat: negotiation filter
+be4b045c,Carlos Henrique,2023-06,Hotfix: negotiation tabs
+a394033c,Carlos Henrique,2023-06,feat: added negotiation offers tab
+592d9b28,Carlos Henrique,2023-06,Feat(po-984): create tab negotiation and multselect to offers
+166afbc3,Carlos Henrique,2023-05,Remove console log
+f9ce2f88,Carlos Henrique,2023-05,Bugfix: added rule to hide notify buttons
+2eebeda4,Carlos Henrique,2023-05,hotfix: new rule to show withdrawal tab
+57f3297d,Carlos Henrique,2023-05,hotfix: hide button withdrawal on notify has made
+3cdd1140,Walisson Rodrigo,2023-05,hotfix: add messages errors with internacionalization in group offers
+525803c3,Carlos Henrique,2023-05,hotfix: adjusted rule to show notify withdrawal
+534cbbf6,Gislene Carvalho,2023-05,Add undefined validation to object
+5c6711da,Gislene Carvalho,2023-05,fix api
+7ff99abc,Gislene Carvalho,2023-05,finish integration services
+f162b53d,Gislene Carvalho,2023-05,integration services - partial
+d1adf007,Brenda Reis Araújo de Souza,2023-05,Ajuste para eventos sem pipeline
+6a3cb2a0,Carlos Henrique,2023-05,Bugfix: Fix feature to add documents and notify withdrawal
+9fe0d1f8,Gislene Carvalho,2023-05,add new tags
+694bf99b,Gislene Carvalho,2023-05,add new tags
+3cf2b71a,Gislene Carvalho,2023-05,adjusts rules by stages and add reload page action
+7f7379b5,Carlos Henrique,2023-05,bugfix delete exclude document
+fa690239,Carlos Henrique,2023-05,Fix withdrawall download feature
+013170e6,Brenda Reis Araújo de Souza,2023-05,ajustes para exibir botao em caso de praça ativa
+bada97eb,Gislene Carvalho,2023-05,Service integration and success review event dialog
+f7657aa2,Gislene Carvalho,2023-05,Adjusts seller rules
+a3b05027,Gislene Carvalho,2023-05,add rules to seller persona
+ff3228e9,Gislene Carvalho,2023-05,Add new buttons to review events - adjusts
+066b2aef,Gislene Carvalho,2023-05,parse fix
+147f5b09,Gislene Carvalho,2023-06,Adjusts services params
+fb47d226,Gislene Carvalho,2023-06,Adjusts services params
+41114067,Carlos Henrique,2023-06,Bugfix: adjustment on negotiation offer filter
+1d8fbe25,Brenda Reis Araújo de Souza,2023-06,settings
+b1a41d46,Gislene Carvalho,2023-06,Add new filter
+1b83641c,Carlos Henrique,2023-06,Bugfix: negotiation params
+2143ff35,Carlos Henrique,2023-06,Bugfix: Adjustments on negotiation tab
+3387b80f,Brenda Reis Araújo de Souza,2023-06,adjustments
+8b044bf8,Brenda Reis Araújo de Souza,2023-06,adjustments
+4714a025,Brenda Reis Araújo de Souza,2023-06,adjustments
+b954586a,Carlos Henrique,2023-06,Bugfix: adjustments on negotiation tab and modal
+067732de,Brenda Reis Araújo de Souza,2023-06,Ajustes css
+2a0f0935,Carlos Henrique,2023-06,Bugfix: fix input on negotiaton modal
+8302bd56,Brenda Reis Araújo de Souza,2023-06,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/negotiation-tab-offers
+e1054f61,Brenda Reis Araújo de Souza,2023-06,install dependence
+547e4c2b,Brenda Reis Araújo de Souza,2023-06,Page-to-modal
+68aaaf9b,Gislene Carvalho,2023-06,Remove console.logs and adjusts apiUrls
+a2343f62,Gislene Carvalho,2023-06,Adjusts rule to show button and css style
+e0908605,Gislene Carvalho,2023-06,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-EDG-720-auctioneer-panel-link
+2623d51a,Brenda Reis Araújo de Souza,2023-06,Ajustes solicitados
+70b72366,Gislene Carvalho,2023-06,Add auctioneer panel link
+d4ea0b95,Gislene Carvalho,2023-06,Get event status id by service and remove session item
+b496b5c5,Brenda Reis Araújo de Souza,2023-06,Lista de Erros e ajustes
+f1bfda68,Brenda Reis Araújo de Souza,2023-06,Ajustes api
+e5e708fd,Brenda Reis Araújo de Souza,2023-06,Ajustes endpoints
+5116bba7,Brenda Reis Araújo de Souza,2023-06,Inserindo modais de confirmacao
+c8440f19,Gislene Carvalho,2023-06,fix rules by roles
+14f4b639,Gislene Carvalho,2023-06,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-683-add-rules-by-role-type
+73ba76f3,Brenda Reis Araújo de Souza,2023-06,Ajuste em componente de data
+15048232,Brenda Reis Araújo de Souza,2023-06,Ajuste em componente de data
+51e3b8c0,Brenda Reis Araújo de Souza,2023-06,Ajuste em componente de data
+3aca6180,Brenda Reis Araújo de Souza,2023-06,Ajustes solicitados em review
+7472f88f,Gislene Carvalho,2023-06,Fixes rules
+ac841092,Gislene Carvalho,2023-06,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-683-add-rules-by-role-type
+afef0b1b,Brenda Reis Araújo de Souza,2023-06,adicionando chamadas do backend
+03248d6e,Brenda Reis Araújo de Souza,2023-06,:sparkles: Tradução
+f3044a44,Brenda Reis Araújo de Souza,2023-06,:sparkles: Componentes de interacao de negociacao
+1fa90b06,Gislene Carvalho,2023-06,Add rule by roles and event status
+bf63d8e1,Carlos Henrique,2023-06,feat: negotiation filter
+256fe9ad,Carlos Henrique,2023-06,Hotfix: negotiation tabs
+461ef86f,Carlos Henrique,2023-06,feat: added negotiation offers tab
+cfa875b0,Carlos Henrique,2023-06,Feat(po-984): create tab negotiation and multselect to offers
+945404ea,Carlos Henrique,2023-05,Remove console log
+78435778,Carlos Henrique,2023-05,Bugfix: added rule to hide notify buttons
+7aceefd9,Carlos Henrique,2023-05,hotfix: new rule to show withdrawal tab
+9aba641e,Carlos Henrique,2023-05,hotfix: hide button withdrawal on notify has made
+f5e58ee6,Walisson Rodrigo,2023-05,hotfix: add messages errors with internacionalization in group offers
+2cf7288c,Carlos Henrique,2023-05,hotfix: adjusted rule to show notify withdrawal
+dcef0676,Gislene Carvalho,2023-05,Add undefined validation to object
+2072ec89,Brenda Reis Araújo de Souza,2023-05,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/EDG-601
+f82f8077,Brenda Reis Araújo de Souza,2023-05,Ajuste para eventos sem pipeline
+c6b6ee67,Gislene Carvalho,2023-05,fix api
+4b0d0021,Gislene Carvalho,2023-05,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-630-seller-flow-approve
+2f5661f6,Gislene Carvalho,2023-05,finish integration services
+b0cb13c0,Brenda Reis Araújo de Souza,2023-05,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/EDG-601
+4ed35b39,Carlos Henrique,2023-05,Bugfix: Fix feature to add documents and notify withdrawal
+5d0b9bbb,Gislene Carvalho,2023-05,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-630-seller-flow-approve
+cdd6fcc5,Gislene Carvalho,2023-05,add new tags
+b8751eb4,Gislene Carvalho,2023-05,add new tags
+29d2c62a,Gislene Carvalho,2023-05,adjusts rules by stages and add reload page action
+8b49b4b7,Gislene Carvalho,2023-05,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-601
+c2a711fc,Carlos Henrique,2023-05,bugfix delete exclude document
+c7440d3c,Brenda Reis Araújo de Souza,2023-05,ajustes para exibir botao em caso de praça ativa
+836b5541,Carlos Henrique,2023-05,Fix withdrawall download feature
+ea8ada10,Gislene Carvalho,2023-05,integration services - partial
+adda3cc1,Gislene Carvalho,2023-05,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-615-add-translations
+2f67bf5b,Gislene Carvalho,2023-05,Service integration and success review event dialog
+2a2723b5,Gislene Carvalho,2023-05,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-615-add-translations
+fad984b0,Gislene Carvalho,2023-05,Adjusts seller rules
+f0bcc91a,Gislene Carvalho,2023-05,add rules to seller persona
+3632b3d4,Gislene Carvalho,2023-05,Add new buttons to review events - adjusts
+84ab7181,Gislene Carvalho,2023-05,parse fix
+8385cc91,Gislene Carvalho,2023-05,Add translations
+1ea37ba1,Carlos Henrique,2023-05,Added cashout status
+fd5ab9ca,Gislene Carvalho,2023-05,ajusta regra de update de cvp
+a4e762ad,Carlos Henrique,2023-05,Bugfix: fix params on aprove cashout
+eecfdfcd,Carlos Henrique,2023-04,Feat: added feature to aprove offer cashout
+62729dcf,Carlos Henrique,2023-04,Feat: added tab offers with pending cashout and document page
+e3ce0746,Odailson Silva,2023-04,ACD-101 - feat: tipo de restricoes
+d0057b28,Flavio Andrade,2023-04,refactoring
+18d24dd4,Flavio Andrade,2023-04,refactoring
+13f0a550,Flavio Andrade,2023-04,ajuste apiUrl
+165f405a,Flavio Andrade,2023-04,refactoring
+ba214662,Flavio Andrade,2023-04,refatoração drawer
+d8529a68,Flavio Andrade,2023-04,apiUrl
+5f3abb20,Flavio Andrade,2023-04,modal exclusao de comprovante
+96232139,Flavio Andrade,2023-04,ajuste quebra de texto
+c9a73dba,Flavio Andrade,2023-04,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/po-870
+05e45860,Flavio Andrade,2023-04,melhoria fluxo
+bf0b5bb5,Gislene Carvalho,2023-04,Merge branch 'develop' of codecommit://sb-event-platform into feature/EDG-569-change-fields-contact-info
+ea22d55d,Flavio Andrade,2023-04,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/po-870
+478b84ce,Flavio Andrade,2023-04,Fluxo Comprovantes de retirada
+a2aa9cb0,Gislene Carvalho,2023-04,Change fields contact
+e22f58a9,Walisson Rodrigo,2023-04,revert: last commit d631e948...
+d631e948,Walisson Rodrigo,2023-04,feature: change labels and fix internacionalization files
+c180f360,Gislene Carvalho,2023-04,fix render error on develop env
+ac29db73,Gislene Carvalho,2023-04,add new redirect to edit product
+534c28cf,Carlos Henrique,2023-04,Bugfix: Fix status and icon on card offer
+79935183,Carlos Henrique,2023-04,Feat: added new tab to offer page
+2c27bdec,Flavio Andrade,2023-04,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into develop
+0ed785d0,Flavio Andrade,2023-04,dicionarios
+879eb6d4,Carlos Henrique,2023-03,Bugfix: fix negotiation component
+8dd0dc42,Carlos Henrique,2023-03,Bugfix: Fix bug on negotiation drawer
+67f5e0a2,Gislene Carvalho,2023-03,change api values
+c6313144,Gislene Carvalho,2023-03,fix imports
+60444be7,Gislene Carvalho,2023-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/FAST-89-finish-offer-action
+5455f35c,Carlos Henrique,2023-03,bugfix: Fix error on negotiation flow
+045da3ee,Gislene Carvalho,2023-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/advanced-config-adjusts
+a1444bbe,Gislene Carvalho,2023-03,finish integration and tests
+55fcdbe2,Flavio Andrade,2023-03,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into feature/po-814
+1ff22cbc,Flavio Andrade,2023-03,mapeamento de feedback de requisição
+6aa69fa0,Gislene Carvalho,2023-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/advanced-config-adjusts
+741e9abe,julio.santos,2023-03,clean
+809b619a,Gislene Carvalho,2023-03,partial integration
+d64bd3a9,julio.santos,2023-03,update code
+71996d7b,julio.santos,2023-03,finish modal
+2aaab456,Gislene Carvalho,2023-03,add error message no available
+8e26e187,Gislene Carvalho,2023-03,Change finish offer tags
+2d9f1e89,Gislene Carvalho,2023-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/FAST-89-finish-offer-action
+5cb7eea4,julio.santos,2023-03,wip storage m.f
+7588a478,Gislene Carvalho,2023-03,ajustes
+c16ed407,Gislene Carvalho,2023-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/advanced-config-adjusts
+cc01f414,Gislene Carvalho,2023-03,change order of results
+d37f98e5,Flavio Andrade,2023-03,Merge branch 'develop' of codecommit::sa-east-1://sbws-users@sb-event-platform into bugfix/po-849
+6c036366,Flavio Andrade,2023-03,refactoring PO-849
+44ebe0a2,Gislene Carvalho,2023-03,Add missing parameters
+89f61659,Gislene Carvalho,2023-03,change select to autocomplete format
+40e343c5,Gislene Carvalho,2023-03,Merge branch 'develop' of codecommit://sb-event-platform into feature/advanced-config-adjusts
+cae0fb12,Gislene Carvalho,2023-03,add i18n new tags
+5bb5bff6,Flavio Andrade,2023-03,status list
+28dbd3f0,Brenda Reis Araújo de Souza,2023-03,remove log
+9d62429c,Brenda Reis Araújo de Souza,2023-03,error-message-pricing-drawer
+d96327a6,Gislene Carvalho,2023-02,fix
+c86da428,Gislene Carvalho,2023-02,Add Edit Product option and rules to be show
+1ba8683a,Ailson Ramos Moreira,2023-02,add conditional rendering btn export results
+2adbd81c,Carlos Henrique,2023-02,Bugfix: fix value on refuse offer confirm dialog
+1480b84a,Gislene Carvalho,2023-02,Rename tabs
+7488132d,Gislene Carvalho,2023-02,Change sort data
+898b166b,Gislene Carvalho,2023-02,Merge branch 'develop' of codecommit://sb-event-platform into feature/advanced-config-adjusts
+96a697fc,Maico Rodrigo Caumo,2023-02,Merge remote-tracking branch 'origin/develop' into feature/translates-modal-v1
+08cf1c71,Ailson Ramos Moreira,2023-02,reload offers when enable/disable event
+cd60c506,Odailson Silva,2023-02,Merge branch 'develop' into feature/translates-modal-v1
+eaa6b7e4,Odailson Silva,2023-02,feat: translates for modal group offer v1
+30e76dc6,Odailson Silva,2023-02,feat: translates for modal group offer v1
+953ad8ea,Gislene Carvalho,2023-02,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-338-add-new-role-validation
+d28a943c,Gislene Carvalho,2023-02,adjusts set default tab
+48f63791,Carlos Henrique,2023-02,Fix error on installments
+70cb5571,Gislene Carvalho,2023-02,testes
+b03e9962,Gislene Carvalho,2023-02,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-338-add-new-role-validation
+4a37c6ee,Gislene Carvalho,2023-02,fix errors
+b80c9aa3,Ailson Ramos Moreira,2023-01,add location reload server data
+ec5030e7,Gislene Carvalho,2023-01,fix merge
+f9fa2a4d,tiago.oliveira,2023-01,code refactoring
+03a4f7b5,tiago.oliveira,2023-01,remove toggle
+03bb8713,Gislene Carvalho,2023-01,Add new role validation
+c9935d11,Gislene Carvalho,2023-01,partial adjusts
+ab2d4fed,Odailson Silva,2023-01,feat: news translates for group-offer
+c37205ef,Flavio Andrade,2023-01,merge with develop
+c792ace6,Flavio Andrade,2023-01,Select de status no modal filtro de produtos
+5b5e4216,Ailson Ramos Moreira,2023-01,change show and hide group label
+856c508b,Ailson Ramos Moreira,2023-01,refactory error msg when disable events
+258e5b2a,Gislene Carvalho,2023-01,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-331-add-new-params
+b1255b2f,Gislene Carvalho,2023-01,Merge branch 'feature/EDG-331-add-new-params' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-331-add-new-params
+a8d40a3f,Gislene Carvalho,2023-01,Add new param to publish service and hide options
+a0391138,Gislene Carvalho,2023-01,Merge branch 'feature/EDG-331-add-new-params' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-331-add-new-params
+82ac2e1b,Gislene Carvalho,2023-01,Add new param to publish service and hide options
+bd6e8175,Gislene Carvalho,2023-01,Add new param to publish service and hide options
+7e47663e,tiago.oliveira,2023-01,fix filters
+4bd848c7,Flavio Andrade,2023-01,fix
+d012f4b3,Flavio Andrade,2023-01,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/plat-563-alt
+ac3074a8,Flavio Andrade,2023-01,update api urls
+7057b3d8,tiago,2023-01,Squashed commit of the following
+356a6983,Flavio Andrade,2023-01,update
+f435bc4d,Flavio Andrade,2023-01,update wirh develop
+04d4663d,tiago.oliveira,2023-01,api url
+0c26954f,Philipe Schneider,2023-01,adjust enviroment EVENT_NODE_ENV that was commented
+b30e8192,tiago,2023-01,Squashed commit of the following
+2454dbcc,Tiago Oliveira,2023-01,Squashed commit of the following
+40fd3dee,Flavio Andrade,2023-01,update cosnts
+79adc0c2,Philipe Schneider,2023-01,FIX: Adjust the url api on dev enviroment
+0461eaed,Flavio Andrade,2023-01,mergin changes
+6caac87e,willianfonseca,2023-01,updating state after disble call
+806e6c37,willianfonseca,2023-01,updating state after disble call
+5cacdbe3,willianfonseca,2023-01,updating state after disble call
+77dd8a84,willianfonseca,2023-01,updating state after disble call
+a20122e7,Flavio Andrade,2023-01,update changes
+cc667062,Flavio Andrade,2023-01,update changes
+5e397e7b,tiago.oliveira,2023-01,new translantions
+6b35b958,Ailson Ramos Moreira,2023-01,add translate error msg
+c3989489,Ailson Ramos Moreira,2023-01,Merge branch 'develop' into arm-menu-actions-translate
+26bd05ef,Ailson Ramos Moreira,2023-01,new menu actions translate
+b491d688,Odailson Silva,2023-01,fix: validation sessionStorage
+f959daae,Odailson Silva,2023-01,fix: port script start
+0e4239f0,Odailson Silva,2023-01,Merge branch 'develop' into feature/v0-group-offer-translate
+3413a11c,Odailson Silva,2023-01,feat: translate for dialog_delete_group_offer
+af7a7b87,Odailson Silva,2023-01,feat: translate for dialog_delete_group_offer
+6ce0cfb7,Carlos Henrique,2023-01,Bugfix: change permission to accept proposal
+c3cab293,Carlos Henrique,2023-01,Bugfix: fix error message
+83fd8da1,Gislene Carvalho,2023-01,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-316-new-modal-event
+2695ff58,Gislene Carvalho,2023-01,Change modal component
+2515f31b,tiago.oliveira,2023-01,code refactoring
+712e8cde,tiago.oliveira,2023-01,code refactoring
+7aeb4987,tiago.oliveira,2023-01,refactor
+c2737a2f,tiago.oliveira,2023-01,code refactoring
+3981df6a,tiago.oliveira,2023-01,include new translations
+1a41e514,tiago.oliveira,2023-01,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/disable-event
+4d702290,tiago.oliveira,2023-01,disableEvent
+db418b06,Ailson Ramos Moreira,2023-01,new transalate show hide lots
+da174c24,Gislene Carvalho,2023-01,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-316-new-modal-event
+6e60bdb9,Gislene Carvalho,2023-01,Cria modal de sucesso de criação de evento
+c18de16b,Ailson Ramos Moreira,2023-01,new translations perpage
+9394aca0,Ailson Ramos Moreira,2023-01,new translate card offer
+0a06fbf9,Ailson Ramos Moreira,2023-01,new translate card offer
+6764a395,Odailson Silva,2023-01,feat-ACC-125: translate for modal offer group
+b4dcc987,Carlos Henrique,2023-01,Refact added default erros to negotiation
+5fc0cd60,tiago.oliveira,2023-01,fix toggle
+cb204cd9,willian,2023-01,Squashed commit of the following
+c7e6bf9d,Flavio Andrade,2022-12,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/po-675
+68baf83e,Flavio Andrade,2022-12,teste po-726
+5db0bdcd,Gislene Carvalho,2022-12,Restringe reload por chave do storage específica
+4df27484,tiago.oliveira,2022-12,new translations
+b21c495b,tiago.oliveira,2022-12,new translations
+fbc1d841,tiago,2022-12,Squashed commit of the following
+91d119d7,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-250-listener-storage-change
+8436568a,luis-pereira-superbid,2022-12,remove consoels logs
+35cc0d67,Gislene Carvalho,2022-12,Rename file
+2a12053d,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-250-listener-storage-change
+a9f57f77,luis-pereira-superbid,2022-12,console log to test
+5ff84157,Gislene Carvalho,2022-12,Rename file
+082658dd,Gislene Carvalho,2022-12,Reload when storage values changed
+af9efb0e,tiago,2022-12,Squashed commit of the following
+6867e7a1,Gislene Carvalho,2022-12,reload page when storage itens change
+94829453,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-250-listener-storage-change
+9349c425,Gislene Carvalho,2022-12,adjusts
+83a85477,Carlos Henrique,2022-12,Bugfix: offer filter fix
+b1c59857,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-250-listener-storage-change
+143d61d9,Carlos Henrique,2022-12,Bugfix: offer filter clear session storage
+a00b4970,Gislene Carvalho,2022-12,Adiciona listener para observar mudanças de valores no storage
+1052a01a,Carlos Henrique,2022-12,Bugfix: fix filter on notification offer
+4649b93b,Carlos Henrique,2022-12,Squashed commit of the following
+ced8a963,Gislene Carvalho,2022-12,Remove code duplication
+f91ca07d,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-176-offer-status-default
+6a9c1f16,Gislene Carvalho,2022-12,Adicionar feature/toogle  para diferenciar a jornada anterior / nova
+0f1fb429,Gislene Carvalho,2022-12,Feature toggle
+67b50c67,Carlos Henrique,2022-12,Bugfix: Restore session filters
+e5f43fd8,Carlos Henrique,2022-12,Bugfix: Fix endpoint to refuse a buyer proposal
+1c3f83a4,Carlos Henrique,2022-12,Bugfix(PO-670): added news messages on notification feature
+7193b421,Cleverson de Melo,2022-12,Ajustado regra para atribuir o valor no sellerIds
+81995e80,Carlos Henrique,2022-12,Bugfix: Fix negotiation history
+32f4e4fa,Carlos Henrique,2022-12,Feat(PO-669): Added feature to accept buyer proposal
+1c6d5651,Gislene Carvalho,2022-12,Front: padronizar lista de status do pricing drawer
+013dcbec,Gislene Carvalho,2022-12,Front: padronizar lista de status do pricing drawer
+5481327c,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-176-offer-status-default
+7c3a0cd6,Flavio Andrade,2022-12,done
+9dacaefb,Flavio Andrade,2022-12,done
+fe448b65,Gislene Carvalho,2022-12,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-176-offer-status-default
+0daf4ae8,Carlos Henrique,2022-12,Bugfix: Adjustments on bid type on bid list
+77f21da5,Gislene Carvalho,2022-11,Padroniza lista de seleção de status segundo regras
+219f47bb,tiago.oliveira,2022-11,fix drawer cashout
+f25723df,odailsonsilva,2022-11,feat: change size pagination enabled user
+17cd9a1f,willian,2022-11,updating with develop
+5e3851f7,willian,2022-11,updating with develop
+2a660c31,willian,2022-11,updating with develop
+f06d441c,tiago.oliveira,2022-11,fix pipeline
+1fe1b7a0,willian,2022-11,updating with develop
+c6f6f73a,willian,2022-11,moving method of date funtion using functional style
+1cb83215,tiago,2022-11,Squashed commit of the following
+a370c3a1,willian,2022-11,moving method of date funtion using functional style
+03b9edb4,willian,2022-11,moving method of date funtion using functional style
+67fca16f,willian,2022-11,moving method of date funtion using functional style
+39ba19ac,Carlos Henrique,2022-11,Bugfix: fix bank null return
+f7869307,Cesar Ramos,2022-11,bugfix/SNWS-109
+7c77ff76,Cesar Ramos,2022-11,feature/SNWS-106
+b58fa788,Gislene Carvalho,2022-11,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-164-publish-event-status
+fc2a3b89,Carlos Henrique,2022-11,Bugfix: removed console log
+0ccb6766,Carlos Henrique,2022-11,Bugfix: fix seller rule
+3d6e1ee2,Carlos Henrique,2022-11,Bugfix: added rule to show bid-list
+3423647e,Carlos Henrique,2022-11,Bugfix: Added bider name and bider document to bider list
+ea2031c4,Carlos Henrique,2022-11,Bugfix: Added bider name and bider document to bider list
+9326d5ab,Gislene Carvalho,2022-11,Remove verificação por role de usuário
+92ba4cc6,Gislene Carvalho,2022-11,Remove verificação por role de usuário
+04dec495,Carlos Henrique,2022-11,Feat: added bid list modal
+862397a7,Gislene Carvalho,2022-11,Padronizar exibição de editar valores
+4a1d1fe7,Gislene Carvalho,2022-11,testes
+25e26156,Cesar Ramos,2022-11,fix/SNWS-56 e SNWS-101
+34caea94,Gislene Carvalho,2022-10,Ajusta visibilidade de opções de botões
+6c02f39f,Brenda Reis Araújo de Souza,2022-10,remove profile verification
+15c003a5,Gislene Carvalho,2022-10,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EDG-158-update-cvp-button-and-action
+8e9c4fd8,Gislene Carvalho,2022-10,Merge e ajustes
+39414ef3,Gislene Carvalho,2022-10,Merge e ajustes
+c2414663,thiago.melin,2022-10,Merge branch 'stg' into conflito
+096828d6,Carlos Henrique,2022-10,updating offers-summary
+cf5efcb4,Carlos Henrique,2022-10,Merge master
+ae0a82f5,Carlos Henrique,2022-10,Bugfix(PO-624): removed feature toggle on drawer
+20cd93ba,Gislene Carvalho,2022-10,Reverte processo de remoção de opção de publicar
+92215820,Gislene Carvalho,2022-10,Adiciona opção de atualizar CVP no menu de detalhes do evento
+0a96f5eb,Gislene Carvalho,2022-10,Altera mensagem de erro genérico
+ab351bdd,Gislene Carvalho,2022-10,Adiciona cancelamento de eventos
+fa5577eb,Gislene Carvalho,2022-10,Altera regra para exibir opção de menu de editar
+ea7d73ff,Gislene Carvalho,2022-10,Remove opção de menu e ação de Publicar Evento
+e461c58b,Flavio Andrade,2022-10,campo de observação de proposta
+82bfaa0f,Flavio Andrade,2022-10,campo de observação de proposta
+e6f68469,Cesar Ramos,2022-10,bugfix/SNWS-56 trocando sendEmail T por S
+3db11954,thiago,2022-10,Squashed commit of the following
+92d8865f,gislene.carvalho,2022-10,Squashed commit of the following
+50d64fd3,Gislene Carvalho,2022-10,Ajusta formatação de valores baseado em currency/locale
+6441065a,Flavio Andrade,2022-10,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into faeture/snws-54
+5a7a7acc,Flavio Andrade,2022-10,refatoracao legibilidade
+ec6c1613,Carlos Henrique,2022-10,Bugfix: fix event date
+39fc73bb,Flavio Andrade,2022-10,rafactoring style
+e864f19a,Gislene Carvalho,2022-10,Ajusta componente de floating label
+3f8399e2,Flavio Andrade,2022-10,refactoring
+4232fc5b,Flavio Andrade,2022-10,refactoring
+1bacdeac,Flavio Andrade,2022-10,task SNWS-54 e SNWS-87
+0149f86d,Flavio Andrade,2022-10,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into faeture/snws-54
+e142c2a5,Flavio Andrade,2022-10,task SNWS-54 e SNWS-87
+78e2d91d,Brenda Reis Araújo de Souza,2022-10,remove validation
+7068078a,Brenda Reis Araújo de Souza,2022-10,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into fix/ids
+d86533ce,Brenda Reis Araújo de Souza,2022-10,ids
+6d2d1ce0,Carlos Henrique,2022-10,bugfix: adjustment on offers filter
+6d4e27c7,Carlos Henrique,2022-10,Bugfix(po-571): removed unnecessary lines
+47c123af,Carlos Henrique,2022-10,Bugfix(po-571): added button to clear filters on responsive mode
+7867bd95,Carlos Henrique,2022-09,bugfix: removed console log
+6474bf79,gislene.carvalho,2022-09,Squashed commit of the following
+872f53d2,Carlos Henrique,2022-09,Bugfix(po-569): fix expiration date on request negotiation drawer
+b908cee9,Brenda Reis Araújo de Souza,2022-09,git pull
+1429c164,Raphael Pinheiro,2022-09,feat(proposal): added transaction scale into proposal drawer and some other fixes
+03955980,Carlos Henrique,2022-09,Squashed commit of the following
+23d2384c,Brenda Reis Araújo de Souza,2022-09,test
+940093f0,Brenda Reis Araújo de Souza,2022-09,tests
+b36cc39c,Brenda Reis Araújo de Souza,2022-09,return test
+5d4dd0ad,Brenda Reis Araújo de Souza,2022-09,error edit min value
+d34be1f3,Brenda Reis Araújo de Souza,2022-09,commit
+e9901139,Brenda Reis Araújo de Souza,2022-09,commit
+01950516,Brenda Reis Araújo de Souza,2022-09,push
+406d1e62,Brenda Reis Araújo de Souza,2022-09,ids ajuste
+9afc93b6,Carlos Henrique,2022-09,bugfix: added refuse offer and accept offer to proposals drawer
+3c5e72a9,Cesar Ramos,2022-09,fix/SNWS-50 alterando propriedade hasPreference mockada
+87cf4347,Raphael Pinheiro,2022-09,feat(proposals): added proposal label on card offer
+abe6adb5,Gislene Carvalho,2022-09,Squashed commit of the following
+9820ce1c,Brenda Reis Araújo de Souza,2022-09,merge
+b9ebaa5d,Brenda Reis Araújo de Souza,2022-09,black alert
+75d10ac6,Carlos Henrique,2022-09,bugfix: adjustment on proposals list to sort winner
+20f0ca8e,Raphael Pinheiro,2022-09,Squashed commit of the following
+0b727326,Raphael Pinheiro,2022-09,Squashed commit of the following
+12f572ae,Brenda Reis Araújo de Souza,2022-09,Squashed commit of the following
+7616766a,Brenda Reis Araújo de Souza,2022-09,alert message
+b6efc0ab,Cesar Ramos,2022-09,feature/SNWS-50 adicionando avatar DP
+8434173d,Carlos Henrique,2022-09,bugfix(PO-532): fix currency error on negotiation history
+e4473ce4,Raphael Pinheiro,2022-09,bugfix(precificacao): removed d
+bafec132,Raphael Pinheiro,2022-09,bugfix(precificacao): rollback in show precification drawer logic
+dc1d90d7,Brenda Reis Araújo de Souza,2022-09,ids
+60487c11,Raphael Pinheiro,2022-09,bugfix(proposal): accordion opened on startup
+fd191f19,Carlos Henrique,2022-09,bugfix: added id to all buttons
+ccb909ff,Carlos Henrique,2022-09,bugfix: added id to all buttons
+51a26c20,Carlos Henrique,2022-09,bugfix: adjustment on translations
+79040204,Raphael Pinheiro,2022-09,bugfix(proposal-cpc): fixed many bugs and some refactors
+20fd53c5,Carlos Henrique,2022-09,bugfix: adjustment on translations
+b936c76c,Raphael Pinheiro,2022-09,feat(PO-552): added role to withdrawal drawer and missing es translations
+50c209b4,Raphael Pinheiro,2022-09,feat(PO-544): pluged download proposal api
+3700548f,Carlos Henrique,2022-09,feat(PO-544): feature accept proposal and download proposal document
+7ae9b880,Brenda Reis Araújo de Souza,2022-09,include alert
+b68c74c9,Gislene Carvalho,2022-08,Ajusts create interval time and extra time
+978b0e4c,Gislene Carvalho,2022-08,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-283-services-integration
+a9b32585,Flavio Andrade,2022-08,ajuste fluxo
+57514f92,Gislene Carvalho,2022-08,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-283-services-integration
+09130c1b,Gislene Carvalho,2022-08,Integração de serviços - parcial
+b733881b,Flavio Andrade,2022-08,bugs: 973, 972, 971
+a0df54ca,Carlos Henrique,2022-08,Squashed commit of the following
+71cdd872,Flavio Andrade,2022-08,major refactoring
+28792bb4,Flavio Andrade,2022-08,ajuste fluxo
+f6fbd187,Flavio Andrade,2022-08,ajustes
+a1bbc3d8,Gislene Carvalho,2022-08,Integration services - partial
+74161059,Flavio Andrade,2022-08,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into bug/mya-924
+d4621655,Flavio Andrade,2022-08,task: [774, 792, 920, 924, 928, 929, 932, 933]
+e61d894c,André Bertoni,2022-08,fix: correção de bugs
+0cc88598,Gislene Carvalho,2022-08,Fix: adjust metric system required field validation
+95eb474e,Gislene Carvalho,2022-08,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-283-services-integration
+70a29823,Flavio Andrade,2022-08,Squashed commit of the following
+68b1bd60,André Bertoni,2022-08,feat: ajuste na URL
+31e1e946,Gislene Carvalho,2022-08,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-283-services-integration
+e3d1a432,André Bertoni,2022-08,feat: integração das modais, btn bloqueio e habilitar e tela de revisão
+fab08df3,Flavio Andrade,2022-08,rafactor: funcionalidade Aprovar/Reprovar aplicadas
+cd8588a8,Gislene Carvalho,2022-08,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-281-create-configure-event-page
+96f78854,Flavio Andrade,2022-08,fix: ajuste componente
+d26f420e,Flavio Andrade,2022-08,fluxo atualizado
+a79b10b7,Flavio Andrade,2022-08,parcial merge
+6feae0f0,Flavio Andrade,2022-08,feature: merge com develop
+db89ecf9,Flavio Andrade,2022-08,task 773 - done
+b1400cb8,André Bertoni,2022-08,feat: criação das traduções
+2e41f983,André Bertoni,2022-08,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into MYA-762
+ce6b83e4,Brenda Reis Araújo de Souza,2022-08,publish
+5e65b891,André Bertoni,2022-08,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into MYA-762
+eb88b7ec,Brenda Reis Araújo de Souza,2022-08,publish
+acd8c49b,Brenda Reis Araújo de Souza,2022-08,publish
+b7476c9b,Gislene Carvalho,2022-08,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-281-create-configure-event-page
+520aab07,Gislene Carvalho,2022-08,Create Settings Advanced page - fix lint error
+591d83ba,Flavio Andrade,2022-08,taks mya-764 [done]
+c1d2e781,André Bertoni,2022-08,fix: resolve conflito
+02e378a6,André Bertoni,2022-08,feat: criação da tela de histórico
+9dc1e1ef,Flavio Andrade,2022-08,parcial [stand by]
+cf834bb0,Flavio Andrade,2022-08,feat: send documents - parcial
+eebb2dd8,Gislene Carvalho,2022-08,Add rule to show item by env
+507b4a16,Gislene Carvalho,2022-08,create i18n tags page
+9a1ee812,André Bertoni,2022-08,feat: split da pagina de envio de documentos do gestor
+d36d1d65,Gislene Carvalho,2022-08,Adiciona novo item ao menu dropdown
+88896007,Gislene Carvalho,2022-07,Change getPublishEvent service params
+821ccffe,Gislene Carvalho,2022-07,Fix validation when metric system is not defined
+ff782588,Gislene Carvalho,2022-07,Ajusta obrigatoriedade e preenchimento de campos da sidebar de eventos
+59114252,Maico Rodrigo Caumo,2022-07,MYA-710 Ajustando redirecionamento de url
+e4583208,Maico Rodrigo Caumo,2022-07,MYA-710 Adicionando role para acessar a pagina de documentos
+11458f81,Maico Rodrigo Caumo,2022-07,MYA-710 Adicionando status de liberacao restrita
+210515d4,Maico Rodrigo Caumo,2022-07,MYA-710 Adicionando status de liberacao restrita
+7209bee2,Maico Rodrigo Caumo,2022-07,MYA-710 - Adicionando status de liberação restrita
+160d0f4f,Raphael Pinheiro,2022-07,feat(pricing): added validation for direct sale value and make increment and measure not required
+d3ba21a3,Gislene Carvalho,2022-07,Merge branch 'develop' of https://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into feature/EVT-105-add-publish-services
+a28b7748,Maico Rodrigo Caumo,2022-07,Merge remote-tracking branch 'origin/develop' into fix/correcao_bug
+19b91764,Raphael Pinheiro,2022-07,bugfix(drawer): added checkUserAccess method
+b97fe56f,Gislene Carvalho,2022-07,Adiciona serviço de publicação e regras de item de menu
+5ff83a2f,André Bertoni,2022-07,fix: ajuste na chamada da API
+52668dc3,Raphael Pinheiro,2022-07,conflicts resolve stg
+97659fb9,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-stg
+4f2a46cc,Raphael Pinheiro,2022-07,bugfix(PO-480): fix routes checkAccess method
+11dffefd,Raphael Pinheiro,2022-07,Squashed commit of the following
+a3ffd9af,Raphael Pinheiro,2022-07,bugfix(PO-480): added checkUser method prop to refuseoffer
+9f638962,Maico Rodrigo Caumo,2022-07,Squashed commit of the following
+fcbdd3b2,André Bertoni,2022-07,fix: correção de conflitos
+c8638453,André Bertoni,2022-07,feat: ajustes de layout
+96d1391b,Raphael Pinheiro,2022-07,Squashed commit of the following
+17c0a81e,Raphael Pinheiro,2022-07,bugfix(PO-480): adjustment on checkUser method for platform-negotiation
+6b77f1e2,Raphael Pinheiro,2022-07,Squashed commit of the following
+0412dcae,Raphael Pinheiro,2022-07,changed edit price offer access
+ac6b93f3,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-resolve
+3bafadb0,Carlos Henrique,2022-07,Bugfix(permission): fix permission card offer
+be42b04e,Raphael Pinheiro,2022-07,Squashed commit of the following
+2bfdedbb,Raphael Pinheiro,2022-07,feat(PO-452): Added some bugfixes into offers and pricing
+77f2e04b,André Bertoni,2022-07,fix: conflitos
+b0a01e60,André Bertoni,2022-07,feat: botão habilitar
+03ae019a,Maico Rodrigo Caumo,2022-07,MYA-710 - Funcionalidades da tela de solicitar revisão
+84c7439b,Maico Rodrigo Caumo,2022-07,Merge branch 'feature/MYA-710' into MYA-702
+a424c135,André Bertoni,2022-07,feat: integração
+27767398,Maico Rodrigo Caumo,2022-07,MYA-710 - Funcionalidades da tela de solicitar revisão
+e6149583,Raphael Pinheiro,2022-07,feat(PO-452): created checkUserAccess method to see if the use had the necessary role
+1d80b877,André Bertoni,2022-07,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into MYA-701
+7c48ae27,André Bertoni,2022-07,feat: criação da tela gestão de documentos
+014ff186,thiago dias melin,2022-07,Squashed commit of the following
+2101aa1e,Raphael Pinheiro,2022-07,feat(PO-460): Pricing improvements and some bug fixes
+7c875812,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-resolve
+1713fee3,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-resolve
+700d2951,Raphael Pinheiro,2022-07,bugfix(PO-465): added some fixes in pricing drawer and notification handle
+7f452c98,thiago dias melin,2022-07,Squashed commit of the following
+8e8b3af8,Raphael Pinheiro,2022-07,feat(normalization): changed menu and header parcel imports alias
+35414336,Raphael Pinheiro,2022-07,Squashed commit of the following
+4bc73c0e,Raphael Pinheiro,2022-07,Squashed commit of the following
+d02c555e,thiago dias melin,2022-07,Squashed commit of the following
+a1c56afd,Carlos Henrique,2022-07,Feat: added negotiation_rule on drawer
+d59deda3,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-stg
+5670482b,Raphael Pinheiro,2022-07,feat(PO-411): added increment interval list and some bugfixes
+fcb41af9,thiago dias melin,2022-07,Squashed commit of the following
+7af90e4c,Raphael Pinheiro,2022-07,feat(PO-422): added service to populate measures select and lot of UI improvements
+fd4027e6,Raphael Pinheiro,2022-07,Squashed commit of the following
+c150e5ae,Raphael Pinheiro,2022-07,bugfix(events): adjustment in responsiveness
+4a7af28f,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-stg
+8133decd,Raphael Pinheiro,2022-07,feat(PO-406): added sb snackbar on save pricing, refactor events and added two new input filds on pricing drawer
+32a7cee0,Raphael Pinheiro,2022-07,Merge branch 'develop' into conflicts-stg
+df2c710a,Raphael Pinheiro,2022-07,bugfix(events): access new event and justify cards start
+53df7b37,Raphael Pinheiro,2022-06,feat(PO-409): changed the sale condition modal iframe height
+6c4ab4b3,Carlos Henrique,2022-06,refact/tests: fix request negotiation tests
+2e540a3d,Raphael Pinheiro,2022-06,Squashed commit of the following
+5a15deb7,Raphael Pinheiro,2022-06,feat(PO-408): fixed alignment of card in event screen and polished the components in page
+c4341a97,Carlos Henrique,2022-06,bugfix/PO-392: floating-input && button css adjustments
+106e7295,Carlos Henrique,2022-06,bugfix/PO-392: some adjustments
+eb56c38e,Carlos Henrique,2022-06,bugfix/PO-392: adjustment negotiation input
+6c93d08e,brenda-souza,2022-06,Conflitos resolvidos no console.
+2b48be5b,Brenda Reis Araújo de Souza,2022-06,removendo validacao de perfil para botão novo evento EVT-202DDD
+ee5fd20b,Raphael Pinheiro,2022-06,merge develop
+38f82561,Raphael Pinheiro,2022-06,feat(EVT-156): selected stores, form validation and some bugfixes
+8bc7596a,Raphael Pinheiro,2022-06,Squashed commit of the following
+447c89ad,Raphael Pinheiro,2022-06,feat(EVT-156): added loading and floating labels for all fields
+ccf4c538,Raphael Pinheiro,2022-06,merge develop
+716f189d,Raphael Pinheiro,2022-06,feat(EVT-156): bugfix in dto
+5e03eaf1,thiago dias melin,2022-06,Squashed commit of the following
+8161162d,Raphael Pinheiro,2022-06,feat(EVT-156): added save values service and form validation
+f556c7f1,Brenda Reis Araújo de Souza,2022-06,invertendo logica de exibicao do botao
+348e6879,Brenda Reis Araújo de Souza,2022-06,cursor mãozinha e exibir pipe corretamente
+bd436544,Raphael Pinheiro,2022-06,conflicts resolved
+213e9ebd,Raphael Pinheiro,2022-06,feat(EVT-156): added new status and css adjustments
+29f304ee,thiago dias melin,2022-06,Squashed commit of the following
+7d383cce,Raphael Pinheiro,2022-06,Squashed commit of the following
+05ef0367,Philipe Schneider,2022-06,MYA-607 - Enable feature tab panel to enable or disabled users in a event
+79182a39,Philipe Schneider,2022-06,MYA-607 - Enable feature tab panel to enable or disabled users in a event
+1ae3fe01,Brenda Reis Araújo de Souza,2022-06,novo evento
+52b3f455,Carlos Henrique,2022-06,feature po-349 - input currency
+d0d7ab99,Raphael Pinheiro,2022-06,hotfix(formatter): added minimum 2 decimal digits
+12983c69,Carlos Henrique,2022-06,Bugfix: fix focus on negotiation input
+7a67e920,Raphael Pinheiro,2022-06,(PO-333): changed the currency formatter
+93669f36,Carlos Henrique,2022-06,Bugfix: PO-339 fix input proposal value
+cb17f05b,Raphael Pinheiro,2022-05,feat(EVT-119): created sale-modal, dialog-confirmation and other components for the new offers summary
+8c16a357,Raphael Pinheiro,2022-05,feat(PO-176): added locace currency and other minor adjustments
+41611d08,Raphael Pinheiro,2022-05,Squashed commit of the following
+aec32ed2,Carlos Henrique,2022-05,Bugfix: fix export button && fix params to api call on drawer
+b6098bc9,Carlos Henrique,2022-05,PropTypes import
+757b881e,Carlos Henrique,2022-05,Cancel proposal component
+a3b0a047,Carlos Henrique,2022-04,Bugfix: fix error on get history without event id
+12f63552,Carlos Henrique,2022-04,Bugfix: fix  error on first load events page
+57e2c34e,Carlos Henrique,2022-04,Fix eventName error event page on first load
+775960b0,rafael-silva,2022-04,Conflicts resolved in the console.
+3d32eb5c,Raphael Pinheiro,2022-04,bugfix(PO-269): added refuse offer into drawer for offer without bid and added some missing i18n
+3f605a93,Raquel Araujo da Silva,2022-04,Squashed commit of the following
+d55c48e9,Raquel Araujo da Silva,2022-04,Squashed commit of the following
+dd53f1c1,Raphael Pinheiro,2022-04,bugfix(PO-255): adjustments in initDate and entDate filters
+6466bbcd,Raphael Pinheiro,2022-04,feat(PO-230): endDate fix
+3cdc48c8,Raphael Pinheiro,2022-04,feat(PO-230): eventName null check
+ebab7730,Carlos Henrique,2022-04,Bugfix/PO-250: fix modal close on submit refuse offer
+245bcbff,Carlos Henrique,2022-04,Bugfix/PO-243: remove console.log
+0e0d157b,Carlos Henrique,2022-04,Bugfix/PO-243: fix offer negotiation history && correction negotiation button show more or less
+4bf48bc7,Raquel Araujo da Silva,2022-04,feat(MYA-289): enabledUsers toggle triggered
+c2511757,thiago dias melin,2022-04,Squashed commit of the following
+b83a4b0e,Carlos Henrique,2022-04,Bugfix/PO-241: added event end date and event id to sumary && correction of label in event card
+1d195d67,Raquel Araujo da Silva,2022-04,Squashed commit of the following
+61e94868,raquel.silva@superbid.net,2022-04,Squashed commit of the following
+c4e9e74a,Raquel Araujo da Silva,2022-04,fix: getEnabledUsers adjusted
+9532db7d,Raquel Araujo da Silva,2022-04,fixin: enablers users
+0bca60c4,Raquel Araujo da Silva,2022-04,fix: enabled users fixin
+10cdbb26,Raquel Araujo da Silva,2022-04,feat: enabled users component adjusted
+d57e6090,Raquel Araujo da Silva,2022-04,enabled component adjusted
+8026bc33,Raquel Araujo da Silva,2022-04,feat: enabled users component adjusted
+1c7d5650,Raquel Araujo da Silva,2022-04,enabled userd adjusted
+fcb3bfaa,Raquel Araujo da Silva,2022-04,enabled component adjusted
+0e2e6756,Raquel Araujo da Silva,2022-04,feat: enabled users component adjusted
+2ad517ed,Carlos Henrique,2022-04,Bugfix/PO-237: Added new translations and fix pagination offer
+37da7e9b,Carlos Henrique,2022-04,Bugfix/PO-237: added translate to refuse offer
+82029abc,Carlos Henrique,2022-04,Bugfix/PO-237: fix snackbar status and message
+a3f0e7e0,Raphael Pinheiro,2022-04,feat(PO-235): i18n adjustments and removed console warnings
+5951b2ce,Raquel Araujo da Silva,2022-04,feat: enabled users component adjusted
+1fea878b,Raphael Pinheiro,2022-04,Squashed commit of the following
+afcf6eeb,Carlos Henrique,2022-04,Bugfix/PO-236: refact added children on prop type
+5d14468e,Carlos Henrique,2022-04,Bugfix/PO-236: change refuse button to drawer information component
+9096c1d2,Raphael Pinheiro,2022-04,feat(i18n): added more translations and erroBoundaryBug fix
+accee37f,rafael-silva,2022-04,Conflicts resolved in the console.
+6aed88d3,Raphael Pinheiro,2022-04,feat(i18n): Created i18n for the project with default pt-BR and ES
+fadbcfce,Raphael Pinheiro,2022-04,removed erroBoundary
+d33cd9bf,Raphael Pinheiro,2022-04,bugfix(i18n): removed i18n entirely
+826ff64f,Raphael Pinheiro,2022-04,bugfix(i18n): lets hope that we found de error now
+22ab23f7,Raphael Pinheiro,2022-04,bugfix(i18n): regressive testing to find error
+73d94ec2,Raphael Pinheiro,2022-04,Revert "feat(i18n): Created i18n for the project with default pt-BR and ES"
+6e7ff9cd,Raphael Pinheiro,2022-04,bugfix(i18n): check if the problem is with i18n import
+07ae0de7,Raphael Pinheiro,2022-04,feat(i18n) removed i18n from enum to test error fix
+1e6b3a0f,Raphael Pinheiro,2022-04,feat(i18n): Created i18n for the project with default pt-BR and ES
+72b9ac5a,Raphael Pinheiro,2022-03,feat(PO-229): added errorBoundary generic from styleguide
+e453c702,Raphael Pinheiro,2022-03,ajustes de conflitos
+ec34373b,rafael-silva,2022-03,Conflitos resolvidos no console.
+2b84a31e,rafael-silva,2022-03,Conflitos resolvidos no console.
+cd75d82f,Carlos Henrique,2022-03,merge to develop
+b8fa460d,Carlos Henrique,2022-03,Merge branch 'bugfix/snackbar' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into bugfix/snackbar
+45155006,Carlos Henrique,2022-03,bugfix/snackbar: Removed snackbar from components and changed to use snackbar in context
+94897ae1,Carlos Henrique,2022-03,bugfix/snackbar: Removed snackbar from components and changed to use snackbar in context
+2d85b03e,Raphael Pinheiro,2022-03,feat(PO-210) adjustments in refuse offer
+75a46e41,thiago dias melin,2022-03,Squashed commit of the following
+ed8f4797,Raphael Pinheiro,2022-03,feat(PO-210): added negotiation history into offer list card and test fix
+3bf54ed0,Raquel Araujo da Silva,2022-03,Squashed commit of the following
+129ce86c,Carlos Henrique,2022-03,Bugfix/PO-191: relocated or snack bar to drawer to avoid disappearing when reloading component
+e729f532,Raphael Pinheiro,2022-03,feat(PO-210): added refuse offer feature
+1e50b263,Raquel Araujo da Silva,2022-03,fix: camelCase props and debbuger removed  and destructiong data props adjusted
+f359a7d9,Raquel Araujo da Silva,2022-03,fix: merge conflits adjusted
+56e7ff60,Raquel Araujo da Silva,2022-03,fix: eslint errors adjusted
+6d6dfb9f,Raquel Araujo da Silva,2022-03,feat: search and pagination in enabled users page
+fa75cc8f,Raquel Araujo da Silva,2022-03,feat: search and pagination in enabled users page
+fd36e73e,Raphael Pinheiro,2022-03,feat(error-boundary): added errorBoundary handler to stop whitescreen
+7f516a86,Carlos Henrique,2022-03,Bugfix/PO-180 & Bugfix/PO-1168
+4b0864e6,Carlos Henrique,2022-03,bugfix change url params
+2d4a3dd1,Carlos Henrique,2022-03,bugfix/cashout-details-params change eventId to offerId
+ef303670,Henrique,2022-03,Squashed commit of the following
+6f26cdce,henriqueviana,2022-03,fix
+e85170d0,henriqueviana,2022-03,fix
+805b94b6,henriqueviana,2022-03,Merge branch 'develop' into bugfix/PO-191
+e66a045d,henriqueviana,2022-03,fix errors
+8627fa1a,Raphael Pinheiro,2022-03,bugfix(PO-190): removed whitespace from the object
+b91cbc66,henriqueviana,2022-03,feat: implement getWithdrawal service
+110b2600,tiago.oliveira,2022-03,fix event report
+52faa022,tiago.oliveira,2022-03,fix offer page
+2d7e5984,tiago.oliveira,2022-03,fix export button
+71946408,tiago.oliveira,2022-03,Merge branch 'develop' into fix/export-design-button
+3557cf80,henriqueviana,2022-03,bugfix: rollback nogotiationhistory in drawer
+b2e35b2a,henriqueviana,2022-03,bugfix: rollback nogotiationhistory in drawer
+7b3ecfbc,Henrique Falco,2022-03,remove import Divider
+40fd8efc,Henrique Falco,2022-03,Bugfix/PO-168: some corrections
+fdd651a6,Henrique Falco,2022-03,merge dev
+5496aab5,Henrique Falco,2022-03,Bugfix/PO-168 and some fix others bugs
+3b040eb8,henriqueviana,2022-03,feat: implementing service of withdrawal and unit tests
+06ce049e,tiago.oliveira,2022-03,fix report button
+d5610e8f,henriqueviana,2022-03,Merge branch 'develop' into feature/PO-147
+7e803235,henriqueviana,2022-03,feat: create Withdrawal component and implementing in Drawer
+a3dfe771,Henrique Falco,2022-03,refact/PO-168: refact api call
+3bb76bea,Henrique Falco,2022-03,feat/PO-168: feature view  conditional sale
+1c80f873,henriqueviana,2022-03,feat: WIP - create component DrawerWithdrawal
+eb4c1ac6,henriqueviana,2022-03,feat: WIP - implementing withdrawal in drawer of offers
+dd58bdbc,Raphael Pinheiro,2022-03,Squashed commit of the following
+a9439bce,thiago dias melin,2022-03,Squashed commit of the following
+4463f761,tiago.oliveira,2022-03,fix journey
+f0d8660a,tiago.oliveira,2022-03,merge with develop
+261e99f1,tiago.oliveira,2022-03,fix report params
+06e82f4b,Raphael Pinheiro,2022-03,feat(husky): added pre-push hook
+9b488bbd,Raphael Pinheiro,2022-03,feat(lint): husky and lint configs, added PropTypes to all components
+ad944b37,henriqueviana,2022-03,rollback paths in apiUrl
+33690be9,henriqueviana,2022-03,bugfix: fix show date and hour in nigotiation history
+0d58742e,henriqueviana,2022-03,bugfix: fix script start in package.json
+04a80ee7,Tiago Oliveira,2022-03,Squashed commit of the following
+956571ba,Henrique Falco,2022-03,bugfix: rollback api url
+3f9053ea,Henrique Falco,2022-03,Bugfix: History value
+0f2a53b1,henriqueviana,2022-03,removing inner loading
+935c44ca,henriqueviana,2022-03,merging with stg
+20577eae,henriqueviana,2022-03,fix loading
+8d7f1126,henriqueviana,2022-03,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into develop
+28ce6b9b,Tiago Oliveira,2022-03,Squashed commit of the following
+36716f30,thiago dias melin,2022-02,Squashed commit of the following
+c2d96f14,henriqueviana,2022-02,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into develop
+dce04496,Henrique,2022-02,Squashed commit of the following
+26604209,henriqueviana,2022-02,Merge branch 'develop' of ssh://git-codecommit.sa-east-1.amazonaws.com/v1/repos/sb-event-platform into develop
+6e8c273b,henriqueviana,2022-02,Merge branch 'stg' into develop
+1edbb1ec,thiago dias melin,2022-02,Squashed commit of the following
+17cd8be5,henriqueviana,2022-02,Merge branch 'develop' into bugfix/PO-136
+d70b54ff,Henrique,2022-02,Squashed commit of the following
+43b561a9,henriqueviana,2022-02,update url to journey-transaction
+e6d079b6,henriqueviana,2022-02,bugfix: fix error in call step.title of NegotiationHistory
+e061f3c5,Raquel Araujo da Silva,2022-02,Squashed commit of the following
+64085c35,Raphael Pinheiro,2022-02,deploy: prod
+9b43dc44,Raphael Pinheiro,2022-02,deploy: prod
+eb693fb1,henriqueviana,2022-02,update env prd
+937afca8,henriqueviana,2022-02,update NODE_ENV
+b2de7a3e,Raquel Araujo da Silva,2022-02,fix: console.log removed and enabled users flag setting false
+1c6c5306,Raquel Araujo da Silva,2022-02,feat: Enabled Users Refactored
+4c5febf9,Raquel Araujo da Silva,2022-02,MYA-196: enabledUser container refactored
+c3700729,henriqueviana,2022-02,Merge branch 'develop' into feature/PO-114
+6c0bb5cd,henriqueviana,2022-02,bugfix: show new Drawer
+0eb55285,Raphael Pinheiro,2022-02,feat(env): added env treatment
+95f4a491,Raphael Pinheiro,2022-02,feat(env): added env treatment
+273d456e,Raphael Pinheiro,2022-02,feat(env): added env treatment
+162613fb,Henrique Falco,2022-02,bugfix: Hide card information and improve drawer logic
+330b1f20,henriqueviana,2022-02,merge: merging wuth develop
+d2639398,Raphael Pinheiro,2022-02,feat(proposal-data-obj): added eventName and timeZoneId into proposal data object
+5e973ade,Raquel Araujo da Silva,2022-02,fix: merge toggle adjustde
+0fba1ad3,Raquel Araujo da Silva,2022-02,fix: merge offer adjusted
+ceada94e,Raquel Araujo da Silva,2022-02,fix: merge adjusted
+41b1ca5c,Raquel Araujo da Silva,2022-02,feat: toggle created
+4e414322,Raphael Pinheiro,2022-02,feat(environemnt): changed API URL apointment correctly to PRE
+efcbcb22,Henrique Falco,2022-02,merge with develop
+c6ab5707,henriqueviana,2022-02,feat: implementing loading when user accept offer
+ed7b1dca,Raquel Araujo da Silva,2022-02,Squashed commit of the following
+df56662d,Raquel Araujo da Silva,2022-02,fix: console.log removed
+9d06b5e1,Raquel Araujo da Silva,2022-02,fix: collection lots and enabled users adjusted
+01c0b18e,Henrique Falco,2022-02,bugfix: hide negotiation button while all params are loader
+45b21415,Henrique Falco,2022-02,bugfix: Added type canceled
+e012107e,Henrique Falco,2022-02,bugfix: Correction of negotiation history
+7a3eca7b,henriqueviana,2022-02,Merge branch 'develop' into bugfix/PO-118
+b082e49a,henriqueviana,2022-02,bugfix: WIP - fix call endpoints of event page
+876ebeff,Henrique Falco,2022-02,bugfix: Removed unnecessary CSS properties
+06dbd61b,Henrique Falco,2022-02,bugfix: text spacing correction and offer filter size adjustment
+0d5df8e0,Raquel Araujo da Silva,2022-02,fix: merge conflits
+fc29bbc7,Raquel Araujo da Silva,2022-02,MYA-196: usuarios habilitados
+4f894f18,henriqueviana,2022-02,bugfix: fix call requests in offers page
+3c84248c,Henrique Falco,2022-02,bugfix: Correction date format
+5a348822,Henrique Falco,2022-02,Bugfix: Bug fixing and refactor api call
+7bdc3113,henriqueviana,2022-02,bugfix
+faba318b,henriqueviana,2022-02,bugfix: fix error in page offers
+2635419f,henriqueviana,2022-02,Squashed commit of the following
+b19511ab,Henrique Falco,2022-02,Bugfix: datapicker css standardized and added new payment tags
+fa655f6a,henriqueviana,2022-02,bugfix: fix error um offer page
+d7ec0570,henriqueviana,2022-02,bugfix: fix name of conponent
+cf08b2a3,henriqueviana,2022-02,feat: implement Header in offers summary
+ef3a9171,tiago.oliveira,2022-02,fix/remove-underscore
+fd1f9fac,Henrique Falco,2022-02,Squashed commit of the following
+5c4dbd23,tiago.oliveira,2022-02,fix conflicts
+ae49fc5f,tiago.oliveira,2022-02,fix/offers
+6ce7ceac,tiago.oliveira,2022-02,fix mr comments
+690b0460,tiago.oliveira,2022-02,fix mr comments
+e7f74dc1,tiago.oliveira,2022-02,fix mr comments
+362a829d,tiago.oliveira,2022-02,fix: offers page
+6d633a13,tiago.oliveira,2022-02,fix: merge with develop
+ebb1f25a,tiago.oliveira,2022-02,Merge branch 'develop' into fix/offers-fix
+5e374683,tiago.oliveira,2022-02,fix: remove get app icon
+b9fe57ed,henriqueviana,2022-02,feat: spike
+8bea101a,henriqueviana,2022-02,Merge branch 'develop' into feature/PO-98
+2f959de9,henriqueviana,2022-02,feat: WIP - spike to resolve conflicts css
+8e562e4b,Raphael Pinheiro,2022-02,Squashed commit of the following
+39ca8304,henriqueviana,2022-02,feat: spyke to resolve conflicts css in build
+ccfbbdd9,Henrique Falco,2022-02,refactor: remove unnecessary params on negotiation service
+bf62facf,Henrique Falco,2022-02,bugfix: some adjustments on negotiation drawer
+aa2d9096,Henrique Falco,2022-02,feat: release couter negotiation proposal
+e918898c,tiago oliveira,2022-02,Squashed commit of the following
+aaf3861d,Henrique Falco,2022-02,feat: Added negotiation drawer services
+51f76f1c,tiago.oliveira,2022-02,fix events and include export button
+45708ccf,tiago.oliveira,2022-02,fix events and include export button
+9adcff3c,Raphael Pinheiro,2022-02,bugfix(buy-information): fix response object right name
+7fd9e862,Raphael Pinheiro,2022-02,bugfix(adjustments): drawer adjustments
+bf59d103,Raphael Pinheiro,2022-02,bugfix(adjustments): drawer adjustments
+844ee67d,henriqueviana,2022-02,merging with develop
+cac7c911,henriqueviana,2022-02,update statusDesc
+71a05442,henriqueviana,2022-02,resolve conflicts
+4357c737,Raphael Pinheiro,2022-02,feat(sale-details): added services to populate sale details drawer
+00922e80,Henrique Falco,2022-02,feat/negotiation-service: release of negotiation service
+6c4275cd,Raphael Pinheiro,2022-02,feat(css-bug): tried to fix css problems in environment
+f4dd18f7,Raphael Pinheiro,2022-02,feat(offer-details): added partial service of offer details
+202442c4,henriqueviana,2022-02,nerging with develop
+cad0575f,henriqueviana,2022-02,bugfix: update click accept offer
+14319f73,henriqueviana,2022-02,bugfix: fix disable button when accept negotiation and implement rules
+4f61f743,Henrique,2022-02,Squashed commit of the following
+95780032,henriqueviana,2022-02,bugfix: update new drawer
+6835e41f,Henrique Falco,2022-02,bugfix: fixed the bug when the request was made before the token was loaded
+681b9286,Henrique Falco,2022-02,fixed the bug when the request was made before the token was loaded
+01b49c94,Henrique Falco,2022-02,bugfix/token: fixed the bug when the request was made before the token was loaded
+81315d7e,henriqueviana,2022-02,bugfix: fix layout filter and update show new Drawer
+2daf8503,Henrique Falco,2022-01,bugfix/offer-filter: fixed bug when clearing filter
+de8f28cf,henriqueviana,2022-01,feat: implement new Drawer
+6a66d3fb,henriqueviana,2022-01,Merge branch 'develop' into feature/PO-25
+48387ea2,henriqueviana,2022-01,feat: WIP - implement new Drawer
+1845194a,Henrique Falco,2022-01,[feat/negotiation-history] Negotiation history components
+ad942d1c,Henrique Falco,2022-01,[Feat/negotiation-component] Remove requestTrade importation
+23c94136,Henrique Falco,2022-01,[Feat/negotiation-components] Props Adjustments
+b30c5857,Henrique Falco,2022-01, [feat/negotiation-components] Negotiation components input and modal to negotiation offer.
+8c864e9f,henriqueviana,2022-01,feat: update startDate value in filter
+ed185940,henriqueviana,2022-01,Merge branch 'develop' into feature/PO-14
+9e6a36c7,henriqueviana,2022-01,feat: implement new items in summary of lots
+d0ad0473,Henrique Falco,2022-01,[feat/sellect-seller] Change select seller to checkbox input
+e811adb2,henriqueviana,2022-01,feat: implement filter to init date event
+dc1d7916,henriqueviana,2022-01,bugfix: update css
+f708e9fa,henriqueviana,2022-01,Merge branch 'develop' into bugfix/icons-status
+36df79c7,henriqueviana,2022-01,bugfix: update css
+206c013f,Raphael Pinheiro,2022-01,bugfix(css): resolved conflict with material css classes
+15c9efb0,Henrique,2022-01,Squashed commit of the following
+b7d877a4,henriqueviana,2022-01,bugfix: fix layout of event card
+8538058e,henriqueviana,2022-01,bugfix: fix icons in status of offers
+e3ce56a3,Raphael Pinheiro,2022-01,feat(services): events summary
+76e5c193,Raphael Pinheiro,2022-01,feat(services): Adjustments in payload response from events and offers service
+334ce496,Raphael Pinheiro,2022-01,feat(snack): garbage removal
+ad612ff4,Raphael Pinheiro,2022-01,feat(snack): added snack notification and some bugfixes
+73f06d8a,Raphael Pinheiro,2022-01,feat(route): card route fix to offers
+9221eb94,Raphael Pinheiro,2022-01,feat(guard): added route guard based into keycloak realms application
+6e0f66ad,Raphael Pinheiro,2022-01,bugfix(pagination): adjustments in pagination pageNumber to be sent
+81e1a845,thiago dias melin,2022-01,Squashed commit of the following
+15dbb122,henriqueviana,2022-01,bugfix: fix call bff event in mobile
+a13dbdfe,henriqueviana,2022-01,Merge branch 'develop' into bugfix/datepicker
+dccb6992,henriqueviana,2022-01,bugfix: fix date param in query
+0a6f5370,Raphael Pinheiro,2022-01,bugfix(card-offer): currency formatter utils
+0dbeff45,henriqueviana,2022-01,bugfix: fix bugs in datepicker
+4c82115c,Henrique Falco,2021-12,[bugfix/pagination] Fixed pagination of events and offers
+97ce7fe2,Henrique Falco,2021-12,[bugfix/event-filter] Fixed event filter search parameter.
+3e0331e1,Raphael Pinheiro,2021-12,bugfix(events-filter): fixed status selection clear
+1252d0c5,Raphael Pinheiro,2021-12,bugfix(offers): fixed pagination and removed bid count from offer card
+56708531,Henrique Falco,2021-12,[bugfix/filter-reset] Remoção do useCallback devido ao bug de reset dos filtros.
+8927ada6,henriqueviana,2021-12,bugfix: fix seller select in offers
+550479c9,henriqueviana,2021-12,bugfix: update size value of mobile variable in event and offers page
+e7bcb94b,henriqueviana,2021-12,merge: merging with develop
+5d18a77d,henriqueviana,2021-12,bugfix: fix filter css
+677f8186,Raphael Pinheiro,2021-12,feat(offer-card): css adjustments
+e33e7837,Raphael Pinheiro,2021-12,feat(offer-filters): offers filters fix
+4b446917,Henrique Falco,2021-12,Squashed commit of the following
+dbd099f2,Raphael Pinheiro,2021-12,bugfix(offers): adjustment in summary and services
+88c95ac2,Raphael Pinheiro,2021-12,bugfix(pagination): removed -1 in pagination
+abd8835a,Raphael Pinheiro,2021-12,bugfix(offers): garbage removal
+de972101,Raphael Pinheiro,2021-12,bugfix(offers): status offers improvements
+2ff1188a,Raphael Pinheiro,2021-12,bugfix(offers): added status icons and bugfixed some filter issues
+b26dbc72,henriqueviana,2021-12,bugfix: update files
+2feef057,henriqueviana,2021-12,Merge branch 'develop' into bugfix/config-axios
+2ccba13a,henriqueviana,2021-12,bugfix: fix refresh token
+0eec6ccc,henriqueviana,2021-12,feat: insert label in datepicker
+b30f9af0,Raphael Pinheiro,2021-12,bugfix(offers): offers polishment
+68cd395d,Raphael Pinheiro,2021-12,feat(summary): Adjustment of offer summary service and rename of components lots to offer
+2c0aa30f,henriqueviana,2021-12,bugfix: fix update token in axios interceptor
+b4b2187b,Raphael Pinheiro,2021-12,feat(responsive-filters): implementation of responsive filters in offers page + services adjustments
+70061ff3,henriqueviana,2021-12,bugfix: remove border of last item of lots summary
+aec0e087,henriqueviana,2021-12,bugfix: update call of services in responsive filter
+828c5d91,Raphael Pinheiro,2021-12,feat(conflicts): conflicts resolution
+1109c59d,Raphael Pinheiro,2021-12,Merge branch 'develop' into ajuste-responsividade-lot-summary
+f70173c3,Raphael Pinheiro,2021-12,bugfix(input): added blur on all inputs to stop re calling service
+1edbf265,Raphael Pinheiro,2021-12,Merge branch 'develop' into feature/css-adjustments
+276d206b,Henrique Falco,2021-12,[feature/responsive-filter] Ajustado a responsividade para telas menores.
+5371a429,henriqueviana,2021-12,bugfix: fix select with checkbox when checked item
+7b285714,Raphael Pinheiro,2021-12,feat(event-filters): dateUtils and adjustments in filters
+698cc8c0,Raphael Pinheiro,2021-12,feat(event-filters): filters adjustments for events
+529cf397,henriqueviana,2021-12,feat: update css of event card
+e59a9664,Ailson Moreira,2021-12,fix responsividade lot page
+258b39d8,Raphael Pinheiro,2021-12,feat(services): adjustments in events service filters and page css
+c8b37bab,Raphael Pinheiro,2021-12,Merge branch 'develop' into feature/css-adjustments
+ad8e829b,Raphael Pinheiro,2021-12,feat(improves): adjustments in cardlots css and routers
+e20e513f,Henrique Falco,2021-12,Squashed commit of the following
+594cbf3b,Ailson Moreira,2021-12,Merge branch 'develop' into ajuste-responsividade-lot-summary
+a7cf18ef,Ailson Moreira,2021-12,fiz responsividade tela de lote
+4b71cdcc,Raphael Pinheiro,2021-12,feat(improvements): backdrop lading, divider and lot screen adjustments
+974c6235,henriqueviana,2021-12,Squashed commit of the following
+cc3ea962,tiago dos santos,2021-12,fix mr components
+7af9728e,tiago dos santos,2021-12,fix unit testing
+f5c1065a,tiago dos santos,2021-12,merge with developer
+591aa861,Raphael Pinheiro,2021-12,feat(services): offers services plugs and treatmented components for
+0e3a500c,tiago dos santos,2021-12,merge with develop
+491b588c,tiago dos santos,2021-12,feat/implement-lot-summary-service implementing service
+8df6e306,tiago dos santos,2021-12,feat/implement-lot-summary-service implementing service
+b8cc80c3,henriqueviana,2021-12,bugfix: import filterService in event page
+07a19271,henriqueviana,2021-12,merge: merging with develop
+b1164c93,henriqueviana,2021-12,test: WIP - implementing test
+c40caa98,Raphael Pinheiro,2021-12,feat(services): event and lots services plug
+1dbd886c,tiago dos santos,2021-12,fix-card-lot merge
+35b655e6,tiago dos santos,2021-12,fix-card-lot
+d6809d66,alison-moreira,2021-12,Conflitos resolvidos no console.
+061023b5,Raphael Pinheiro,2021-12,bugfix(styles): Encapsulate events styles
+70ba26ce,henriqueviana,2021-12,feat: create context and testing axios request
+e94ab966,Ailson Moreira,2021-12,removing commented lines
+c8d560f2,Ailson Moreira,2021-12,fix lot page responsive
+f53c9690,henriqueviana,2021-12,Merge branch 'develop' into refactor/responsive
+8d2f264c,henriqueviana,2021-12,refactory: update lint
+9de20df7,henriqueviana,2021-12,refactory: update responsive
+35eaa7b8,tiago dos santos,2021-12,Squashed commit of the following
+6ae0e675,Raphael Pinheiro,2021-12,feat(infra): added externals to webpack and eslint fix
+39198f55,Tiago,2021-12,Squashed commit of the following
+25ae37cc,henriqueviana,2021-12,refactory: update styles of responsive
+3a813187,henriqueviana,2021-12,fix: fixing header width
+702d519b,henriqueviana,2021-11,Merge branch 'develop' into feature/responsive
+c2c6df6e,henriqueviana,2021-11,feat: WIP - implement responsive layout in event page
+0ba1165e,Henrique Santos,2021-11,Squashed commit of the following
+241a8450,henriqueviana,2021-11,merge: merging with develop
+2fc9cc0c,henriqueviana,2021-11,reactory: refactoring event page and remove columns of Material UI
+5b43114a,Raphael Pinheiro,2021-11,feat(deploy): webpack config to build with hash
+906cbdae,henriqueviana,2021-11,Merge branch 'develop' into feature/filter
+daf42c68,henriqueviana,2021-11,feat: create example of filter component and update icons
+2e017b27,Ailson Ramos Moreira,2021-11,Squashed commit of the following
+f88b76db,tiago dos santos,2021-11,feat/card-lotes code refactoring
+c1ad3558,tiago dos santos,2021-11,card lote
+3fe0bb5f,Raphael Pinheiro,2021-11,feat(lots): created router and new page lots + eslint fix
+2fa0c5a8,henriqueviana,2021-11,feat: update Card Component and insert pagination
+682d1c94,henriqueviana,2021-11,feat: add initial tests config
+ac43c40c,henriqueviana,2021-11,feat: add material-ui pagination dependency
+3615278e,henriqueviana,2021-11,feat: refactory card
+662e9b15,henriqueviana,2021-11,feat: update component card
+9c2eced7,henriqueviana,2021-11,feat: create events page

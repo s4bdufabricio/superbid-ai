@@ -1,0 +1,23 @@
+011a85d,Andre Pasqualotto,2024-03,Adding string and query utils
+2122d39,Andre Pasqualotto,2024-03,changing keys of object
+9de031c,Andre Pasqualotto,2024-03,changing file utils
+38460bf,Andre Pasqualotto,2024-03,adding function to download response from api as file
+3fd57d0,Raphael Pinheiro,2022-07,bugfix(PO-465): created a custom event handler to communicate trough micro fronts
+f5b3b0d,Raphael Pinheiro,2022-04,bugfix(env): changed the name of utils node env
+0fdb9c1,henriqueviana,2022-02,removing logs
+2870f71,Raphael Pinheiro,2022-02,feat(webpack-env): DefinePlugin import fix
+920fb98,Raphael Pinheiro,2022-02,feat(webpack-env): try adjustment of node_evn
+8703b12,Raphael Pinheiro,2022-02,feat(keycloak-url): added other env to a const file
+cdc53bf,Raphael Pinheiro,2022-02,feat(keycloak-url): added treatment for keycloak url environments
+8a2962f,Raphael Pinheiro,2022-02,feat(keycloak-realm): changed realm to sbws
+674f0af,Henrique Falco,2022-02,bugfix/axios: Fixed axios return instance
+f209f22,henriqueviana,2021-12,merge: merging with develop
+a3dd297,henriqueviana,2021-12,bugfix: fix refresh token
+2b122c9,Raphael Pinheiro,2021-12,feat(services): configAxios baseUrl treatment
+c22e1a9,Raphael Pinheiro,2021-12,feat(tests): Tests for axios and sb-utils-platform exports
+6ca1cf7,henriqueviana,2021-12,feat: create config axios
+f5343b9,Raphael Pinheiro,2021-12,feat(infra): adjustment in webpack externals
+be75c28,Raphael Pinheiro,2021-11,feat(deploy): webpack config to build with hash
+68cde66,henriqueviana,2021-11,feat: refactoring keycloak
+cd5496d,Raphael Pinheiro,2021-11,[feature/login] restante do init
+8de43ac,Raphael Pinheiro,2021-11,[feature/login] Adicionado inicializador do keycloak e estado
