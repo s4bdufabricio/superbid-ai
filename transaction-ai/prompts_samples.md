@@ -162,15 +162,18 @@ Baseado no conteudo do signoff voce pdoe me sugerir quais de historias devem ser
 
 ## CRIAR SUBSTASKS DA STORY
 
-
 ```
 Consulte a lista de APPS APPs aonde são feitas evoluções do transaction na pagina com o ID 1295122435 do confluence.
 baseado nessa informação, preciso criar subtasks para a Story, Deve ser criada uma subtask por aplicação impactada.
 
 Exemplo de titulo para uam subtask : "[sb-fs] Adicionar botão da tela de oferta do site"
 
+Importante considerar nas descrição da subtask todos os campos detalhados em negrito na STORY, bem caso nome de tabelas ou colunas no banco de dados caso exista alguma informação na descrição técnica da STORY. Não é necessário para a subtask obedecer um template como o da story na descrição, quanto mais direta a descrição e maior detalhamento de questões técnicas como campos ou colunas a serem adicionadas, removidas ou lógicas de negócio a serem implementadas, lembre-se que o leitor da subtask é o desenvolvedor.
+
 Após ter o entendido das APPs e suas dependências e baseado na função de cada app consulte a STORY <<KEY>> 
 e me sugira as subtasks necessarias com titulo e descrição.
+
+Importante considerar a coluna de dependencias ao analisar o impacto e quais apps precisam de subtasks, não inclua apps das quais não exita uma relação de dependência descrita na tabela
 
 Após a minha revisão dos textos eu te dou o ok para criar no JIRA as subtasks com o parent sendo a story definida acima.
 ```
