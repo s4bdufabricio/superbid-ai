@@ -158,3 +158,19 @@ Prompt 4: Explicando Cenário atual para gerar as Story do Epic
 ```
 Baseado no conteudo do signoff voce pdoe me sugerir quais de historias devem ser criadas, após minha validação e ok podemos criar abaixo do epic criado anteriormente.
 ```
+
+
+## CRIAR SUBSTASKS DA STORY
+
+
+```
+Consulte a lista de APPS APPs aonde são feitas evoluções do transaction na pagina com o ID 1295122435 do confluence.
+baseado nessa informação, preciso criar subtasks para a Story, Deve ser criada uma subtask por aplicação impactada.
+
+Exemplo de titulo para uam subtask : "[sb-fs] Adicionar botão da tela de oferta do site"
+
+Após ter o entendido das APPs e suas dependências e baseado na função de cada app consulte a STORY <<KEY>> 
+e me sugira as subtasks necessarias com titulo e descrição.
+
+Após a minha revisão dos textos eu te dou o ok para criar no JIRA as subtasks com o parent sendo a story definida acima.
+```

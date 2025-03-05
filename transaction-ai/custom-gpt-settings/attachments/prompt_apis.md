@@ -1,6 +1,6 @@
 # SOBRE ACTION E CHAMADAS DE APIS
 
-## Infomração Geral para todas as chamadas de API
+## Informação Geral para todas as chamadas de API
 
 * Sempre considere utilizar os parametros definidos como default na suas actions caso o usuario nao especifique.
 * Para todas as requisições incluir sempre o header alem do authorization: "X-Atlassian-Token: nocheck"
@@ -36,6 +36,7 @@
       jql : "project = \"Time Transaction\" AND sprint = SPRINT_ID AND type = Story ORDER BY summary ASC, parent DESC"
       fields: "summary,customfield_10020,customfield_10034,parent"
 
+  
 
 # createStory - usado para criar issue Epic, Story, Bug ou Sub-task
 
@@ -52,4 +53,10 @@
   * Quando for criar um STORY usar o formato do arquivo (story_template.md), converta a sintaxe de formatacao dos mds para ADF para formatar no jira
 
   * Sempre que criar uma Issue retorne o ID e Summary criado na repsosta no chat para facilitar a consulta
+
+  # FORMATAÇÃO DE TEXTO PARA STORY
+
+  Sempre que for descrever ou criar uam história utilize obrigatóriamente o modelo e formatação do arquivo "story_template.md" substituindo as informações pelo contexto do prompt passado pelo usuário.
+
+
   
