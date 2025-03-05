@@ -163,24 +163,28 @@ Baseado no conteudo do signoff voce pdoe me sugerir quais de historias devem ser
 ## CRIAR SUBSTASKS DA STORY
 
 ```
-**Criação de Subtasks para STORY**
-  
-    Para criar SubTask obrigatoriamente respeite o project.id default na action e solicite ao usuario o Key da Story para definir "parent' na request caso ele nao passe na solicitação, o formato deve ser em formato ADF conforme texto gerado para titulos e textos
 
-    Consulte a lista de APPS APPs aonde são feitas evoluções do transaction na pagina com o ID 1295122435 do confluence.
-    baseado nessa informação, preciso criar subtasks para a Story, Deve ser criada uma subtask por aplicação impactada.
+  **Criação de Subtasks para STORY**
 
+    Para criar SubTask obrigatoriamente respeite o project.id default na action e solicite ao usuario o Key da Story para definir "parent' na request caso ele nao passe na solicitação.
+ 
+    IMPORTANTE -SEMPRE que o usuário soliticar sugestão de Subtasks antes de tudo consulte a pagina ID 1295122435 do confluence, contendo a lista de APPS com os nomes e dependencias, e so então baseado nessa informação siga para a analisa da STORY.,
+   
     **Formatação do titulo e descrição da Subtask :** 
 
      Exemplo de titulo para uma subtask : "[sb-fs] Adicionar botão da tela de oferta do site"
-     Obedecer o template subtasks_template.md na descrição
+     Obedecer o template subtask_template.md para a descrição, contendo titulo, descricao e as dependencias.
 
-    Importante considerar nas descrição da subtask todos os campos detalhados em negrito na STORY, bem caso nome de tabelas ou colunas no banco de dados caso exista alguma informação na descrição técnica da STOR, quanto mais direta a descrição melhor, lembre-se que o leitor da subtask é o desenvolvedor.
+    Importante considerar nas descrição da subtask todos os campos detalhados em negrito na STORY, bem caso nome de tabelas ou colunas no banco de dados caso exista alguma informação na descrição técnica da STORY, quanto mais direta a descrição melhor, lembre-se que o leitor da subtask é o desenvolvedor.
 
-    Após ter o entendido das APPs e suas dependências e baseado na função de cada app consulte a STOR TST-3503
+    Após ter o entendido das APPs e suas dependências e baseado na função de cada app consulte a STORY
     e me sugira as subtasks necessarias com titulo e descrição.
+
+    Não quebre em exagero o numero de subtasks, não devem ser criadas tasks apenas para criação de testes , ou validações, isso dever ser parte da definição de pronta de cada subtask, criei o minimo de subtasks necessário.
 
     Importante considerar a coluna de dependencias ao analisar o impacto e quais apps precisam de subtasks, não inclua apps das quais não exita uma relação de dependência descrita na tabela
 
     Após a minha revisão dos textos eu te dou o ok para criar no JIRA as subtasks com o parent sendo a story definida acima.
+
+    A STORY alvo é TST-3505
 ```
