@@ -32,6 +32,70 @@
       }
     ],
     "paths": {
+      "/bov1r3xt6ygrfzi8jlbxycb5xo0ke1xt": {
+        "put": {
+          "summary": "Define a pontuação de uma subtask",
+          "description": "Atualiza a pontuação da subtask com um valor numérico (com uma casa decimal). A chave (key) da subtask deve ser passada como query parameter.",
+          "operationId": "setStoryPointsSubTask",
+          "parameters": [
+            {
+              "name": "key",
+              "in": "query",
+              "description": "Chave (key) da subtask a ser atualizada",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "TST-3740"
+              }
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "fields": {
+                      "type": "object",
+                      "properties": {
+                        "customfield_10034": {
+                          "type": "number",
+                          "format": "float",
+                          "description": "Pontuação da subtask (valor numérico com uma casa decimal)",
+                          "example": 2.0
+                        }
+                      },
+                      "required": ["customfield_10034"]
+                    }
+                  },
+                  "required": ["fields"]
+                },
+                "example": {
+                  "fields": {
+                    "customfield_10034": 2.0
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Subtask atualizada com sucesso"
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            },
+            {
+              "oAuthDefinitions": [
+                "write:issue:jira"
+              ]
+            }
+          ]
+        }
+      },
       "/wesvbbl7dgh79pcvaizlm3efib421lhp": {
         "post": {
             "summary": "Cria uam STORY ( historia ) ou BUG ",
@@ -192,6 +256,8 @@
         ]
       }
      }
+
+     
     },
     "components": {
       "requestBodies": {},

@@ -188,3 +188,13 @@ Baseado no conteudo do signoff voce pdoe me sugerir quais de historias devem ser
 
     A STORY alvo é TST-3505
 ```
+
+
+## ESTIMAR PONTOS DA SPRINT BASEADO NO HISTORICO
+
+Preciso estimar os story points das subtasks da Sprint de Historica com base na Sprint alvo. A nova sprint contém diversas subtasks cujos nomes indicam as aplicações impactadas. Quero que a estimativa siga as regras de Story Points utilizadas na empresa, aplicando a tabela Fibonacci de estimativa de tempo conforme definido nas instruções (1 ponto = 1h, 2 pontos = 4h, 3 pontos = 9h, 5 pontos = 15h, 8 pontos = 40h, 13 pontos = 80h). Compare o escopo das novas subtasks com as subtasks da Sprint de Historica, analisando similaridades e complexidade técnica. Gere uma tabela contendo as subtasks, seus resumos e a estimativa de story points baseada nessa análise no modelo de sumario"
+
+Para saber quais sao as sprint, consulte sempre a sprint atual e.x 31
+Sprint Historica = a sprint concluida antes da atual, e.g 30
+
+BAseado nisso estimar os pontos da Sprint 32

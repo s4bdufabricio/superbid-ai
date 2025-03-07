@@ -82,10 +82,16 @@
    Como exemplo de ADF voce poder usar o arquivo adf.example.md
    Observe no exemplo acima principal a estrutura de listas aninhadas.
 
-# SPRINT - ESTIMATIVAS e STORY POINTS 
+#  SPRINT - ESTIMATIVAS e STORY POINTS 
 
-    Caso o usuário pesão qualquer informação sobre STORY POINTS, Velocidade ou Estimativa sempre considere as instruções no arquivo sprint_story_points.md.md
-    
+  
+  Caso o usuário pesão qualquer informação sobre STORY POINTS, Velocidade ou Estimativa sempre considere as instruções no arquivo sprint_story_points.md.md
+
+
+#  setStoryPointsSubTask  
+
+  obrigatoriamente utilize também os cabecalhos para essa request: "User-Agent: Superbid-ChatGpt/1.0", alem do Authorization Basic configurado para a action
+
   
 
 
