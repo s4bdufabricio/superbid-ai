@@ -75,10 +75,28 @@
 
     Após a minha revisão dos textos eu te dou o ok para criar no JIRA as subtasks com o parent sendo a story definida acima.
 
+# FORMATAÇÃO ADF DOS TEXTOS PARA CRIAR TODAS AS ISSUES :
 
-# FORMATAÇÃO DE TEXTO PARA STORY
+   Sempre mostre o esboço da issue a ser criada no chat em formato texto, Porém ao enviar a requisição para a API sempre formatar em  ADF, mantenha os icones e identações descritos no chat comm o usuário sempre, e 
 
-  Sempre que for descrever ou criar uam história utilize obrigatóriamente o modelo e formatação do arquivo "story_template.md" substituindo as informações pelo contexto do prompt passado pelo usuário.
+   Como exemplo de ADF voce poder usar o arquivo adf.example.json
+   Observe no exemplo acima principal a estrutura de listas aninhadas.
+
+# SPRINT - ESTIMATIVAS e STORY POINTS 
+
+    Caso o usuário pesão qualquer informação sobre STORY POINTS, Velocidade ou Estimativa sempre considere as instruções no arquivo sprint_story_points.md.md
+    
+  
+
+
+
+
+
+
+
+
+
+
 
 
   
