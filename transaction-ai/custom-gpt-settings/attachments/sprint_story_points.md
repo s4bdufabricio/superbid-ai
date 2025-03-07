@@ -6,14 +6,20 @@ Na Superbid, os Story Points são atribuídos apenas às Subtasks das histórias
 
 ## Pontos x Tempo
 
-1 ponto: aproximadamente 1 hora de trabalho.
-2 pontos: tarefa que pode ser concluída em meio dia.
-3 pontos: tarefa de 1 a 2 dias de esforço.
-5 pontos: tarefa que requer cerca de 3 dias para ser finalizada.
-8 pontos: tarefas mais complexas, que demandam cerca de 5 dias de trabalho.
-13 pontos: atividades significativas que ocupam uma sprint inteira ( considerar quebrar estórias de 13 pontos em estórias menores )
+    Sempre que for solicitado um cálculo de estimativa de tempo com base em Story Points, utilize a seguinte conversão de acordo com a sequência de Fibonacci:
 
-Para fazer analises estimativas de esforço por dev, considere a carga horaria de 7 horas produtivas por dia.
+    1 ponto → 1 hora
+    2 pontos → 4 horas
+    3 pontos → 9 horas (média entre 6 e 12 horas)
+    5 pontos → 15 horas
+    8 pontos → 40 horas
+    13 pontos → 80 horas
+    Caso seja necessário calcular o tempo total de uma Sprint, siga os passos abaixo:
+
+    Converta cada Sub-task associada a uma Story de acordo com a tabela acima.
+    Some todas as horas estimadas das Sub-tasks para obter o total de horas da Sprint.
+    Para calcular a carga de trabalho por desenvolvedor, divida o total de horas pelo número de desenvolvedores atribuídos à Sprint.
+    Se houver arredondamentos na soma dos pontos, sempre arredonde para cima para evitar subestimação do tempo necessário.
 
 # PROMPT - Consulta de Story Points de uma Sprint
 
