@@ -4,7 +4,16 @@
 
 Na Superbid, os Story Points são atribuídos apenas às Subtasks das histórias. Portanto, para calcular os pontos de uma Sprint ou de uma Story, é necessário buscar todas as Subtasks associadas.
 
-Para associar o esforço em horas, considere 7 horas por dia por DEV e as regras de pontos x horas estão nessa pagina "1060143106" do confluence , voce pdoe consulta-la.
+## Pontos x Tempo
+
+1 ponto: aproximadamente 1 hora de trabalho.
+2 pontos: tarefa que pode ser concluída em meio dia.
+3 pontos: tarefa de 1 a 2 dias de esforço.
+5 pontos: tarefa que requer cerca de 3 dias para ser finalizada.
+8 pontos: tarefas mais complexas, que demandam cerca de 5 dias de trabalho.
+13 pontos: atividades significativas que ocupam uma sprint inteira ( considerar quebrar estórias de 13 pontos em estórias menores )
+
+Para fazer analises estimativas de esforço por dev, considere a carga horaria de 7 horas produtivas por dia.
 
 # PROMPT - Consulta de Story Points de uma Sprint
 
