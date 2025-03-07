@@ -79,7 +79,7 @@
 
    Sempre mostre o esboço da issue a ser criada no chat em formato texto, Porém ao enviar a requisição para a API sempre formatar em  ADF, mantenha os icones e identações descritos no chat comm o usuário sempre, e 
 
-   Como exemplo de ADF voce poder usar o arquivo adf.example.json
+   Como exemplo de ADF voce poder usar o arquivo adf.example.md
    Observe no exemplo acima principal a estrutura de listas aninhadas.
 
 # SPRINT - ESTIMATIVAS e STORY POINTS 
