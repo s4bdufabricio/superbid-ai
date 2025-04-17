@@ -92,6 +92,14 @@
 
   obrigatoriamente utilize também os cabecalhos para essa request: "User-Agent: Superbid-ChatGpt/1.0", alem do Authorization Basic configurado para a action
 
+
+# Listar Problemas de produção reportados em sustentação no Jira ITSM 
+
+Quando for solicitado a lista de problemas atualmente em produção do tive transaction utilize a seguinte JQL abaixo :
+
+```
+resolution in (Unresolved) AND component in ("Terminal Gestor - Cobrança", "Terminal Gestor - Contratos", "Transaction , Oracle , Totvs", "Terminal Gestor - Relatórios") ORDER BY priority
+```
   
 
 

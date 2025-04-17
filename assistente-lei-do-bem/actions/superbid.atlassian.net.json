@@ -864,6 +864,75 @@
             }
           ]
         }
+      },
+      "/rest/api/3/search/jql": {
+        "get": {
+          "summary": "Get Issues by JQL",
+          "description": "Get Story, Bugs etc..  by Key with fields specified by prompt",
+          "operationId": "getIssuesByJql",
+          "parameters": [
+            {
+              "name": "jql",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "key = TST-1835"
+              }
+            },
+            {
+              "name": "maxResults",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "5000"
+              }
+            },
+            {
+              "name": "fields",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "*all"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
+      },     
+      "/rest/api/3/issue/{key}/changelog": {
+        "get": {
+          "summary": "Get Issues History Status Change",
+          "description": "Get all Issues changes status history, the key of issue should be replaced on URL path {key}",
+          "operationId": "getIssueChanges",
+          "parameters": [
+            {
+              "name": "key",
+              "in": "path",
+              "required": true,
+              "description": "The issue key, e.g. SNWS-21",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "maxResults",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "example": "5000"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": ""
+            }
+          }
+        }
       }
     },
     "components": {

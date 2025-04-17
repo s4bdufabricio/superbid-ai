@@ -56,7 +56,7 @@
           }
         }
       },
-      "/rest/agile/1.0/board/179/sprint": {
+      "/rest/agile/1.0/board/{boardId}/sprint": {
         "get": {
           "summary": "Get All Sprints",
           "description": "Get All Sprints",
@@ -79,7 +79,7 @@
               "in": "query",
               "schema": {
                 "type": "string",
-                "example": "project = \"Time Transaction\" AND key = TST-1835"
+                "example": "key = TST-1835"
               }
             },
             {
@@ -140,18 +140,27 @@
           }
         }
       },
-      "/rest/api/2/issue/134661": {
+      "/rest/api/3/issue/{key}": {
         "get": {
-          "summary": "Get Subtask By Story",
-          "description": "Get Subtask By Story",
-          "operationId": "getSubtaskByStory",
+          "summary": "Get All Issue Content by KEy",
+          "description": "Get all Content of a specific Issue",
+          "operationId": "getIssueContent",
           "parameters": [
+            {
+              "name": "key",
+              "in": "path",
+              "required": true,
+              "description": "The issue key, e.g. SNWS-21",
+              "schema": {
+                "type": "string"
+              }
+            },
             {
               "name": "fields",
               "in": "query",
               "schema": {
                 "type": "string",
-                "example": "subtasks,customfield_10034"
+                "example": "*all"
               }
             }
           ],
@@ -522,15 +531,15 @@
           "tags": [
             "Page"
           ],
-          "operationId": "getPagesInSpace",
-          "summary": "Get pages in space",
-          "description": "Returns all pages in the specific space",
+          "operationId": "getDocsConfluence",
+          "summary": "Get pages in space Padroes de Desenvolvimento",
+          "description": "Returna as paginas referentes ao space no confluence Padroes de Desenvolvimento",
           "parameters": [
             {
               "name": "id",
               "in": "path",
               "required": true,
-              "default":426366,
+              "default":1212547076,
               "description": "The ID of the space for which pages should be returned.",
               "schema": {
                 "format": "int64",
